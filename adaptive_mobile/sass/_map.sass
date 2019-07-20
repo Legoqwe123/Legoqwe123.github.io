@@ -1,0 +1,44 @@
+.footer
+    display: flex
+#map 
+    width: 50%
+.contacts
+    flex-basis: 50%
+    padding-left: 215px
+    &-title 
+        margin-top: 100px 
+        width: 100%
+        max-width: 293px
+        font-size: 22px
+        +bold
+    &-list 
+        padding: 0
+        &__item
+            margin-top: 40px
+            font-size: 16px
+            +reg
+            display: flex
+        &__icon
+            width: 14px
+            height: 20px
+            margin-right: 22px
+.contacts p 
+    margin: 0
+.contacts a 
+    color: black
+@media (max-width: 1200px)
+    .contacts
+      padding-left: 100px
+@media (max-width: 768px)
+    .footer
+        flex-direction: column-reverse
+    #map
+        width: 100%
+    .contacts
+        padding-left: 50px
+        margin-bottom: 50px
+        &-title
+            margin-top: 50px
+            font-size: 18px
+        p 
+            font-size: 16px          

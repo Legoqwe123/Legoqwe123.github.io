@@ -1,0 +1,99 @@
+#brif 
+    background-image: url('../img/interview.jpg'), url('../img/form.jpg')
+    background-position: left center, center right
+    background-size: 50%, contain
+    background-repeat: repeat-y, repeat-x
+
+.brif
+    &-block 
+        display: flex
+        +bold
+    &__interview
+        flex-basis: 50%
+    &__form
+        flex-basis: 50%
+        padding-left: 200px
+        text-align: center
+        
+.interview
+    &__title
+        margin-top: 100px
+        margin-bottom: 50px
+        width: 100%
+        max-width: 515px
+    &__subtitle
+        margin-bottom: 90px
+        +reg
+    &-list 
+        margin: 0
+        padding: 0
+        &__item
+            margin-bottom: 35px
+            align-items: center
+            display: flex
+            
+        &__counter
+            display: inline-block
+            width: 35px
+            height: 35px
+            border: 2px solid #000000
+            border-radius: 50%
+            text-align: center
+            padding-top: 8px
+            font-size: 14px
+        &__text
+            margin-left: 30px
+            max-width: 100%
+            max-width: 380px
+.brif
+    &__title
+        margin-top: 100px
+        margin-bottom: 50px
+        text-align: center
+    &__subtitle
+        margin-bottom: 50px
+        text-align: center
+        +reg
+    &__input
+        padding: 25px
+        border-radius: 10px
+        border: 1px solid #dddddd
+        display: flex
+        width: 100%
+       
+        align-items: center
+        margin-top: 15px
+    &__button
+        display: block
+        margin-top: 30px
+        padding: 0
+        width: 100%
+        max-width: 370px
+        height: 70px
+        border: 1px solid #ffd200
+        border-radius: 10px
+        background-color: #ffd200
+    &__description
+        margin-top: 30px
+        +reg
+@media (max-width: 1200px)
+  .interview-list__text
+      max-width: 300px
+  .brif__form
+      padding-left: 100px
+@media (max-width: 768px)
+   .brif-block
+       flex-direction: column
+   .brif__form
+       padding: 30px 
+   .brif__interview
+       padding: 30px
+   #brif 
+        background-image: url('../img/interview.jpg'), url('../img/form.jpg')
+        background-position: top center, center bottom
+        background-size: 100% 50%, cover
+        background-repeat: repeat-x, no-repeat
+   form 
+        
+           
+            

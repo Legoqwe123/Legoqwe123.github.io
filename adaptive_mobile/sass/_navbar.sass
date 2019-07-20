@@ -1,0 +1,44 @@
+.navbar
+    padding: 8px 0
+    &-block 
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__info 
+        display: flex
+        
+    &__contacts 
+        margin-right: 20px
+        display: flex
+        flex-direction: column
+        
+    &__adress
+        +reg
+        font-size: 13px
+        font-weight: 400
+        text-align: end
+    &__phone 
+        text-decoration: none
+        +bold
+        font-size: 20px
+        font-weight: 700
+        color: #333333
+        margin-top: 5px   
+    &_button
+        padding: 15px 30px
+        border: 1px 
+        border-radius: 10px
+        background-color: #ffd200
+        +bold
+        font-size: 13px
+        font-weight: 400
+        
+@media (max-width: 768px) 
+    .navbar
+        &__contacts
+            display: none
+        &_button
+            font-size: 15px 
+            padding: 10px
+        &__logo
+             max-width: 90px
