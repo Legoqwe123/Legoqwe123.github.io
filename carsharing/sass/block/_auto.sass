@@ -1,0 +1,68 @@
+.auto
+    &-title 
+        margin: 60px auto 0px 
+        text-align: center
+        font-size: 48px
+        max-width: 790px
+        font-weight: 400
+    &-subtitle
+        margin: 25px auto 0px 
+        text-align: center
+        font-size: 24px
+        max-width: 630px
+    &-button 
+        display: flex 
+        justify-content: center
+        align-items: center
+        margin-top: 40px
+        &__play
+            position: relative
+            padding: 0 50px
+            width: 100%
+            max-width: 270px
+            height: 50px
+            background: #fff
+            text-align: end
+            border: 1px solid #0099FF
+            border-radius: 20px
+            color: #0099FF
+            margin-right: 60px
+            &:hover
+                color: #ffffff
+                background: #0099FF
+                &:before
+                    background: #ffffff
+            &:before 
+                content: ''
+                position: absolute
+                -webkit-mask-image: url(../img/play.svg)
+                background: #0099FF
+                width: 15px
+                height: 18px
+                top: 14px
+                left: 50px
+    &-category
+      display: flex
+      justify-content: center`
+      margin-top: 50px
+      margin-left: 55px
+      text-align: center
+      &__first
+          position: relative
+          left: 65px
+          z-index: 0
+      &__second
+          position: relative
+          left: 0
+          z-index: 1
+      &__third
+          position: relative
+          right: 95px
+          z-index: 0
+.category
+    &-title 
+        font-size: 34px
+        font-weight: 400
+    &-subtitle
+        font-size: 24px
+        color: #3399FF

@@ -1,0 +1,39 @@
+.area 
+    position: relative
+    margin-top: 70px
+    &:before
+        content: ''
+        position: absolute
+        width: 100%
+        height: 100%
+        left: 0
+        top: 0
+        background: linear-gradient(180deg, #FFFFFF 0%, #F1F8FF 100%)
+        transform: matrix(1, 0, 0, -1, 0, 0)
+        z-index: -1
+    &-title 
+        position: relative
+        top: 70px
+        text-align: center
+    &-wrp 
+        margin-top: 115px
+        display: flex 
+        justify-content: center
+        align-items: start
+    &-item 
+       margin-left: 90px
+       &__image 
+           width: 100%
+           max-width: 570px
+       &__title
+           margin: 0
+           width: 100%
+           max-width: 390px
+       &__text 
+           width: 100%
+           line-height: 21px
+           max-width: 415px
+           font-size: 16px 
+           color: #8A8A91
+
+    
