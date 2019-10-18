@@ -49,10 +49,23 @@
             color: #8A8A91
     &-image 
         margin-top: 80px
-        width: 732px
-        height: 231.07px
+        width: 100%
+        max-width: 732px
+        max-height: 100%
     &-wrp 
         margin-top: 150px;
         &__img
             display: flex 
             justify-content: center
+@media (max-width: 968px) 
+    .info
+        &-wrp 
+           margin-top: 100px
+        &-list 
+            flex-direction: column
+            &__subtitle
+                max-width: 460px;
+            &__item 
+                margin-top: 40px
+                p 
+                   margin: 0

@@ -132,6 +132,43 @@ body {
       justify-content: space-around;
 }
 
+.head-burger {
+  display: none;
+  position: absolute;
+  top: 25px;
+  width: 26px;
+  height: 20px;
+}
+
+.head-burger__btn {
+  position: relative;
+  top: 9px;
+  width: 25px;
+  height: 2px;
+  background: black;
+  cursor: pointer;
+}
+
+.head-burger__btn:before {
+  content: '';
+  position: absolute;
+  -webkit-transform: translateY(7px);
+          transform: translateY(7px);
+  width: 25px;
+  height: 2px;
+  background: black;
+}
+
+.head-burger__btn:after {
+  content: '';
+  position: absolute;
+  -webkit-transform: translateY(-7px);
+          transform: translateY(-7px);
+  width: 25px;
+  height: 2px;
+  background: black;
+}
+
 .active {
   color: #0099FF;
 }
@@ -339,8 +376,9 @@ body {
 
 .info-image {
   margin-top: 80px;
-  width: 732px;
-  height: 231.07px;
+  width: 100%;
+  max-width: 732px;
+  max-height: 100%;
 }
 
 .info-wrp {
@@ -354,6 +392,27 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (max-width: 968px) {
+  .info-wrp {
+    margin-top: 100px;
+  }
+  .info-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .info-list__subtitle {
+    max-width: 460px;
+  }
+  .info-list__item {
+    margin-top: 40px;
+  }
+  .info-list__item p {
+    margin: 0;
+  }
 }
 
 .advantage-title {
@@ -402,12 +461,19 @@ body {
 }
 
 .advantage-list__item {
-  width: 410px;
+  width: 100%;
+  max-width: 414px;
   height: 237px;
 }
 
 .advantage-list__block:nth-child(2) {
   margin-top: -50px;
+}
+
+@media (max-width: 968px) {
+  .advantage-list__image {
+    display: none;
+  }
 }
 
 .user {
@@ -593,6 +659,28 @@ body {
   color: #8A8A91;
 }
 
+@media (max-width: 968px) {
+  .area .area-wrp {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .area .area-item {
+    margin: 0 10px;
+  }
+  .area .area-item__text {
+    margin: 0 auto;
+    max-width: 95%;
+  }
+  .area .area-item__title {
+    margin: 0 auto;
+  }
+}
+
 .footer {
   margin-top: 100px;
 }
@@ -636,6 +724,11 @@ body {
 .footer-text {
   margin-left: 120px;
   font-size: 12px;
+}
+
+svg {
+  width: 100%;
+  max-width: 30px;
 }
 
 @font-face {

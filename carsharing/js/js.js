@@ -72,8 +72,8 @@ $(function () {
                 break;
             }
         }
-
-
+    
+    
         if (pos > ($pageHeight / 5)) {
             $buttonUp.fadeIn(500)
         } else {
@@ -91,12 +91,11 @@ $(function () {
 
     $btnPlay.on('click', function () {
 
-        let $modal = $('.modal');
-
-       
+        let $modal = $('.modal'); 
+        
         $('body').addClass('modal-on');
         
-        $modal.show(500);
+        $modal.show(300);
 
     });
 
@@ -104,7 +103,7 @@ $(function () {
 
         let $modal = $('.modal');
 
-        $modal.fadeOut(500);
+        $modal.hide(300);
         
         $('body').removeClass('modal-on');
 

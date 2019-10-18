@@ -12,6 +12,33 @@
         &__list
             display: flex
             justify-content: space-around
+    &-burger 
+        display: none
+        position: absolute;
+        top: 25px;
+        width: 26px;
+        height: 20px;
+        &__btn
+            position: relative
+            top: 9px
+            width: 25px 
+            height: 2px 
+            background: black
+            cursor: pointer
+            &:before
+                content: ''
+                position: absolute
+                transform: translateY(7px)
+                width: 25px 
+                height: 2px 
+                background: black
+            &:after 
+                content: ''
+                position: absolute
+                transform: translateY(-7px)
+                width: 25px 
+                height: 2px 
+                background: black
 
 .active 
     color: #0099FF
@@ -23,3 +50,4 @@
     background: linear-gradient( #FFFFFF 0%, #F1F8FF 100%)
     z-index: 5
     transition: all ease 2s
+
