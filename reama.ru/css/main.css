@@ -291,7 +291,6 @@ header.header:after {
   position: absolute;
   bottom: 0px;
   left: 0px;
-  background-size: 105%;
   z-index: 99999;
   content: '';
   display: block;
