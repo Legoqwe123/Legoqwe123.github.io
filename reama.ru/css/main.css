@@ -12,6 +12,7 @@ body {
   }
 .slider-top-content .left-block li{
     cursor: pointer;
+    line-height: 100px;
 }
 
 html, body {
