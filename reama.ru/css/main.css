@@ -189,8 +189,7 @@ header.header:after {
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
-  -ms-flex-align: center;
-  align-items: center; }
+   }
 
 .left-block ul, .left-block div {
   background: url(../img/bg-slider.png) center center no-repeat;
@@ -1232,4 +1231,8 @@ form.order-form input {
 
 .header-link {
   font-size: 16px;
+}
+
+.left-block__name {
+   padding: 34px 25px !important;
 }
