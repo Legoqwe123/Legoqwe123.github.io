@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 body {
   color: #fff;
   font-size: 18px;
@@ -12,9 +13,7 @@ body {
 .slider-top-content .left-block li{
     cursor: pointer;
 }
-.container {
-  /*border: 1px solid red; */
-}
+
 html, body {
   /* Убирает прокрутку по горизонтале, для мобильной версии */
   width: 100%;
@@ -30,7 +29,7 @@ p {
   margin: 0px; }
 
 h2 {
-  font-size: 48px;
+  font-size: 35px;
   position: relative;
   z-index: 999;
   text-align: center;
@@ -147,6 +146,7 @@ div, span, img {
 
 .header__caption {
   text-transform: uppercase;
+  font-size: 16px;
   padding-left: 25px; }
 
 .caption {
@@ -330,10 +330,10 @@ header.header:after {
 .offer__item {
   border-radius: 50%;
   border: 4px solid #fff;
-  width: 165px;
-  min-width: 165px;
-  height: 165px;
-  min-height: 165px;
+  width: 75px;
+  min-width: 145px;
+  height: 98px;
+  min-height: 144px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -342,8 +342,8 @@ header.header:after {
   align-items: center; }
 
 .offer__item img {
-  width: 100px;
-  max-width: 100px; }
+  width: 75px;
+  max-width: 75px; }
 
 .offer__text {
   margin-top: 45px;
@@ -438,15 +438,15 @@ header.header:after {
   position: relative; }
 
 .tehnologi img {
-  max-width: 265px;
-  max-height: 265px;
+  max-width: 155px;
+  max-height: 145px;
   width: 100%;
   height: auto; }
 
 .advertising {
   position: relative;
   padding: 75px 0px 120px;
-  background: url(../img/bg-portfolio-2.png) center -100px no-repeat;
+  background: url(../img/bg-portfolio-2.png)no-repeat;
   background-size: cover; }
 
 .advertising p,
@@ -1052,8 +1052,8 @@ footer {
 .slider-top__wrapper {
   width: 100%;
   height: 100%;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 91%, 63% 100%, 0 91%, 0 0);
-  clip-path: polygon(0 0, 100% 0, 100% 91%, 63% 100%, 0 91%, 0 0);
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 59%, 60% 75%, 0 64%, 0 0);
+  clip-path: polygon(0 0, 100% 0%, 100% 59%, 60% 75%, 0 64%, 0 0);
   overflow: hidden; }
 
 .thanks {
@@ -1104,7 +1104,7 @@ footer {
 }
 .left-block ul li, .left-block div h2 {
     line-height: 52px;
-    font-size: 42px;
+    font-size: 30px;
     margin: 0px;
     text-align: left;
 }
@@ -1158,11 +1158,11 @@ header.header:after {
   margin-bottom: 135px;
 }
 .left-block-small ul {
-    max-height: 200px;
+    max-height: 165px;
 }
 .slider-top {
     min-height: 900px;
-}
+  }
 .left-block-small ul {
     background: url(../img/bg-slider.png) center bottom no-repeat;
 }
@@ -1188,8 +1188,6 @@ form.order-form input {
 .advertising {
     position: relative;
     padding: 75px 0px 0px;
-    background: url(../img/bg-portfolio-2.png) center 0px no-repeat;
-    
 }
 .advertising {
     padding-bottom: 220px;
@@ -1215,4 +1213,10 @@ form.order-form input {
 .ymaps-2-1-74-events-pane {
   z-index: 0!important;
 }
-  
+.header__logo{
+  width: 25%;
+}
+.header-block{
+  font-size: 16px;
+}
+
