@@ -557,10 +557,6 @@
 
 			<div id="map" style="width: 100%; height: 650px; z-index: 9999; position: relative;" ></div>
 
-			<!-- <div class="map" id="map">
-				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?z=20&um=constructor%3Adab7034f7c17ec59c59d9cbfa3f80f136087033b046c831a591c7236cf6627a7&amp;width=100%25&amp;height=647&amp;lang=ru_UA&amp;scroll=true"></script>
-			</div> -->
-
 		</section>
 
 		<footer class="footer" id="footer">
@@ -811,17 +807,16 @@ return false;
 
 <!-- Map Yandex -->
 <script>
-	ymaps.ready(init);    
+	
+ ymaps.ready(init);    
 	function init() {
 		var myMap = new ymaps.Map("map", {
 			center: [52.031288, 113.503340],
 			zoom: 18
-		}, 
-		),
+		});
 		myPieChart = new ymaps.Placemark([
 			52.031288, 113.503330
-			], 
-			);
+			]);
 		myMap.behaviors.disable('scrollZoom'); 
 		myMap.behaviors.disable('drag');
 		myMap.geoObjects
@@ -837,7 +832,7 @@ return false;
                     iconImageSize: [50, 50],
                 }
                 ));
-	}
+	}  
 </script>
 
 <script src="js/main.js"></script>

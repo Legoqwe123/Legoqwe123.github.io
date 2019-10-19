@@ -139,6 +139,7 @@ $('.scroll_to_slide_6').click(function(e) {
  };
 
  resizeWindow();
+
  
 
  });
