@@ -121,13 +121,13 @@ $('.scroll_to_slide_6').click(function(e) {
     $('.slider-top__wrapper').slick('slickPrev');
   });
 
-  let $window = $(window);
+ 
   
-  $window.resize(resizeWindow);
+  $(window).resize(resizeWindow);
 
   // Меняем значение placeholder при изменении экрана
   function resizeWindow(){
-     if ($window.width() < 768){
+     if ($(window).width() < 768){
         $('.name').attr('placeholder', 'Имя Фамилия');
         $('.email').attr('placeholder', 'E-Mail');
         $('.phone').attr('placeholder', 'Телефон');
@@ -142,8 +142,8 @@ $('.scroll_to_slide_6').click(function(e) {
 
   $('.burger-menu__link').on('click', function(e){
     e.preventDefault();
-    let $id = $(this).attr('href');
-    let block = $($id)
+    var id = $(this).attr('href');
+    var block = $(id)
     
     $('html,body').animate({
       scrollTop: block.offset().top
