@@ -167,9 +167,6 @@ $('.scroll_to_slide_6').click(function(e) {
 
   })
 
-  console.log($('.slider-top').offset().top);
   
-  
-
- });
+});
 

@@ -310,7 +310,7 @@
     margin-top: -50px;
 }
  .slider-top-slide{
-     background-size: 100% 75% !important; 
+    background-size: 1450px 75% !important;
  }
   .header__burger {
       display: block;
@@ -432,7 +432,7 @@
      
     }
     .slider-top-slide{
-        background-size: 100% 67% !important; 
+        background-size: 1450px  67% !important; 
     }
     .fish-content-list:after {
         display: none;
