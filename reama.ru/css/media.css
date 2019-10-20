@@ -10,7 +10,7 @@
         margin-top: 200px;
     }
     .quote {
-        top: 120px;
+        top: 85px;
         /*z-index: 999;*/
     }
 }
@@ -129,6 +129,11 @@
 	.mt-180 {
         margin-top: 0px;
     }
+
+    .btn-scroll{
+        margin: 0px 157px;
+        margin-bottom: 385px;
+    }
     .production {
         padding-bottom: 200px;
     }
@@ -180,6 +185,10 @@
 @media screen and (max-width: 992px) {
     .offer__item-wrapper{
         margin-bottom: 35px;
+    }
+
+    .btn-scroll {
+        margin: 385px auto;
     }
     .offer__text {
         margin-top: 20px;
@@ -293,11 +302,11 @@
         height: 850px !important;
     }
     .quote {
-        top: 365px;
+        top: 280px;
     }
     .container-button {
         left: 50%;
-        margin-left: -224px;
+        margin-left: -400px;
     }
 }
 
@@ -305,12 +314,17 @@
  .orders:before {
     display: none;
 }
+
+.container-button {
+    left: 50%;
+    margin-left: -324px;
+}
 .menu-btn {
     display: block;
     margin-top: -50px;
 }
  .slider-top-slide{
-    background-size: 1450px 75% !important;
+    background-size: 100% 75% !important;
  }
   .header__burger {
       display: block;
@@ -408,7 +422,7 @@
     clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 0);
 }
 .quote {
-    top: 390px;
+    top: 300px;
 }
 .left-block ul {
     font-size: 37px;
@@ -432,10 +446,15 @@
      
     }
     .slider-top-slide{
-        background-size: 1450px  67% !important; 
+        background-size: 100% 67% !important; 
     }
     .fish-content-list:after {
         display: none;
+    }
+
+    .container-button {
+        left: 50%;
+        margin-left: -235px;
     }
 
    .left-block ul, .left-block div {
@@ -490,7 +509,7 @@
         margin-left: 10%;
     }
     .quote {
-        top: 280px;
+        top: 220px;
     }
     .bg-orders:after {
    display: none;
@@ -508,6 +527,11 @@
 
     .left-block__name {
 
+    }
+
+    .container-button {
+        left: 50%;
+        margin-left: -222px;
     }
 
     h2 {
