@@ -1284,6 +1284,10 @@ form.order-form input {
   display: none;
 }
 
+.burger-menu {
+  display: none;
+}
+
 .burger-menu__active {
    right: 0% !important;
 }
