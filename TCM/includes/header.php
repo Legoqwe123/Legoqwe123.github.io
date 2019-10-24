@@ -23,16 +23,16 @@
             <div class='menu-block content-container'>
                 <ul class="menu-list">
                     <li class="menu-list__item">
-                        <a href='#' class="menu-list__link">О продукте</a>
+                        <a href='index.php' class="menu-list__link">О продукте</a>
                     </li>
                     <li class="menu-list__item">
-                        <a href='#' class="menu-list__link">Тарифы</a>
+                        <a href='tariff.php' class="menu-list__link">Тарифы</a>
                     </li>
                     <li class="menu-list__item">
-                        <a href='#' class="menu-list__link">Контакты</a>
+                        <a href='contact.php' class="menu-list__link">Контакты</a>
                     </li>
                     <li class="menu-list__item">
-                        <a href='#' class="menu-list__link">Презентация</a>
+                        <a href='presentation.php' class="menu-list__link">Презентация</a>
                     </li>
                     <li class="menu-list__item">
                         <a href='#' class="menu-list__link">Техподдержка</a>

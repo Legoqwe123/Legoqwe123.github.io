@@ -28,7 +28,7 @@
                 <div class="slider-background__one">
                     <div class="slider-block__item  content-container">
                         <div class="slider-block__text">
-                            <span class="slider-text">Как организовать контроль обхода онлайн?</span>
+                            <span class="slider-text">Как организовать эффективный мониторинг охранников?</span>
                         </div>
                         <div class="slider-block__image">
                             <img src="img/slider-phone.png" alt="" class="slider-image">
@@ -50,8 +50,8 @@
                     </div>
                 </div>
             </div>
-            <div class="slider-button">
-                <button type="button" class="slider-button__prev">
+          <div class="slider-button">
+             <button type="button" class="slider-button__prev">
                     <img src="img/arrow__prev.png" alt="" class="slider-img__prev">
                 </button>
                 <button type="button" class="slider-button__next">
@@ -86,7 +86,7 @@
 
         <div class="presentation">
             <div class="presentation-block content-container">
-                 <h1 class="presentation-title">Презентация<span>ТСМ.КОНТРОЛЬ</span></h1>
+                 <h1 class="presentation-title">Видеопрезентация<span>ТСМ.КОНТРОЛЬ</span></h1>
                  <div class="presentation-video">
                      
                  </div>
@@ -126,9 +126,7 @@
             </div>
         </div>
 
-        <div class="footer">
-            <p class="footer-text">Copyright ТСМ.КОНТРОЛЬ © 2019</p>
-        </div>
+        <?php include('includes/footer.php') ?>
 
     </div>
 
