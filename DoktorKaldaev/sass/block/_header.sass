@@ -1,0 +1,109 @@
+.header
+    position: relative
+    &:after 
+        content: ''
+        position: absolute
+        top: 140px
+        left: -165px
+        width: 451px
+        height: 451px
+        background: url('../img/Ellipse-decorate.png') no-repeat
+        z-index: -1
+    &:before
+        content: ''
+        position: absolute
+        top: 315px
+        left: 0
+        background: url('../img/Ellipse-decorate.png') no-repeat
+        width: 451px
+        height: 451px
+        z-index: -1
+    &-block 
+        padding: 20px
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &-menu 
+        &__list 
+            display: flex 
+        &__item 
+            margin-left: 40px
+        &__link 
+            position: relative
+            &:before 
+                content: ""
+                position: absolute
+                bottom: -3px
+                left: 50%
+                width: 0%
+                height: 2px
+                background: $primary-color
+                transition: all ease .5s
+            &:after 
+                content: ""
+                position: absolute
+                bottom: -3px
+                right: 50%
+                width: 0%
+                height: 2px
+                background: $primary-color
+                transition: all ease .5s
+            &:hover 
+                &:before
+                    width: 50%
+                &:after    
+                    width: 50%  
+
+    &-wrap 
+        margin-top: 130px
+        display: flex
+    &-title 
+        max-width: 600px
+        line-height: 75px
+    &-subtitle 
+        margin: 30px 0
+        font-size: 24px
+    &-button 
+        max-width: 100%
+        width: 270px 
+        font-family: 'Circe Bold' , sans-serif;
+        font-size: 20px
+        height: 60px
+        border: 2px solid $title-color 
+        background: #ffffff
+        border-radius: 15px
+        color: $title-color
+        margin-right: 30px
+        &:first-child
+            background: $title-color
+            color: #ffffff
+    &-image 
+        position: relative
+        z-index: 999
+        &__block 
+          position: relative
+          margin-left: 180px
+          &:after
+            content: ''
+            position: absolute
+            left: -77%
+            top: -20%
+            width: 570px
+            height: 570px
+            background: radial-gradient(50% 50% at 50% 50%, #72DBA3 0%, #2EC381 100%), #F7EF99;
+            border-radius: 50%
+            z-index: 5
+          &:before 
+               content: ''
+               position: absolute
+               left: -47%
+               top: -2%
+               width: 430px
+               height: 430px
+               background: radial-gradient(50% 50% at 50% 50%, #EDFFF6 0%, rgba(255, 255, 255, 0) 100%), #F2EF9A;
+               border-radius: 50%
+               border: 70px solid #72DBA3
+               z-index: 10
+          
+    
+
