@@ -6,8 +6,10 @@ $text-color: #00110A
   box-sizing: border-box
 body 
    +reg
+   font-size: 16px
 .container 
   width: 1440px
+  max-width: 100%
   margin: 0 auto
   padding: 0 135px
 img 
@@ -20,7 +22,11 @@ h1
   font-weight: 500
   font-size: 64px
   margin: 0
-
+h2 
+  margin: 0
+  +reg 
+  font-size: 48px
+  color: $title-color
 p 
   margin: 0
 ul 
@@ -32,5 +38,23 @@ a
 button 
   cursor: pointer
   outline: 0
+.text-decorate
+   color: #57A773
+   font-weight: 700
 
 
+@media (max-width: 1290px)
+  .container
+    width: 992px
+    padding: 0px 30px
+@media (max-width: 992px)
+  .container
+    width: 768px
+  h2 
+    font-size: 24px
+    line-height: 35px
+
+    
+    
+
+    
