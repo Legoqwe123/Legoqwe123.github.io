@@ -1,19 +1,19 @@
 @font-face {
 font-family: 'Circe Extra Light';
-src: url('../fonts/circleLight/Circe-ExtraLight.eot');
-src: url('../fonts/circleLight/Circe-ExtraLight.eot?#iefix') format('embedded-opentype'),
-url('../fonts/circleLight/Circe-ExtraLight.woff') format('woff'),
-url('../fonts/circleLight/Circe-ExtraLight.ttf') format('truetype');
+src: url('../fonts/circleLight/Circe-Light.eot');
+src: url('../fonts/circleLight/Circe-Light.eot?#iefix') format('embedded-opentype'),
+url('../fonts/circleLight/Circe-Light.woff') format('woff'),
+url('../fonts/circleLight/Circe-Light.ttf') format('truetype');
 font-weight: normal;
 font-style: normal;
 }
 
 @font-face {
 font-family: 'Circe Regular';
-src: url('../fonts/circleRegular/Circe-Regular.eot');
-src: url('../fonts/circleRegular/Circe-Regular.eot?#iefix') format('embedded-opentype'),
-url('../fonts/circleRegular/Circe-Regular.woff') format('woff'),
-url('../fonts/circleRegular/Circe-Regular.ttf') format('truetype');
+src: url('../fonts/circeRegular/Circe-Regular.eot');
+src: url('../fonts/circeRegular/Circe-Regular.eot?#iefix') format('embedded-opentype'),
+url('../fonts/circeRegular/Circe-Regular.woff') format('woff'),
+url('../fonts/circeRegular/Circe-Regular.ttf') format('truetype');
 font-weight: normal;
 font-style: normal;
 }
@@ -30,7 +30,6 @@ font-style: normal;
 
 @mixin reg {
     font-family: 'Circe Regular' , sans-serif;
-    font-style: normal;
     font-weight: normal;
     color: $text-color;
     line-height: 24px;
@@ -38,7 +37,6 @@ font-style: normal;
 
 @mixin light {
     font-family: 'Circe Extra Light' , sans-serif;
-    font-style: normal;
     font-weight: normal;
     color: $text-color;
     line-height: 24px;
