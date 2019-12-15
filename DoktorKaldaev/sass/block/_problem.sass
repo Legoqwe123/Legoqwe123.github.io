@@ -1,0 +1,80 @@
+#problem 
+    position: relative
+    overflow: hidden
+    &:after
+        content: ""
+        position: absolute
+        left: 0px
+        top: 54px
+        background: url('../img/ellipse-decorate2.png') no-repeat
+        width: 301px
+        height: 301px
+    
+.problem 
+    &-block 
+        padding: 100px 0px
+        display: flex
+        justify-content: space-between
+        align-items: flex-end
+    &-img 
+        &__wrap
+            display: flex
+            align-items: center
+            flex-basis: 50%
+    &-text 
+        position: relative
+        margin-top: 25px
+        max-width: 475px
+        z-index: 3
+        &__title 
+            position: relative
+            z-index: 3
+            margin-bottom: 50px
+        &__wrap 
+            flex-basis: 50%
+            &:before
+               content: ""
+               position: absolute
+               right: -24%
+               bottom: -30%
+               background: linear-gradient(180deg, rgba(114, 219, 163, 0.8) 0%, rgba(247, 239, 153, 0.8) 100%)
+               width: 643px
+               height: 643px
+               border-radius: 50%
+               z-index: 1
+            &:after
+               content: ""
+               position: absolute
+               right: -24%
+               top: -5%
+               background: linear-gradient(180deg, rgba(114, 219, 163, 0.8) 0%, rgba(247, 239, 153, 0.8) 100%)
+               width: 643px
+               height: 643px
+               border-radius: 50%
+               transform: rotate(90deg)
+               z-index: 2
+@media (max-width: 1290px)
+  .problem
+      &-text 
+          &__wrap
+              &:before
+                transform: scale(0.5) 
+              &:after
+                transform: scale(0.5)  rotate(90deg)
+@media (max-width: 992px)
+    #problem 
+        &:after
+            transform: scale(0.7)
+            left: -50px
+    .problem
+      &-text 
+          max-width: 341px
+          &__wrap
+              &:before
+                bottom: 8%
+                transform: scale(0.45) rotate(90deg)
+                right: -380px
+              &:after
+                top: 12%  
+                right: -380px
+                transform: scale(0.45)  

@@ -1,0 +1,65 @@
+.advantages
+    position: relative
+    background: linear-gradient(180deg, #72DBA3 0%, #F7EF99 100%)
+    padding: 95px 0
+    overflow: hidden
+    &:before
+        content: ''
+        position: absolute
+        top: 0
+        left: -26%
+        width: 32%
+        height: 100%
+        border: 100px solid rgba(255, 255, 255, 0.2)
+        background: transparent
+        border-radius: 50%
+    &:after
+        content: ''
+        position: absolute
+        top: 16px
+        right: 41px
+        width: 129px
+        height: 129px
+        background: rgba(255, 255, 255, 0.2)
+        border-radius: 50%
+    &-list 
+        display: flex
+        flex-wrap: wrap
+        margin-top: 15px
+        &:after
+           content: ''
+           position: absolute
+           top: 88px
+           right: -95px
+           width: 262px
+           height: 262px
+           background: rgba(255, 255, 255, 0.2)
+           border-radius: 50%
+        &__title
+            display: block
+            font-size: 24px
+            line-height: 50px
+        &__item 
+            flex-basis: 33%
+            text-align: center
+            margin-top: 60px
+        &__img 
+            height: 55px
+    
+@media (max-width: 992px )
+    .advantages
+        &:before
+            border: 50px solid rgba(255, 255, 255, 0.2)
+            width: 662px
+            height: 662px
+            top: 180px
+            left: -588px
+        &:after
+            top: 257px
+        &-list 
+            &:after
+                top: 309px
+            &__item 
+                flex-basis: 50%
+
+

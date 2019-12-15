@@ -1,8 +1,8 @@
 .reason
-    margin-top: 160px
     padding-bottom: 55px
     background: linear-gradient(354.49deg, #F7EF99 6.39%, #72DBA3 93.61%)
     background-size: cover
+    overflow: hidden
     &-title 
         position: relative
         padding-top: 90px
@@ -24,8 +24,8 @@
              background: transparent
              top: -97px
              left: -137px
-             width: 153%
-             height: 126%
+             width: 830px
+             height: 830px
              border: 100px solid rgba(255, 255, 255, 0.2)
              border-radius: 50%
              z-index: -1
@@ -40,8 +40,8 @@
               background: transparent
               top: 148px
               right: -97px
-              width: 62%
-              height: 50%
+              width: 355px
+              height: 355px
               background: rgba(255, 255, 255, 0.2)
               border-radius: 50%
               z-index: -1
@@ -71,13 +71,56 @@
             &__text
                padding: 52px 115px
                flex-basis: 100%
+               &:before
+                  border: 30px solid rgba(255, 255, 255, 0.2)
+                  width: 331px
+                  height: 328px
+                  top: -45px
+                  left: -5px
+               &:after
+                  content: ''
+                  position: absolute
+                  background: transparent
+                  border: 30px solid rgba(255, 255, 255, 0.2)
+                  width: 331px
+                  height: 328px
+                  right: 0
+                  border-radius: 50%
             &__diseases
                 flex-basis: 100%
                 margin-left: 0px
+                &:after
+                    width: 191px
+                    height: 189px
+                    top: 352px
+                    right: -23px
+                &:before
+                    content: ''
+                    position: absolute
+                    background: transparent
+                    top: -61px
+                    left: 55px
+                    width: 189px
+                    height: 191px
+                    background: rgba(255, 255, 255, 0.2)
+                    border-radius: 50%
+                    z-index: -1
+
         &-diseases
             margin-right: 0px
             &__block
                 justify-content: space-between
+                &:after
+                  content: ''
+                  position: absolute
+                  background: transparent
+                  border: 30px solid rgba(255, 255, 255, 0.2)
+                  width: 331px
+                  height: 328px
+                  left: 0
+                  bottom: -40px
+                  border-radius: 50%
+                  z-index: -1
             &__img 
                 width: 339px
                 transform-origin: bottom left
