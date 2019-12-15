@@ -573,13 +573,13 @@ button {
   content: "";
   position: absolute;
   right: -24%;
-  bottom: -30%;
+  bottom: -18%;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(114, 219, 163, 0.8)), to(rgba(247, 239, 153, 0.8)));
   background: linear-gradient(180deg, rgba(114, 219, 163, 0.8) 0%, rgba(247, 239, 153, 0.8) 100%);
   width: 643px;
   height: 643px;
   border-radius: 50%;
-  z-index: 1;
+  z-index: 2;
 }
 
 .problem-text__wrap:after {
@@ -594,7 +594,7 @@ button {
   border-radius: 50%;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  z-index: 2;
+  z-index: 1;
 }
 
 @media (max-width: 1290px) {
