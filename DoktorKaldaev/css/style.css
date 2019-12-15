@@ -257,6 +257,8 @@ button {
 .header-image__block {
   position: relative;
   top: -100px;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 
 @media (max-width: 1390px) {
@@ -922,7 +924,7 @@ button {
 }
 
 @media (max-width: 992px) {
-  .video:before {
+  git .video:before {
     top: 272px;
     right: -265px;
   }
