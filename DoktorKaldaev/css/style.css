@@ -471,7 +471,7 @@ button {
   .reason-wrap__diseases:after {
     width: 191px;
     height: 189px;
-    top: 352px;
+    top: 372px;
     right: -23px;
   }
   .reason-wrap__diseases:before {
@@ -513,6 +513,9 @@ button {
   }
   .reason-diseases__last {
     width: 708px;
+  }
+  .reason-diseases__title {
+    margin-top: 40px;
   }
 }
 
