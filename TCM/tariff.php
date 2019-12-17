@@ -8,14 +8,16 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Title</title>
+    <title>ТСМ.Контроль</title>
 </head>
 
 <body>
    
-    <div class="container">
+    <div class="container" data-page='tariff'>
 
         <?php include('includes/header.php') ?>  
+
+        <?php include('includes/modal.php') ?>
         
         <div class="tariff">
             <div class="tariff-block content-container">
@@ -58,6 +60,10 @@
     </div>
 
 
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+    
 </body>
 
 </html>

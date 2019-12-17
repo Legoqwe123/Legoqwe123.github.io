@@ -1,0 +1,81 @@
+.contraindications 
+  position: relative
+  padding: 100px 0
+  overflow: hidden
+  &:after
+    content: ''
+    position: absolute 
+    width: 150px
+    height: 150px
+    background: linear-gradient(180deg, rgba(114, 219, 163, 0.8) 0%, rgba(247, 239, 153, 0.8) 100%)
+    transform: rotate(-90deg)
+    border-radius: 50%
+    top: 25px
+    left: -50px
+  &:before
+    content: ''
+    position: absolute 
+    width: 200px
+    height: 200px
+    background: linear-gradient(180deg, rgba(114, 219, 163, 0.8) 0%, rgba(247, 239, 153, 0.8) 100%)
+    transform: rotate(-90deg)
+    border-radius: 50%
+    bottom: 40px
+    left: 415px
+    z-index: -1
+  &-block 
+    margin-top: 65px
+    display: flex
+    justify-content: space-between
+    &:before 
+      content: ''
+      position: absolute 
+      width: 259px
+      height: 259px
+      background: linear-gradient(180deg, rgba(114, 219, 163, 0.8) 0%, rgba(247, 239, 153, 0.8) 100%)
+      transform: rotate(-90deg)
+      border-radius: 50%
+      bottom: 45px
+      right: 0px
+      z-index: -1
+  &-title 
+    &__wrp
+      position: absolute
+      top: -50px
+  &-item 
+    display: flex
+    align-items: center
+    margin-top: 46px
+    &__image 
+      width: 61px
+      height: 61px
+      margin-right: 30px 
+    &__text 
+      max-width: 400px
+  &-col 
+     &-2 
+         position: relative
+    
+  
+  
+
+
+@media ( max-width:992px)
+  .contraindications
+    &-block
+      flex-direction: column
+      align-items: flex-end
+    &-col
+      max-width: 58%
+    &-item
+      justify-content: flex-end
+      flex-basis: 50%
+      &__text
+        max-width: 307px
+    &-title 
+      &__wrp
+          top: -400px
+      
+    
+    
+   

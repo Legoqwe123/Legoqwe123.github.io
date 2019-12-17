@@ -1,0 +1,83 @@
+.comment 
+  position: relative;
+  background: linear-gradient(0deg, #F7EF99 0.02%, #72DBA3 100.02%);
+  padding: 100px 0px 81px;
+  overflow: hidden
+  &:after 
+    content: '';
+    position: absolute; 
+    bottom: 24px;
+    left: 25px;
+    width: 729px;
+    height: 729px;
+    border: 100px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    z-index: 0;
+  
+  &:before 
+    content: '';
+    position: absolute; 
+    top: 35px;
+    right: 16px;
+    width: 729px;
+    height: 729px;
+    border: 100px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    z-index: 0;
+  
+  &-block 
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    z-index: 3;
+  
+  &-slider 
+    position: relative;
+    background: url('../img/feedback_1.png');
+    max-width: 100%;
+    width: 431px;
+    min-height: 788px;
+    transition: .5s;
+    &:before 
+      position: absolute;
+      content: " ";
+      width: 325px;
+      height: 1px;
+      left: 54px;
+      top: 120px;
+      background: #FFFFFF;
+    
+    &__name 
+      margin-top: 45px;
+      font-size: 17px;
+      line-height: 16px;
+      color: #FFFFFF;
+      margin-left: 65px;
+    
+    &__text 
+      margin-top: 50px;
+      max-width: 260px ;
+      background: #FFFFFF;
+      padding: 24px 16px;
+      border-radius: 20px;
+      margin-left: 34px;
+    
+    &__block 
+      position: absolute;
+      width: 76%;
+      left: 53px;
+      height: 100%;
+      overflow: hidden;
+     
+    &__list 
+      position: absolute;
+      display: flex;
+      top: 47px;
+      left: 0px;
+      width: 99%;
+    
+  
+
+ 

@@ -14,13 +14,17 @@
         align-items: center
         justify-content: space-between
         margin-top: 10px
-        &__text 
-           margin-left: 13px;
+        &__link
+           margin-left: 13px
+           &:hover 
+               color: #2F80ED
     &-phone 
         display: flex
-        align-items: center
-        justify-content: space-between
-        
+        &__link
+            margin-left: 13px
+            &:hover 
+               color: #2F80ED
+    
 .menu 
     background: #2F4858
     &-list 
@@ -43,9 +47,97 @@
                    width: 100%
                    height: 3px
                    background: #3EB5F1
-         
+    &-text 
+        display: none
+        font-size: 18px
+        line-height: 21px
+        color: #fff
 
-          
+.menu-btn 
+  display: none
+  cursor: pointer
+  width: 30px
+  height: 50px
+ 
 
+.menu-btn
+    span
+        position: relative
+        display: block
+        width: 30px
+        height: 3px
+        top: 35%
+        background-color: #ffffff
+        &:before, 
+            content: ''
+            position: absolute
+            top: 50%
+            margin-top: -2px
+            left: 50%
+            margin-left: -15px
+            width: 30px
+            height: 3px
+            background-color: #ffffff
 
-			
+.menu-btn 
+    span
+        &:before,
+            content: ''
+            display: block
+            transition: 0.2s;
+
+.menu-btn 
+    span
+        &:before
+            transform: translateY(10px)
+
+.menu-active 
+   color: #3EB5F1
+       
+
+@media (max-width: 1220px)
+    .menu
+        &-list 
+            &__link
+                font-size: 18px
+
+@media (max-width: 992px)		
+   	.header
+        padding: 15px 0px
+        &-text 
+            display: none
+        &-contact 
+            display: flex
+            align-items: center
+            justify-content: space-between
+            flex-basis: 64%;
+            flex-direction: row-reverse
+        &-mail 
+            margin-top: 0px
+    .menu 
+        &-block 
+            display: flex
+            justify-content: space-between
+            align-items: center
+        &-list 
+            display: none
+        &-btn 
+            display: block
+        &-text 
+            display: block
+            
+@media (max-width: 768px)		
+    .header 
+        &-contact 
+            display: flex
+            flex-direction: column-reverse
+            align-items: flex-start
+            flex-basis: 27%
+        &-phone
+            margin-top: 10px
+            
+@media (max-width: 540px)		
+    .menu 
+        &-text 
+            &_wrp 
+                visibility: hidden

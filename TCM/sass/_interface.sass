@@ -6,11 +6,18 @@ body
     
 
 a 
-    outline: 0
+    outline: none
     text-decoration: none 
     color: black
+    user-select: none
+    
+div 
+    user-select: none
 li 
     list-style-type: none
+    user-select: none
+    
+   
 h1 
     margin: 0px
     font-size: 48px
@@ -33,21 +40,126 @@ button
     border: none
     background: none
     outline: 0
+    transition: 0.2 all ease
+    &:active 
+        transform: scale(0.95)
 .container 
+    position: relative
     margin: 0 auto
     width: 100%
     overflow: hidden
 .content-container
+    position: relative
     margin: 0 auto 
     width: 1170px
 img 
     max-width: 100%
 
-input
-	&::-webkit-input-placeholder
-		color: #D5D5D5;
-	&::-moz-placeholder
-		color: #D5D5D5;
-	&:-ms-input-placeholder
-		color: #D5D5D5;
 
+.slick-disabled 
+  display: none !important
+
+
+.modal 
+    position: fixed
+    background: rgba(243, 236, 245, 0.5)
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    z-index: 999
+    &-burger 
+        display: none
+    &-message 
+        display: none
+        &__button 
+            text-align: end
+            margin-bottom: 20px
+    &-ajax 
+        position: relative
+        top: 30%
+        margin: 0 auto
+        padding: 19px 60px 49px
+        background: #2F4858
+        max-width: 369px
+        min-height: 100px
+    &-success
+        color: #ffffff
+    &-block
+        position: absolute
+        padding: 31px 51px 81px 89px
+        top: 0
+        right: 0
+        width: 100%
+        max-width: 369px
+        background: #2F4858
+        opacity: 2
+        z-index: 9999
+    &-menu
+        &__item 
+            position: relative
+            margin-top: 25px
+        &__link 
+            color: #fff
+            font-size: 24px
+            line-height: 28px
+            &:hover
+               color: #3EB5F1
+    &-button 
+        margin-top: 44px
+        text-align: end
+        cursor: pointer
+    &-contact 
+        text-align: end
+        &__link
+            color: #ffffff 
+            &:hover
+               color: #3EB5F1
+
+.sos-image 
+    width: 150%
+.active 
+    display: block
+.active-message  
+    display: flex !important
+
+.error  
+     border: 1px solid red  !important
+
+#email-error 
+        margin-top: 5px
+        border: none  !important
+        color: red
+#username-error 
+        margin-top: 5px
+        border: none  !important
+        color: red
+
+
+
+@media (max-width: 1220px)
+    .content-container
+        width: 950px
+@media (max-width: 992px)
+    .content-container
+       max-width: 768px
+       width: 95%
+    h1
+        font-size: 25px
+    *
+        cursor: default !important
+@media (max-width: 768px)
+    .content-container
+       width: 85%
+    h1 
+        font-size: 16px
+    .modal 
+        &-contact 
+            display: none
+        &-menu 
+            text-align: center
+        &-block 
+            padding: 85px 65px 117px
+        &-button 
+            margin-top: 0px
+        

@@ -9,7 +9,6 @@
         &__text 
             margin-bottom: 100px;
             display: flex
-            justify-content: center
             align-items: center
             flex-basis: 75%
             background: #2F4858
@@ -21,9 +20,11 @@
             
     &-background 
         &__one
+           position: relative
            display: flex
            background: url('../img/slider-image.jpg')no-repeat
-           background-size: 100% 600px;
+           background-size: 100% 100%;
+           z-index: 99999
         &__two 
            background: url('../img/slider-image2.jpg')no-repeat
            background-size: 100% 100%;
@@ -31,6 +32,7 @@
            background: url('../img/slider-image3.jpg')no-repeat
            background-size: 100% 100%;
     &-text 
+        text-align: start
         padding-left: 46px
         color: #ffffff
         font-size: 48px
@@ -38,5 +40,70 @@
     &-button 
         position: absolute
         bottom: 10px
-        left: 18.5%
+        left: 0
+
+    .button-color
+        fill: #2F4858
         
+    @media (max-width:1200px)
+        .slider 
+            &-block 
+                &__item 
+                    justify-content: center
+                    height: 468px !important
+                &__text 
+                    flex-basis: 75%
+            &-background 
+                &__one
+                   background-size: 100% 100%
+                &__two 
+                   background-size: 100% 100%
+                &__three
+                   background-size: 100% 100%
+            &-text 
+                font-size: 40px
+    
+    @media (max-width:992px)
+        .slider
+            &-text 
+                font-size: 24px
+                &__decorate 
+                    padding: 0
+                    width: 100%
+                    max-width: 362px
+            &-block 
+                &__item
+                    justify-content: flex-start
+                    height: 400px !important
+                &__text 
+                    flex-basis: 550px
+                    height: 143px
+                &__size 
+                    flex-basis: 70% !important
+            &-button 
+                bottom: 118px
+                left: 0
+                &__prev 
+                    margin-right: 60px
+            &-image 
+                max-width: 75%
+    @media (max-width:768px)
+        .slider
+            &-block
+                &__item 
+                  height: 300px !important
+                &__image 
+                  display: none
+                &__size 
+                  flex-basis: 91% !important
+                  padding-right: 20px
+                &__text 
+                  flex-basis: 345px
+            &-text 
+                font-size: 16px
+            &-button 
+               bottom: 10px
+               &__prev 
+                    margin-right: 0px
+               
+                

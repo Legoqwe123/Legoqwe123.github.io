@@ -11,7 +11,7 @@
         padding: 0 80px 50px
         &__item
             margin-top: 30px
-            display: flex
+            display: flex !important
             justify-content: space-around
             align-items: center
             border: 1px solid #D5D5D5
@@ -19,12 +19,84 @@
             border-radius: 2px
             height: 100%
             min-height: 397px
+            outline: none
             &:nth-child(2n+1)
-                flex-direction: row-reverse
+                flex-direction: row-reverse 
         &__text 
             flex-basis: 48%
             font-size: 16px
             font-weight: 500
             line-height: 178%
             letter-spacing: 0.005em
-        
+            span 
+                color: #3EB5F1
+    &-button 
+        position: relative
+        height: 20px
+        &__next 
+            display: none 
+            position: absolute
+            top: 0
+            right: 0
+        &__prev 
+            display: none
+    &-double 
+        &__image 
+            display: none 
+    &-video 
+        margin-top: 20px
+        width: 100%
+        height: 100%
+.ytube-video
+    height: auto
+    min-height: 700px
+
+@media only screen and (min-width: 768px)  and (max-width: 992px)
+      .presentation
+            &-list 
+              padding: 0px
+              &__item 
+                  height: 397px !important
+                  margin-right: 20px
+                  flex-direction: row !important
+                  &:nth-child(2n)
+                     flex-direction: row-reverse !important
+            &-text 
+              font-size: 14px
+              line-height: 165%
+            &-image 
+                max-width: 90%
+            &-double 
+               &__image 
+                  display: none  !important
+      .ytube-video
+         min-height: 490px
+
+@media (max-width: 769px)
+      .presentation 
+            &-list 
+              padding: 0px
+              &__item 
+                  height: 324px !important
+                  display: flex
+                  flex-direction: column !important
+                  box-shadow: none !important
+                  box-shadow: 0px 15px 10px -15px #111 !important
+                  border: none
+                  border-top:  1px solid #D5D5D5
+              &__text 
+                  flex-basis: 0% !important  
+            &-text 
+                font-size: 12px
+            &-image 
+                margin: 0 auto
+                max-width: 60%
+            &-clone  
+                display: none !important
+      .ytube-video
+          min-height: 300px
+      .sos-image 
+          max-width: 100%
+    
+                  
+    
