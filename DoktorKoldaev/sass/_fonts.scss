@@ -35,6 +35,14 @@ font-style: normal;
     line-height: 24px;
 }
 
+@mixin bold {
+    font-family: 'Circe Bold' , sans-serif;
+    font-weight: normal;
+    color: $text-color;
+    line-height: 24px;
+}
+
+
 @mixin light {
     font-family: 'Circe Extra Light' , sans-serif;
     font-weight: normal;

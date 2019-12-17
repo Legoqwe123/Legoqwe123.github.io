@@ -97,6 +97,8 @@ button {
   background: none;
   border: none;
   padding: 0;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 button:active {
@@ -123,7 +125,10 @@ input[type=radio]:checked + label:before {
 }
 
 label {
-  margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
 }
 
 label:before {
@@ -131,10 +136,10 @@ label:before {
   display: inline-block;
   background: #FFFFFF;
   border: 1px solid #57A773;
-  border-radius: 4px;
   width: 20px;
-  height: 19px;
+  height: 19.2px;
   border-radius: 50%;
+  margin-right: 14px;
 }
 
 @media (max-width: 1290px) {
@@ -1268,16 +1273,85 @@ label:before {
   margin-top: 60px;
 }
 
+.offer-description {
+  position: relative;
+  overflow: hidden;
+}
+
+.offer-description__slider {
+  -webkit-transition: all ease .8s;
+  transition: all ease .8s;
+  width: 740px;
+}
+
+.offer-description__title {
+  position: relative;
+  cursor: pointer;
+}
+
+.offer-description:after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 250px;
+  width: 10px;
+  height: 3px;
+  background: #57A773;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-radius: 5px;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+.offer-description:before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  right: 250px;
+  width: 10px;
+  height: 3px;
+  border-radius: 5px;
+  background: #57A773;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
 .offer-item {
-  padding: 52px 105px;
+  position: relative;
+  padding: 52px 42px;
   background: #FFFFFF;
   border-radius: 70px;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  max-width: 100%;
+  width: 570px;
+  margin-top: 30px;
+}
+
+.offer-item:nth-child(2n) {
+  margin-left: 30px;
 }
 
 .offer-item__title {
   text-align: center;
+  font-family: 'Circe Extra Light' , sans-serif;
+  font-weight: normal;
+  color: #00110A;
+  line-height: 24px;
+  font-size: 14px;
+  font-size: 22px;
+}
+
+.offer-item__subtitle {
+  position: absolute;
+  top: 84px;
+  left: 170px;
+  font-family: 'Circe Extra Light' , sans-serif;
+  font-weight: normal;
+  color: #00110A;
+  line-height: 24px;
+  font-size: 14px;
 }
 
 .offer-item__cost {
@@ -1292,7 +1366,88 @@ label:before {
       flex-wrap: wrap;
 }
 
+.offer-text__bold {
+  font-family: 'Circe Bold' , sans-serif;
+  font-weight: normal;
+  color: #00110A;
+  line-height: 24px;
+  font-size: 18px;
+  color: #00110A;
+}
+
+.offer-price {
+  font-family: 'Circe Bold' , sans-serif;
+  font-weight: normal;
+  color: #00110A;
+  line-height: 24px;
+  color: #E27488;
+  font-size: 18px;
+}
+
+.offer-recommend {
+  width: 50%;
+  float: left;
+}
+
+.offer-recommend__description {
+  margin-top: 24px;
+  line-height: 32px;
+}
+
+.offer-recommend__text {
+  margin-top: 14px;
+  font-family: 'Circe Extra Light' , sans-serif;
+  font-weight: normal;
+  color: #00110A;
+  line-height: 24px;
+  font-size: 14px;
+}
+
 .offer-wrp__cost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 0 58px;
+}
+
+.offer-wrp__description {
+  margin-top: 24px;
+  padding: 0 58px;
+  overflow: hidden;
+}
+
+.offer-wrp__link {
+  padding: 0 58px;
+}
+
+.offer-delivery {
+  margin-top: 23px;
+  width: 50%;
+  float: left;
+}
+
+.offer-delivery__price {
+  float: right;
+  margin-top: -23px;
+  font-family: 'Circe Bold' , sans-serif;
+  font-weight: normal;
+  color: #00110A;
+  line-height: 24px;
+  font-size: 18px;
+}
+
+.offer-delivery__var {
+  margin-bottom: 17px;
+}
+
+.offer-delivery__block {
+  margin-top: 38px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1301,16 +1456,40 @@ label:before {
           justify-content: space-between;
 }
 
-.offer-wrp__description {
-  margin-top: 24px;
+.offer-delivery__link {
+  margin-top: 52px;
+  display: block;
+  text-align: center;
+  font-family: 'Circe Bold' , sans-serif;
+  font-weight: normal;
+  color: #00110A;
+  line-height: 24px;
+  font-size: 20px;
+  color: #fff;
+  padding: 20px 140px;
+  background: #E27488;
+  border-radius: 15px;
 }
 
-.offer-delivery__radio {
-  margin-top: 20px;
+.offer-delivery__text {
+  font-family: 'Circe Extra Light' , sans-serif;
+  font-weight: normal;
+  color: #00110A;
+  line-height: 24px;
+  font-size: 14px;
 }
 
-.offer-delivery__price {
-  float: right;
-  margin-top: 17px;
+.arrows-active:before {
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+}
+
+.arrows-active:after {
+  -webkit-transform: rotate(-225deg);
+          transform: rotate(-225deg);
+}
+
+.slider-right {
+  margin-right: 370px;
 }
 /*# sourceMappingURL=style.css.map */

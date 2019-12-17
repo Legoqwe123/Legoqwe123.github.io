@@ -3,32 +3,126 @@
   padding: 100px 0
   &-block 
     margin-top: 60px
+  &-description
+    position: relative
+    overflow: hidden
+    &__slider
+     transition: all ease .8s
+     width: 740px
+    &__title
+      position: relative
+      cursor: pointer
+    &:after
+      content: ''
+      position: absolute
+      top: 10px
+      right: 250px
+      width: 10px
+      height: 3px
+      background: #57A773;
+      transform: rotate(45deg)
+      border-radius: 5px
+      transition: all ease .5s
+    &:before
+      content: ''
+      position: absolute
+      top: 15px
+      right: 250px
+      width: 10px
+      height: 3px
+      border-radius: 5px
+      background: #57A773
+      transform: rotate(-45deg)
+      transition: all ease .5s
   &-item 
-    padding: 52px 105px
+    position: relative
+    padding: 52px 42px
     background: #FFFFFF
     border-radius: 70px
-    flex-basis: 50%
+    max-width: 100%
+    width: 570px
+    margin-top: 30px
+    &:nth-child(2n)
+      margin-left: 30px
     &__title 
       text-align: center
+      +light 
+      font-size: 22px
+    &__subtitle
+      position: absolute
+      top: 84px
+      left: 170px
+      +light
     &__cost
       margin-top: 50px
   &-list 
     display: flex
     flex-wrap: wrap
+  &-text 
+    &__bold
+      +bold
+      font-size: 18px
+      color: #00110A
+  &-price
+    +bold 
+    color: $title-color
+    font-size: 18px
+  &-recommend
+      width: 50%
+      float: left
+      &__description
+        margin-top: 24px
+        line-height: 32px
+      &__text
+        margin-top: 14px
+        +light
   &-wrp
     &__cost
       display: flex
       justify-content: space-between
+      align-items: flex-end
+      padding: 0 58px
     &__description
       margin-top: 24px 
-  &-delivery
-   &__radio
-     margin-top: 20px
-   &__price
+      padding: 0 58px
+      overflow: hidden
+    &__link
+      padding: 0 58px
+  &-delivery  
+    margin-top: 23px
+    width: 50%
+    float: left
+    &__price
        float: right
-       margin-top: 17px
+       margin-top: -23px
+       +bold 
+       font-size: 18px
+    &__var
+      margin-bottom: 17px
+    &__block
+      margin-top: 38px
+      display: flex
+      justify-content: space-between
+    &__link
+      margin-top: 52px
+      display: block
+      text-align: center
+      +bold
+      font-size: 20px
+      color: #fff
+      padding: 20px 140px
+      background: $title-color
+      border-radius: 15px
+    &__text
+      +light
 
-   
+.arrows-active
+   &:before
+     transform: rotate(225deg)
+   &:after
+     transform: rotate(-225deg)
+.slider-right
+  margin-right: 370px
   
 
 
