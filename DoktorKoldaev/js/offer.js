@@ -1,6 +1,6 @@
 $(function(){
    
-    const itemWdth = $('.offer-slider__item').width();
+    let itemWdth = $('.offer-slider__item').width();
     
     $('.offer-description__title').on('click', function () {
          let sliderBlock = $(this).next();
@@ -8,7 +8,7 @@ $(function(){
         
          arrowsBlock.toggleClass('arrows-active');
 
-        (arrowsBlock.hasClass('arrows-active')) ? sliderBlock.css('margin-left',`-${itemWdth}px`) : sliderBlock.css('margin-left',`0px`)
+        (arrowsBlock.hasClass('arrows-active')) ? sliderBlock.css('margin-left',-+itemWdth+'px') : sliderBlock.css('margin-left' , '0px')
    })
    
 

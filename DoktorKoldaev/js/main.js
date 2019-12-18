@@ -1,7 +1,7 @@
 $(function () {
 
-    const ask = $(".ask-list__text");
-    const answer = $(".ask-answer__text");
+    let ask = $(".ask-list__text");
+    let answer = $(".ask-answer__text");
 
     $(".comment-slider__list").slick({
         infinite: false,
@@ -24,7 +24,7 @@ $(function () {
     });
 
     function tabClose(index) {
-        if ($(`[data-indx="${index}"]`).hasClass("active")) {
+        if ($('[data-indx='+index+']').hasClass("active")) {
             return;
         }
 
@@ -32,7 +32,7 @@ $(function () {
             answer.removeClass("active");
         });
 
-        $(`[data-indx="${index}"]`).fadeIn(300, function () {
+        $('[data-indx='+index+']').fadeIn(300, function () {
             $(this).addClass("active");
         });
     }
