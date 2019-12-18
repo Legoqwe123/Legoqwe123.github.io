@@ -27,7 +27,7 @@ $(function () {
         if ($('[data-indx='+index+']').hasClass("active")) {
             return;
         }
-
+ 
         answer.fadeOut(300, function () {
             answer.removeClass("active");
         });

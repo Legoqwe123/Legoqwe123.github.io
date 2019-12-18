@@ -11,7 +11,6 @@ $(function(){
         (arrowsBlock.hasClass('arrows-active')) ? sliderBlock.css('margin-left',-+itemWdth+'px') : sliderBlock.css('margin-left' , '0px')
    })
    
-
    $('.offer-delivery__radio').on('click', function () {
        let radioValue = $(this).attr('value');
        let priceValue = $(this).closest('.offer-wrp__description').siblings('.offer-wrp__cost').children('.offer-price').text();
@@ -20,9 +19,9 @@ $(function(){
        
        valueBlock.text(sum + ' ' + '₽')
        
-       
-   })
+    })
 
 
+    
 
 })

@@ -16,6 +16,8 @@
 
 <body>
 
+  
+
   <section id="header">
     <header class="header">
       <div class="container">
@@ -28,19 +30,39 @@
           <div class="header-menu">
             <ul class="header-menu__list">
               <li class="header-menu__item">
-                <a href="#" class="header-menu__link">Причины</a>
+                <a href="#reason" class="header-menu__link">Причины</a>
               </li>
               <li class="header-menu__item">
-                <a href="#" class="header-menu__link">Решение</a>
+                <a href="#problem" class="header-menu__link">Решение</a>
               </li>
               <li class="header-menu__item">
-                <a href="#" class="header-menu__link">Преимущества</a>
+                <a href="#advantages" class="header-menu__link">Преимущества</a>
               </li>
               <li class="header-menu__item">
-                <a href="#" class="header-menu__link">Отзывы</a>
+                <a href="#comment" class="header-menu__link">Отзывы</a>
               </li>
               <li class="header-menu__item">
-                <a href="#" class="header-menu__link">FAQ</a>
+                <a href="#ask" class="header-menu__link">FAQ</a>
+              </li>
+              <li class="header-menu__burger">
+                <div class="menu-burger"></div>
+                <ul class="menu-list">
+                  <li class="menu-list__item">
+                    <a href="#reason" class="menu-link">Причины</a>
+                  </li>
+                  <li class="menu-list__item">
+                    <a href="#problem" class="menu-link">Решение</a>
+                  </li>
+                  <li class="menu-list__item">
+                    <a href="#advantages" class="menu-link">Преимущества</a>
+                  </li>
+                  <li class="menu-list__item">
+                    <a href="#comment" class="menu-link">Отзывы</a>
+                  </li>
+                  <li class="menu-list__item">
+                    <a href="#ask" class="menu-link">FAQ</a>
+                  </li>   
+                </ul>
               </li>
             </ul>
           </div>
@@ -66,8 +88,8 @@
   </section>
 
 
-  <section id="reason" class="reason">
-    <div class="container">
+  <section id="reason" class="reason"> 
+    <div class="container container-fluid">
       <h2 class="reason-title">Причины возникновения боли</h2>
       <div class="reason-block">
         <div class="reason-wrap__text">
@@ -119,7 +141,7 @@
     </div>
   </section>
 
-  <section id="problem" class="problem">
+   <section id="problem" class="problem">
     <div class="container">
       <div class="problem-block">
         <div class="problem-img__wrap">
@@ -147,7 +169,7 @@
   </section>
 
 
-  <section id="advantages" class="advantages">
+ <section id="advantages" class="advantages"> 
     <div class="container">
       <div class="advantages-block">
         <h2 class="advantages-title">Преимущества</h2>
@@ -189,11 +211,11 @@
 
 
 
-  <section id="author" class="author">
+   <section id="author" class="author">
     <div class="container">
       <div class="author-block">
         <div class="author-img__wrap author-blocks">
-          <img src="img/koldaev.jpg" alt="Доктор колдаев" class="author-img">
+          <img src="img/koldaev.jpg" alt="Доктор Колдаев" class="author-img">
         </div>
         <div class="author-text__wrap author-blocks">
           <h2 class="author-title">О создателе массажера</h2>
@@ -249,7 +271,7 @@
   </section>
 
   <section id="contraindications" class="contraindications">
-    <div class="container">
+    <div class="container contraindications-container">
       <div class="contraindications-block">
         <div class="contraindications-col-1 contraindications-col">
           <div class="contraindications-item">
@@ -702,15 +724,30 @@
                 <a href="#" class="offer-delivery__link">Оплатить</a>
               </div>
           </div>
-
-
-
         </div>
       </div>
     </div>
   </section>
 
-
+  <section id="footer">
+    <div class="container">
+      <div class="footer">
+        <div class="footer-inform">
+          <div class="footer-inform__item">
+            ИП Колдаев Александр Иванович
+          </div>
+          <div class="footer-inform__item">
+            ОГРН 307621923900028
+          </div>
+          <div class="footer-inform__item">
+            <a href="mailto:support@koldaev.ru" class="footer-inform__link">support@koldaev.ru </a>
+          </div>
+        </div>
+        <div class="footer-privacy__policy">Политика конфиденциальности</div>
+      </div>
+    </div>
+  </section> 
+  
 
 
 
@@ -718,6 +755,7 @@
   <script src="js/slick.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/offer.js"></script>
+  <script src="js/menu.js"></script>
 
 
 </body>

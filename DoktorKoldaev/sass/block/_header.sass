@@ -19,6 +19,9 @@
         width: 451px
         height: 451px
         z-index: -1
+    &-logo 
+        position: relative
+        z-index: 10000
     &-block 
         padding: 20px 0px
         display: flex
@@ -38,7 +41,7 @@
                 left: 50%
                 width: 0%
                 height: 2px
-                background: #57A773
+                background: $title-color
                 transition: all ease .5s
             &:after 
                 content: ""
@@ -47,11 +50,10 @@
                 right: 50%
                 width: 0%
                 height: 2px
-                background: #57A773
+                background: $title-color
                 transition: all ease .5s
             &:hover 
-                color: #57A773
-                font-weight: bold
+                color: $title-color
                 &:before
                     width: 50%
                 &:after    
@@ -91,7 +93,66 @@
           position: relative
           top: -100px
           flex-basis: 50%
+          
 
+.header-menu__burger
+    display: none
+.menu
+    &-list
+        position: absolute
+        display: flex
+        padding: 127px 0px
+        flex-direction: column
+        align-items: center
+        top: 0px
+        left: 0
+        width: 100%
+        background: #fff
+        height: 568px
+        z-index: 9999
+        &__item 
+           margin-top: 30px
+    &-link 
+        color: #57A773
+        font-size: 18px
+        &:hover
+            color: $title-color
+    &-burger
+        cursor: pointer
+        position: relative
+        width: 41px
+        height: 6px
+        z-index: 99999
+        &:after
+            position: absolute
+            content: ''
+            top: 10px
+            width: 41px
+            height: 6px
+            border-radius: 
+            background: #57A773
+            transition: all ease 0.5s
+            border-radius: 5px
+        &:before
+            position: absolute
+            content: ''
+            top: 0px
+            width: 41px
+            height: 6px
+            background: #57A773
+            transition: all ease 0.5s
+            border-radius: 5px
+            
+           
+           
+
+.menu-active
+   &:before
+       transform: rotate(45deg)
+       top: 9px
+   &:after
+       top: 9px
+       transform: rotate(-45deg)
 
 @media (max-width: 1390px)
  .header
@@ -136,6 +197,9 @@
       &:after
             transform: scale(0.7)
             top: 15px
+      &-subtitle
+          +light 
+          font-size: 22px
       &-image 
           &__block
               position: absolute
@@ -146,6 +210,57 @@
               top: 65px
               &:before
                   border: 50px solid #72DBA3
+    
+@media (max-width: 768px )
+    .header
+        &-menu
+            &__burger
+                display: block
+                width: 42px
+                height: 16px
+            &__item 
+                display: none
+@media (max-width: 560px )
+    .header
+        &:after 
+          transform: scale(0.3)
+        &:before
+           top: 70px
+           left: -195px
+           transform: scale(0.3) 
+        &-image 
+            width: 280px
+            height: 280px
+            &__block
+                width: 92%
+                left: 48px
+                top: 320px
+                display: flex
+                justify-content: center
+        &-title
+            font-size: 24px
+            line-height: 35px
+        &-buttons
+            &__block
+                display: flex
+                justify-content: center
+                margin-top: 350px
+    .button
+        &-information
+          display: none
+        &-buy 
+            margin: 0
+@media (max-width: 390px )
+    .header
+        &-image 
+            &__block 
+               left: 42px
+               top: 330px
+        &-buttons
+            &__block
+                display: flex
+                justify-content: center
+                margin-top: 300px
     
 
 

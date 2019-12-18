@@ -80,3 +80,22 @@
                 top: 12%  
                 right: -380px
                 transform: scale(0.45)  
+
+@media (max-width: 768px)
+    .problem
+        &-block 
+            flex-direction: column-reverse
+            align-items: center
+        &-text 
+            &__wrap 
+                margin-left: 0px
+                &:before
+                  right: -405px
+                  bottom: 33%
+                &:after
+                   top: -10%
+                   right: -405px
+    #problem 
+        &:after
+           top: 395px
+           left: -80px

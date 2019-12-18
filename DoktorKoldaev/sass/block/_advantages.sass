@@ -38,6 +38,7 @@
         &__title
             display: block
             font-size: 24px
+            color: #fff
             line-height: 50px
         &__item 
             flex-basis: 33%
@@ -45,6 +46,8 @@
             margin-top: 60px
         &__img 
             height: 55px
+        &__text
+            color: #fff
     
 @media (max-width: 992px )
     .advantages
@@ -61,5 +64,24 @@
                 top: 309px
             &__item 
                 flex-basis: 50%
+                
+
+
+@media (max-width: 768px)
+    .advantages
+        &:before
+          border: 30px solid rgba(255, 255, 255, 0.2)
+          width: 433px
+          left: -330px
+          top: 209px
+          height: 433px
+        &:after
+         left: -65px
+         top: 1200px
+        &-list 
+            flex-direction: column
+            &:after
+              right: -160px
+              top: 729px
 
 
