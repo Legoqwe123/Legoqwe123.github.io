@@ -13,39 +13,31 @@ $(function () {
         autoplaySpeed: 4000
     });
 
-    // $(".comment-slider__list").slick({
+    $(".ask-list").slick({
         
-    //     infinite: false,
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    //     autoplay: true,
-    //     arrows: false,
-    //     autoplaySpeed: 4000,
-
-    //     responsive: [
-    //         {
-    //             breakpoint: 2048,
-    //             settings: "unslick"
-    //         },
-    //         {
-    //             breakpoint: 993,
-    //             settings: {
-    //                 arrows: false 
-    //             }
-               
-    //         },
-    //         {
-    //             breakpoint: 768,
-    //             settings: {
-    //                 infinite: false 
-    //             }
-    //         }
+        responsive: [
+            {
+                breakpoint: 2048,
+                settings: "unslick"
+            },
+            {
+            breakpoint: 768,
+                settings: {
+                    infinite: false ,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    
+                    autoplaySpeed : 4000,
+    
+                }
+            }
             
-    //     ]
-    // });
+        ]
+    });
 
-
-
+   tabClose(1);
+   
     ask.on("click", function () {
         let indx = $(this).attr("data-tab");
 
@@ -61,15 +53,16 @@ $(function () {
         if ($('[data-indx='+index+']').hasClass("active")) {
             return;
         }
- 
+      
         answer.hide(500, function () {
             answer.removeClass("active");
         });
 
         $('[data-indx='+index+']').show(500, function () {
             $(this).addClass("active");
-        });
+       });
     }
 
+  
 
 })
