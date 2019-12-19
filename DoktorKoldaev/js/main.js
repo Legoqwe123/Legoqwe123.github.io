@@ -13,6 +13,39 @@ $(function () {
         autoplaySpeed: 4000
     });
 
+    // $(".comment-slider__list").slick({
+        
+    //     infinite: false,
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     autoplay: true,
+    //     arrows: false,
+    //     autoplaySpeed: 4000,
+
+    //     responsive: [
+    //         {
+    //             breakpoint: 2048,
+    //             settings: "unslick"
+    //         },
+    //         {
+    //             breakpoint: 993,
+    //             settings: {
+    //                 arrows: false 
+    //             }
+               
+    //         },
+    //         {
+    //             breakpoint: 768,
+    //             settings: {
+    //                 infinite: false 
+    //             }
+    //         }
+            
+    //     ]
+    // });
+
+
+
     ask.on("click", function () {
         let indx = $(this).attr("data-tab");
 
@@ -24,15 +57,16 @@ $(function () {
     });
 
     function tabClose(index) {
+        
         if ($('[data-indx='+index+']').hasClass("active")) {
             return;
         }
  
-        answer.fadeOut(300, function () {
+        answer.hide(500, function () {
             answer.removeClass("active");
         });
 
-        $('[data-indx='+index+']').fadeIn(300, function () {
+        $('[data-indx='+index+']').show(500, function () {
             $(this).addClass("active");
         });
     }

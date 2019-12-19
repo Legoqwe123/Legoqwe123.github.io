@@ -24,7 +24,7 @@
     border: 100px solid rgba(255, 255, 255, 0.5);
     border-radius: 50%;
     z-index: 0;
-  
+
   &-block 
     position: relative;
     display: flex;
@@ -48,7 +48,6 @@
       left: 54px;
       top: 120px;
       background: #FFFFFF;
-    
     &__name 
       margin-top: 45px;
       font-size: 17px;
@@ -56,6 +55,12 @@
       color: #FFFFFF;
       margin-left: 65px;
     
+    &__btns 
+     position: absolute
+     width: 500px
+     display: flex
+     justify-content: space-between
+     flex-direction: row-reverse
     &__text 
       margin-top: 50px;
       max-width: 260px ;
@@ -77,7 +82,49 @@
       top: 47px;
       left: 0px;
       width: 99%;
-    
-  
 
  
+  
+@media (max-width: 768px)
+   .comment
+     &:after
+       height: 413px
+       width: 413px
+       border: 50px solid rgba(255, 255, 255, 0.5)
+       bottom: -55px
+       left: -190px
+     &:before
+       height: 413px
+       width: 413px
+       border: 50px solid rgba(255, 255, 255, 0.5)
+       top: 190px
+       right: -285px
+
+@media (max-width: 520px)
+   .comment
+     &-block 
+       margin-top: 0px
+       flex-direction: column
+     &-slider
+       background: none
+       max-width: none
+       min-height: auto
+       &:before
+         top: 70px
+       &__block 
+         position: relative
+         width: 100%
+         min-height: 550px
+       &__btns
+         position: relative
+         width: 100%
+         top: -30px
+       &__text
+         max-width: 280px
+         margin-left: 23px
+       &__name 
+         margin-left: 7%
+         margin-top: 0px
+
+        
+  

@@ -1,6 +1,15 @@
 .offer 
   background: linear-gradient(0deg, #F7EF99 0.02%, #72DBA3 100.02%)
   padding: 100px 0
+  &-img 
+    &__one
+      margin-top: 30px
+      text-align: center
+    &__two 
+      display: flex
+      justify-content: space-around
+      margin-top: 54px
+      align-items: center
   &-block 
     margin-top: 60px
   &-description
@@ -124,5 +133,11 @@
 .slider-right
   margin-right: 370px
   
-
+@media (max-width: 1440px)
+    .offer
+      &-list 
+        justify-content: center
+      &-item 
+        &:nth-child(2n)
+          margin-left: 0px
 

@@ -19,3 +19,19 @@
             text-align: end
             flex-basis: 38%
             color: #fff
+
+@media (max-width: 768px)
+   .footer
+       &-inform 
+           flex-direction: column
+       &-privacy
+           &__policy
+               flex-basis: 50%
+@media (max-width: 575px)
+     .footer
+       &-inform 
+           align-items: center
+           flex-basis: 100%
+       &-privacy
+           &__policy
+               display: none
