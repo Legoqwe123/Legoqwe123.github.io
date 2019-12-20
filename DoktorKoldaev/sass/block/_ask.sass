@@ -1,8 +1,36 @@
 .ask 
+  position: relative
   padding: 200px 0px 100px
   overflow: hidden
+  &:before
+    position: absolute
+    top: 40px
+    left: -132px
+    content: ''
+    background: url('../img/ask_ellipse.png')
+    width: 262px
+    height: 262px
+    z-index: 0
+  &:after
+    position: absolute
+    content: ''
+    background: url('../img/ask_ellipse.png')
+    width: 262px
+    right: -125px
+    top: 20px
+    height: 262px
+    z-index: -1
   &-block 
     display: flex
+    &:after
+      position: absolute
+      content: ''
+      background: url('../img/ask_ellipse.png')
+      width: 262px
+      height: 262px
+      z-index: -1
+      bottom: 50px
+      left: 389px
   &-title 
     position: absolute
     top: -82px
@@ -24,10 +52,15 @@
       padding: 50px 45px
       transition: all ease .3s
       height: auto
+      position: relative
+      background: #fff
+     
     &__text 
       display: none
       position: relative
       max-width: 400px
+   
+     
 .tab-active 
   background: #72DBA3
   border-radius: 15px
@@ -37,9 +70,18 @@
 
 @media (max-width: 992px)
   .ask 
+    &:before
+      transform: scale(0.82)
+    &:after
+      transform: scale(0.82)
+      top: 426px
     &-answer 
       &__item 
         border: 20px solid #72DBA3
+    &-block 
+      &:after
+        transform: scale(0.7)
+        left: 145px
         
 @media (max-width: 768px)
    .ask 
@@ -47,6 +89,8 @@
      &-block
        display: block
        min-height: 400px
+       &:after
+         display: none
      &-title 
        top: -150px
        left: 20px

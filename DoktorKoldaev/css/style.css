@@ -143,11 +143,6 @@ label:before {
   margin-right: 14px;
 }
 
-.slider-list__two {
-  padding: 0 20% 0 0  !important;
-  overflow: visible !important;
-}
-
 .button-up {
   width: 56px;
   height: 56px;
@@ -183,7 +178,10 @@ label:before {
 }
 
 @media (max-width: 768px) {
-  font-size: 18px;
+  .slider-list__two {
+    padding: 0 20% 0 0  !important;
+    overflow: visible !important;
+  }
 }
 
 .header {
@@ -999,7 +997,7 @@ label:before {
 .advantages-list__title {
   display: block;
   font-size: 24px;
-  color: #fff;
+  color: #000;
   line-height: 50px;
 }
 
@@ -1015,7 +1013,7 @@ label:before {
 }
 
 .advantages-list__text {
-  color: #fff;
+  color: #000;
 }
 
 @media (max-width: 992px) {
@@ -1522,14 +1520,48 @@ label:before {
 }
 
 .ask {
+  position: relative;
   padding: 200px 0px 100px;
   overflow: hidden;
+}
+
+.ask:before {
+  position: absolute;
+  top: 40px;
+  left: -132px;
+  content: '';
+  background: url("../img/ask_ellipse.png");
+  width: 262px;
+  height: 262px;
+  z-index: 0;
+}
+
+.ask:after {
+  position: absolute;
+  content: '';
+  background: url("../img/ask_ellipse.png");
+  width: 262px;
+  right: -125px;
+  top: 20px;
+  height: 262px;
+  z-index: -1;
 }
 
 .ask-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.ask-block:after {
+  position: absolute;
+  content: '';
+  background: url("../img/ask_ellipse.png");
+  width: 262px;
+  height: 262px;
+  z-index: -1;
+  bottom: 50px;
+  left: 389px;
 }
 
 .ask-title {
@@ -1563,6 +1595,8 @@ label:before {
   -webkit-transition: all ease .3s;
   transition: all ease .3s;
   height: auto;
+  position: relative;
+  background: #fff;
 }
 
 .ask-answer__text {
@@ -1579,8 +1613,22 @@ label:before {
 }
 
 @media (max-width: 992px) {
+  .ask:before {
+    -webkit-transform: scale(0.82);
+            transform: scale(0.82);
+  }
+  .ask:after {
+    -webkit-transform: scale(0.82);
+            transform: scale(0.82);
+    top: 426px;
+  }
   .ask-answer__item {
     border: 20px solid #72DBA3;
+  }
+  .ask-block:after {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    left: 145px;
   }
 }
 
@@ -1591,6 +1639,9 @@ label:before {
   .ask-block {
     display: block;
     min-height: 400px;
+  }
+  .ask-block:after {
+    display: none;
   }
   .ask-title {
     top: -150px;
