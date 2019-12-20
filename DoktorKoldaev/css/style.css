@@ -129,6 +129,7 @@ label {
   display: -ms-flexbox;
   display: flex;
   cursor: pointer;
+  outline: none;
 }
 
 label:before {
@@ -140,6 +141,11 @@ label:before {
   height: 19.2px;
   border-radius: 50%;
   margin-right: 14px;
+}
+
+.slider-list__two {
+  padding: 0 20% 0 0  !important;
+  overflow: visible !important;
 }
 
 @media (max-width: 1290px) {
@@ -751,6 +757,9 @@ label:before {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .reason-diseases__img {
+    width: 100%;
+  }
   .reason-wrap__text {
     padding: 30px;
   }
@@ -1266,6 +1275,12 @@ label:before {
           justify-content: center;
 }
 
+.video-youtube {
+  border: 0px;
+  width: 370px;
+  height: 225px;
+}
+
 @media (max-width: 1420px) {
   .video-block__item {
     -ms-flex-preferred-size: 50%;
@@ -1484,6 +1499,7 @@ label:before {
 
 .ask {
   padding: 200px 0px 100px;
+  overflow: hidden;
 }
 
 .ask-block {
@@ -1798,7 +1814,7 @@ label:before {
   content: '';
   position: absolute;
   top: 10px;
-  right: 250px;
+  left: 120px;
   width: 10px;
   height: 3px;
   background: #57A773;
@@ -1813,7 +1829,7 @@ label:before {
   content: '';
   position: absolute;
   top: 15px;
-  right: 250px;
+  left: 120px;
   width: 10px;
   height: 3px;
   border-radius: 5px;
@@ -1849,9 +1865,9 @@ label:before {
 }
 
 .offer-item__subtitle {
-  position: absolute;
-  top: 84px;
-  left: 170px;
+  left: 0px;
+  top: 104px;
+  text-align: center;
   font-family: 'Circe Extra Light' , sans-serif;
   font-weight: normal;
   color: #00110A;
@@ -1971,7 +1987,7 @@ label:before {
   line-height: 24px;
   font-size: 20px;
   color: #fff;
-  padding: 20px 140px;
+  padding: 20px 0px;
   background: #E8536E;
   border-radius: 15px;
 }
@@ -2006,6 +2022,44 @@ label:before {
   }
   .offer-item:nth-child(2n) {
     margin-left: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer-img {
+    width: 100%;
+  }
+  .offer-img__first {
+    width: 170px;
+    height: 296px;
+  }
+  .offer-recommend__description {
+    line-height: 24px;
+  }
+  .offer-title {
+    margin-left: 20px;
+  }
+  .offer-item {
+    padding: 25px 15px;
+    border-radius: 30px;
+  }
+  .offer-description {
+    min-height: 241px;
+  }
+  .offer-description__slider {
+    width: 200%;
+  }
+  .offer-wrp__description {
+    padding: 0 10px;
+  }
+  .offer-wrp__cost {
+    padding: 0px 10px;
+  }
+  .offer-wrp__link {
+    padding: 0px;
+  }
+  .offer-delivery__link {
+    margin-top: 32px;
   }
 }
 

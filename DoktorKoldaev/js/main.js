@@ -27,14 +27,13 @@ $(function () {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     arrows: false,
-                    
-                    autoplaySpeed : 4000,
-    
                 }
             }
             
         ]
     });
+
+    $('.ask-list').children().addClass('slider-list__two')
 
    tabClose(1);
    

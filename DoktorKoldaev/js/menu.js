@@ -15,7 +15,7 @@ $(function () {
        menu.toggleClass('menu-active').addClass('animate');;
         
 
-       (menu.hasClass('menu-active')) ? menuList.slideDown(500 , function (){menu.removeClass('animate')}): menuList.slideUp(500, function () {menu.removeClass('animate')})
+       (menu.hasClass('menu-active')) ? menuList.slideDown(500 , function (){menu.removeClass('animate')}) : menuList.slideUp(500, function () {menu.removeClass('animate')})
 
     })
 
