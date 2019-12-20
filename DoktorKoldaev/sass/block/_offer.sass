@@ -8,8 +8,10 @@
     &__two 
       display: flex
       justify-content: space-around
-      margin-top: 54px
+      margin-top: 17px
       align-items: center
+    &__block 
+      min-height: 291px
   &-block 
     margin-top: 60px
   &-description
@@ -20,29 +22,7 @@
      width: 740px
     &__title
       position: relative
-      cursor: pointer
-    &:after
-      content: ''
-      position: absolute
-      top: 10px
-      left: 120px
-      width: 10px
-      height: 3px
-      background: #57A773;
-      transform: rotate(45deg)
-      border-radius: 5px
-      transition: all ease .5s
-    &:before
-      content: ''
-      position: absolute
-      top: 15px
-      left: 120px
-      width: 10px
-      height: 3px
-      border-radius: 5px
-      background: #57A773
-      transform: rotate(-45deg)
-      transition: all ease .5s
+      
   &-item 
     position: relative
     padding: 52px 40px
@@ -53,6 +33,36 @@
     margin-top: 30px
     &:nth-child(2n)
       margin-left: 30px
+    &__arrows
+      position: relative
+      display: inline-block
+      cursor: pointer
+      top: 3px
+      left: 20.5px
+      width: 12px
+      height: 16px
+      &:after
+        content: ''
+        position: absolute
+        top: 5px
+        left: 0px
+        width: 10px
+        height: 3px
+        background: #57A773;
+        transform: rotate(45deg)
+        border-radius: 5px
+        transition: all ease .5s
+      &:before
+        content: ''
+        position: absolute
+        top: 10px
+        left: 0px
+        width: 10px
+        height: 3px
+        border-radius: 5px
+        background: #57A773
+        transform: rotate(-45deg)
+        transition: all ease .5s
     &__title 
       text-align: center
       +light 

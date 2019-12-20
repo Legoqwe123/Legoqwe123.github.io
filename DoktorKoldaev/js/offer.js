@@ -2,9 +2,9 @@ $(function(){
    
     let itemWdth = $('.offer-slider__item').width();
     
-    $('.offer-description__title').on('click', function () {
+    $('.offer-item__arrows').on('click', function () {
          let sliderBlock = $(this).next();
-         let arrowsBlock = $(this).parent();
+         let arrowsBlock = $(this);
         
          arrowsBlock.toggleClass('arrows-active');
 

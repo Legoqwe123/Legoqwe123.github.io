@@ -73,18 +73,21 @@
         font-size: 24px
     &-button 
         max-width: 100%
+        display: inline-block
         width: 270px 
         font-family: 'Circe Bold' , sans-serif;
         font-size: 20px
         height: 60px
         border: 2px solid $title-color 
+        text-align: center
+        padding: 17px 0px
         background: #ffffff
         border-radius: 15px
-        color: $title-color
+        color: $title-color  !important
         margin-right: 30px
         &:first-child
-            background: $title-color
-            color: #ffffff
+            background: $title-color 
+            color: #ffffff  !important
     &-image 
         position: relative
         z-index: 999
@@ -180,6 +183,7 @@
       &-button
           width: 216px
           height: 66px
+          padding: 20px 0px
       &-image 
          &__block 
              position: relative

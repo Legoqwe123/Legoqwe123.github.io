@@ -83,7 +83,22 @@ label
   padding: 0 20% 0 0  !important
   overflow: visible !important
   
+.button
+  &-up 
+    width: 56px
+    height: 56px
+    border-radius: 50%
+    background: $title-color
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12)
+  &-wrp
+    &__up    
+      display: none 
+      position: fixed
+      bottom: 10%
+      right: 5%
+      z-index: 99999
       
+
     
 
 @media (max-width: 1290px)
