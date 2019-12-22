@@ -522,9 +522,30 @@
         <div class="offer-list">
           <div class="offer-item">
             <p class="offer-item__title">Массажер Колдаева</p>
-              <div class="offer-img__block offer-img__one">
-                  <img src="img/massager-offer__1.png" class="offer-img__first offer-img" alt="Массажер">
+            <p class="offer-item__hidden">Руководство + Массажер Колдаева</p>
+           <div class="offer-slider__wrap">
+            
+            <div class="offer-slider">
+              <div class="offer-img__block offer-img__one offer-slider__item">
+                <img src="img/massager-offer__1.png" class="offer-img__first offer-img" alt="Массажер">
               </div>
+              <div class="offer-recommend offer-slider__item">
+                <p class="offer-recommend__description">Массажер, созданный врачем А.И. Колдаевым
+                  для борьбы с различными болями с пояснице,
+                  мышцах и суставах. </p>
+                <p class="offer-recommend__text">Рекомендуется приобретать вместе с руководством.</p>
+              </div>
+            </div>
+          
+          </div>
+
+          <div class="offer-wrp__arrows">
+            <span class="offer-description__title offer-text__bold">Описание</span>
+            <span class="offer-item__arrows"></span>
+           </div>
+
+             
+              
               <div class="offer-wrp__cost">
                 <span class="offer-item__cost">Стоимость:</span>
                 <span class="offer-price">1500 ₽</span>
@@ -532,69 +553,84 @@
               <div class="offer-wrp__description">
                 
                 <div class="offer-description">
-                  <span class="offer-description__title offer-text__bold">Описание</span>
-                  <span class="offer-item__arrows"></span>
-                  <div class="offer-description__slider">
-                  
-                  <div class="offer-delivery offer-slider__item">
-                    
-                    <div class="offer-delivery__var offer-text__bold">Вариант доставки</div>
-
-                    <input type="radio" name="delivery-block_1" value="300" id="radio_1" class="offer-delivery__radio" checked>
-                    <label for="radio_1" class="offer-delivery__text">Первый класс Почты РФ</label>
-                    <span class="offer-delivery__price">300₽</span><br>
-                    
-                    <input type="radio" name="delivery-block_1" value="1500" id="radio_2" class="offer-delivery__radio">
-                    <label for="radio_2" class="offer-delivery__text">Почтой РФ (другая страна)</label>
-                    <span class="offer-delivery__price">1500 ₽</span>
-
-                    <div class="offer-delivery__block">
-                      <span class="offer-delivery__result">Итог</span>
-                      <span class="offer-price">1800 ₽</span>
-                    </div>
-                    </div>
+                
                  
-                  <div class="offer-recommend offer-slider__item">
-                    <p class="offer-recommend__description">Массажер, созданный врачем А.И. Колдаевым
-                      для борьбы с различными болями с пояснице,
-                      мышцах и суставах. </p>
-                    <p class="offer-recommend__text">Рекомендуется приобретать вместе с руководством.</p>
-                  </div>
-                </div>
+
+                      <div class="offer-delivery__var offer-text__bold">Вариант доставки</div>
+                      <input type="radio" name="delivery-block_1" value="300" id="radio_1" class="offer-delivery__radio"
+                        checked data-href="http://www.youtube.ru">
+                      <!--В атрибуте data-href указывается нужная ссылка например youtube.ru  -->
+                      <label for="radio_1" class="offer-delivery__text">Первый класс Почты РФ</label>
+                      <span class="offer-delivery__price">300₽</span><br>
+                       <input type="radio" name="delivery-block_1" value="1500" id="radio_2"
+                        class="offer-delivery__radio" data-href="http://www.yandex.ru">
+                      <!--В атрибуте data-href указывается нужная ссылка например youtube.ru  -->
+                      <label for="radio_2" class="offer-delivery__text">Почтой РФ (другая страна)</label>
+                      <span class="offer-delivery__price">1500 ₽</span>
+                      
+                      <div class="offer-delivery__block">
+                        <span class="offer-delivery__result">Итог</span>
+                        <span class="offer-price">1800 ₽</span>
+                      </div>
+                    
+                  
+                 
                 </div>
               </div>
               <div class="offer-wrp__link">
-                <a href="#" class="offer-delivery__link">Оплатить</a>
+                <a href="http://www.youtube.ru" class="offer-delivery__link">Оплатить</a>
               </div>
           </div>
 
          
+          
+          
           <div class="offer-item">
             <p class="offer-item__title">Как работать с триггерными точками</p>
               <p class="offer-item__subtitle">Руководство + Массажер Колдаева</p>
-                <div class="offer-img__block offer-img__two">
+               
+
+            <div class="offer-slider__wrap">
+              <div class="offer-slider">
+               
+                <div class="offer-img__block offer-img__two offer-slider__item"">
                   <div class="offer-img__blocks">
-                     <img src="img/3-1000.png" class="offer-img__two offer-img" alt="Пособие по массажеру">
+                     <img src="img/3-1000.png" class="offer-imgs__one offer-img " alt="Пособие по массажеру">
                   </div>
                   <div class="offer-img__icnos">
-                    <img src="img/add.png" class="offer-img__two offer-img" alt="icon">
+                    <img src="img/add.png" class="offer-imgs__two" alt="icon">
                  </div>
-                  <div class="offer-img__blocks">
-                    <img src="img/massager-red.png" class="offer-img__two offer-img" alt="Массажер">
+                  <div class="offer-img__blocks flex-start">
+                    <img src="img/massager-red.png" class="offer-imgs__three offer-img" alt="Массажер">
                   </div>
               </div>
+              
+              <div class="offer-recommend offer-slider__item">
+                <p class="offer-recommend__description">—Где находятся точки <br>
+                  — Способы работы с ними <br>
+                  — Теория триггерных точек <br>
+                  — Работа с помощью тренажера
+                </p>
+                <p class="offer-recommend__text">Упражнения на растяжение мышц с триггерными точками.</p>
+              </div>
+             </div>
+            </div>
+
+            <div class="offer-wrp__arrows">
+              <span class="offer-description__title offer-text__bold">Описание</span>
+              <span class="offer-item__arrows"></span>
+             </div>
+
+
+             
               <div class="offer-wrp__cost">
                 <span class="offer-item__cost">Стоимость:</span>
                 <span class="offer-price">3950 ₽</span>
               </div>
               <div class="offer-wrp__description">
                 <div class="offer-description">
-                  <span class="offer-description__title offer-text__bold">Описание</span>
-                  <span class="offer-item__arrows"></span>
-                  <div class="offer-description__slider">
+                 
                   
-                    <div class="offer-delivery offer-slider__item">
-                      
                       <div class="offer-delivery__var offer-text__bold">Вариант доставки</div>
   
                       <input type="radio" name="delivery-block_2" value="300" id="radio_3" class="offer-delivery__radio" checked>
@@ -611,17 +647,9 @@
                         <span class="offer-delivery__result">Итог</span>
                         <span class="offer-price">4250 ₽</span>
                       </div>
-                      </div>
                    
-                    <div class="offer-recommend offer-slider__item">
-                      <p class="offer-recommend__description">—Где находятся точки <br>
-                        — Способы работы с ними <br>
-                        — Теория триггерных точек <br>
-                        — Работа с помощью тренажера
-                      </p>
-                      <p class="offer-recommend__text">Упражнения на растяжение мышц с триггерными точками.</p>
-                    </div>
-                  </div>
+                   
+                  
                     
                 </div>
               </div>
@@ -633,28 +661,50 @@
           <div class="offer-item">
             <p class="offer-item__title">Как избавиться от боли в спине, мышцах, суставах</p>
               <p class="offer-item__subtitle">Руководство + Массажер Колдаева</p>
-                <div class="offer-img__block offer-img__two">
-                  <div class="offer-img__blocks">
-                     <img src="img/2-1000.png" class="offer-img__two offer-img" alt="Пособие по массажеру">
-                  </div>
-                  <div class="offer-img__icnos">
-                    <img src="img/add.png" class="offer-img__two offer-img" alt="icon">
-                  </div>
-                  <div class="offer-img__blocks">
-                    <img src="img/massager-offer__2.png" class="offer-img__two offer-img" alt="Массажер">
-                  </div>
+                
+
+              <div class="offer-slider__wrap">
+                <div class="offer-slider">
+                 
+                  <div class="offer-img__block offer-img__two offer-slider__item">
+                    <div class="offer-img__blocks">
+                       <img src="img/2-1000.png" class="offer-imgs__one offer-img" alt="Пособие по массажеру">
+                    </div>
+                    <div class="offer-img__icnos">
+                      <img src="img/add.png" class="offer-imgs__two" alt="icon">
+                    </div>
+                    <div class="offer-img__blocks flex-start">
+                      <img src="img/massager-offer__2.png" class="offer-imgs__three offer-img" alt="Массажер">
+                    </div>
+                </div>
+                
+                <div class="offer-recommend offer-slider__item">
+                  <p class="offer-recommend__description">— Расширенное руководство о триггерных точках <br> <br>
+                    — Теория о миофасциальных проблемах<br>
+                    — Виды специального самомассажа <br>
+                    — Специальные упражнения<br>
+                    — Советы по питанию для восстановления фасций
+                  </p>
+                </div>
+               </div>
               </div>
-              <div class="offer-wrp__cost">
+  
+              <div class="offer-wrp__arrows">
+                <span class="offer-description__title offer-text__bold">Описание</span>
+                <span class="offer-item__arrows"></span>
+               </div>
+              
+              
+               <div class="offer-wrp__cost">
                 <span class="offer-item__cost">Стоимость:</span>
                 <span class="offer-price">3900 ₽</span>
               </div>
               <div class="offer-wrp__description">
                 <div class="offer-description">
-                  <span class="offer-description__title offer-text__bold">Описание</span>
-                  <span class="offer-item__arrows"></span>
-                  <div class="offer-description__slider">
+                 
+      
                   
-                    <div class="offer-delivery offer-slider__item">
+               
                       
                       <div class="offer-delivery__var offer-text__bold">Вариант доставки</div>
   
@@ -671,17 +721,10 @@
                         <span class="offer-delivery__result">Итог</span>
                         <span class="offer-price">4200 ₽</span>
                       </div>
-                      </div>
+                  
                    
-                    <div class="offer-recommend offer-slider__item">
-                      <p class="offer-recommend__description">— Расширенное руководство о триггерных точках <br> <br>
-                        — Теория о миофасциальных проблемах<br>
-                        — Виды специального самомассажа <br>
-                        — Специальные упражнения<br>
-                        — Советы по питанию для восстановления фасций
-                      </p>
-                    </div>
-                  </div>
+                   
+                 
                     
                 </div>
               </div>
@@ -693,30 +736,54 @@
           <div class="offer-item">
             <p class="offer-item__title">Как избавиться от боли в пояснице</p>
               <p class="offer-item__subtitle">Руководство + Массажер Колдаева</p>
-                <div class="offer-img__block offer-img__two">
-                  <div class="offer-img__blocks">
-                     <img src="img/1-1000.png" class="offer-img__two offer-img" alt="Пособие по массажеру">
-                  </div>
-                  <div class="offer-img__icnos">
-                    <img src="img/add.png" class="offer-img__two offer-img" alt="icon">
-                  </div>
-                  <div class="offer-img__blocks">
-                    <img src="img/massager-red.png" class="offer-img__two offer-img" alt="Массажер">
-                  </div>
+               
+
+
+              <div class="offer-slider__wrap">
+                <div class="offer-slider">
+                 
+                  <div class="offer-img__block offer-img__two offer-slider__item"" >
+                    <div class="offer-img__blocks">
+                       <img src="img/1-1000.png" class="offer-imgs__one offer-img" alt="Пособие по массажеру">
+                    </div>
+                    <div class="offer-img__icnos">
+                      <img src="img/add.png" class="offer-imgs__two" alt="icon">
+                    </div>
+                    <div class="offer-img__blocks flex-start">
+                      <img src="img/massager-red.png" class="offer-imgs__three offer-img" alt="Массажер">
+                    </div>
+                </div>
+                
+                <div class="offer-recommend offer-slider__item">
+                  <p class="offer-recommend__description">— Расширенное руководство о боли в пояснице. <br> <br>
+                    — Теория о миофасциальных проблемах<br>
+                    — Виды специального самомассажа <br>
+                    — Специальные упражнения<br>
+                    — Советы по питанию для восстановления фасций
+                  </p>
+                </div>
+               </div>
               </div>
+  
+              <div class="offer-wrp__arrows">
+                <span class="offer-description__title offer-text__bold">Описание</span>
+                <span class="offer-item__arrows"></span>
+               </div>
+
+
+
               <div class="offer-wrp__cost">
                 <span class="offer-item__cost">Стоимость:</span>
                 <span class="offer-price">2950 ₽</span>
               </div>
+             
+             
+             
               <div class="offer-wrp__description">
                 <div class="offer-description">
-                  <span class="offer-description__title offer-text__bold">Описание</span>
-                  <span class="offer-item__arrows"></span>
-                  <div class="offer-description__slider">
                   
-                    <div class="offer-delivery offer-slider__item">
-                      
-                      <div class="offer-delivery__var offer-text__bold">Вариант доставки</div>
+              
+                  <div class="offer-delivery__var offer-text__bold">Вариант доставки</div>
   
                       <input type="radio" name="delivery-block_4" value="300" id="radio_7" class="offer-delivery__radio" checked>
                       <label for="radio_7" class="offer-delivery__text">Первый класс Почты РФ</label>
@@ -732,17 +799,9 @@
                         <span class="offer-delivery__result">Итог</span>
                         <span class="offer-price">3250 ₽</span>
                       </div>
-                      </div>
+                      
                    
-                    <div class="offer-recommend offer-slider__item">
-                      <p class="offer-recommend__description">— Расширенное руководство о боли в пояснице. <br> <br>
-                        — Теория о миофасциальных проблемах<br>
-                        — Виды специального самомассажа <br>
-                        — Специальные упражнения<br>
-                        — Советы по питанию для восстановления фасций
-                      </p>
-                    </div>
-                  </div>
+                  
                     
                 </div>
               </div>

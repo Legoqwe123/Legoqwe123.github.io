@@ -23,18 +23,33 @@
      background: rgba(255, 255, 255, 0.2);
      border-radius: 50%
      z-index: 0
-
+  &-slider
+    width: 860px
+    transition: all ease 0.8s
+    &__wrap
+       margin-top: 30px
+       padding: 0 60px
+       min-height: 300px
+       overflow: hidden
+    &__item 
+      float: left
+      width: 50%
   &-img 
     &__one
-      margin-top: 30px
+      float: left
       text-align: center
+      width: 50%
     &__two 
       display: flex
-      justify-content: space-around
+      justify-content: flex-start
       margin-top: 17px
       align-items: center
-    &__block 
-      min-height: 291px
+    &__blocks
+      display: flex
+      flex-basis: 45%
+      justify-content: center
+      &:nth-child(2)
+        justify-content: flex-start
   &-block 
     margin-top: 60px
     &:after
@@ -47,7 +62,6 @@
      background: rgba(255, 255, 255, 0.2);
      border-radius: 50%
      z-index: 0
-
   &-description
     position: relative
     overflow: hidden
@@ -110,7 +124,9 @@
       text-align: center
       +light
     &__cost
-      margin-top: 50px
+      margin-top: 25px
+    &__hidden
+      visibility: hidden
   &-list 
     display: flex
     flex-wrap: wrap
@@ -133,6 +149,8 @@
         margin-top: 14px
         +light
   &-wrp
+    &__arrows 
+      padding: 0 60px
     &__cost
       display: flex
       justify-content: space-between
@@ -179,8 +197,11 @@
      transform: rotate(-225deg)
 .slider-right
   margin-right: 370px
-  
-@media (max-width: 1400px)
+.offer-img__icnos
+   display: flex
+   flex-basis: 10%
+   justify-content: center
+@media (max-width: 1440px)
     .offer
       &-list 
         justify-content: center
@@ -190,10 +211,10 @@
 @media (max-width: 768px)
      .offer
        &-img 
-         width: 100%
-         &__first
-           width: 170px
-           height: 296px
+         width: 75%
+         &__first 
+           max-width: 170px
+           height: auto
        &-recommend
          &__description
            line-height: 24px
@@ -215,6 +236,18 @@
            padding: 0px
        &-delivery 
          &__link 
-           margin-top: 32px
-
+           margin-top: 0px
+       &-slider 
+          width: 209%
+          &__wrap
+            min-height: 225px
+            padding: 0 10px
+     .offer-wrp__arrows
+        padding: 0 10px
         
+@media (max-width: 420px)
+     .offer
+       &-img
+         &__first
+           max-width: 100px
+           height: auto

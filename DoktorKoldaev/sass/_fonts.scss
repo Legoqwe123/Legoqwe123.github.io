@@ -29,14 +29,14 @@ font-style: normal;
 }
 
 @mixin reg {
-    font-family: 'Circe Regular' , sans-serif;
+    font-family: 'Circe Regular' , sans-serif !important;
     font-weight: normal;
     color: $text-color;
     line-height: 24px;
 }
 
 @mixin bold {
-    font-family: 'Circe Bold' , sans-serif;
+    font-family: 'Circe Bold' , sans-serif !important;
     font-weight: normal;
     color: $text-color;
     line-height: 24px;
@@ -44,7 +44,7 @@ font-style: normal;
 
 
 @mixin light {
-    font-family: 'Circe Extra Light' , sans-serif;
+    font-family: 'Circe Extra Light' , sans-serif !important;
     font-weight: normal;
     color: $text-color;
     line-height: 24px;
