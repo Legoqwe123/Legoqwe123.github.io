@@ -1,0 +1,30 @@
+#video 
+    background: url('../img/background-video.jpg') no-repeat
+    background-size: cover
+.video
+    &-text 
+        color: #fff
+        @include Roboto
+        font-weight: 900
+        margin-top: 30px
+        transition: all ease .5s
+    &-block 
+        padding: 227px 0px 300px 0px
+    &-btn
+        position: relative
+        text-align: center
+        border: 3px solid #ffffff
+        border-radius: 50%
+        padding: 28px 28px 28px 35px
+        transition: all ease .5s
+        &:active
+            transform: scale(0.95)
+        &:hover 
+            border-color: $primary
+        &:hover + .video-text 
+            color: $primary
+            
+.icon-play 
+    width: 37px
+    height: 45px
+    

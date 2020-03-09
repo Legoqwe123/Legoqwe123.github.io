@@ -1,0 +1,46 @@
+#works 
+    padding: 70px 0 70px
+.works 
+    &-list
+        &__item 
+         position: relative
+    &-list 
+        &__link 
+          display: block
+          width: 100%
+          height: 100%
+    &-link
+        position: relative
+        cursor: pointer
+        color: #413d4b
+        &:after 
+            position: absolute
+            content: ""
+            width: 12px
+            height: 2px
+            background: #4c4c4c
+            transform: rotate(45deg)
+            margin-left: 20px
+            top: 8px
+            transition: all ease .5s
+        &:before 
+            position: absolute
+            content: ""
+            width: 12px
+            height: 2px
+            background: #4c4c4c
+            right: -32px
+            top: 16px
+            transform: rotate(-45deg)
+            transition: all ease .5s
+        &:hover 
+            color: $primary
+            &:after 
+              background: $primary
+            &:before
+              background: $primary
+.container-works
+  overflow: hidden
+    
+@media (max-width: 1220px)
+    .container-works 

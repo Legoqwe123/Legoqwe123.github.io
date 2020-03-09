@@ -1,0 +1,240 @@
+doctype html
+html(lang="ru")
+  head
+  meta(charset="utf-8")
+  meta(http-equiv="X-UA-Compatible", content="ie=edge")
+  meta(name="viewport", content="width=device-width, initial-scale=1.0")
+  link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:300,400,900&display=swap")
+  link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous")
+  link(rel="stylesheet", href="css/style.css")
+  title Тестовое задание
+  body
+    header#header
+      .container
+       .header-fixed.row.py-2.justify-content-between.align-items-center
+         .header-logo.col-5
+          a.header-link.d-block(href = "index.html")
+           img(src="img/logo-header.png", alt="Логотип", ).header-logo
+         .header-menu.col-7
+          ul.header-list.row
+           for name in ['HOME', 'ABOUT' , 'EXPERTISE' ,'TEAMS', 'WORKS', 'PEOPLE SAY', 'CONTACT']
+              li.header-list__item.ml-3
+               a.header-list__link(href="#")=name
+       h1.header-title.text-center We Are Awesome Creative Agency
+       p.header-text.text-center.mx-auto
+          | This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel 
+          | velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit 
+          | consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh 
+          | vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.      
+       .header-btn__wrap.text-center
+          button(type = "button").header-button.btn-more.px-3.py-2 LEARN MORE
+    section#about
+      .container 
+        .about-block.row
+          .about-block__img.col-5.text-center.my-lg-2.my-auto.d-none.d-sm-block
+            img.about-img(src="img/about-logo.jpg") 
+          .about-block__desctiption.col-sm-7.col-12
+            h2.about-title OUR STORY 
+            p.about-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. 
+               | Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id 
+               | elit. Duis sed odio sit amet nibh vulputate cursus
+               br
+               br
+               | Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. 
+               | Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti 
+               | sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+            button(type = "button").about-button.btn-more.px-3.py-2 LEARN MORE
+    section#video
+      .video-block.text-center
+        button.video-btn 
+           .icon-play 
+             svg(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="37" height="45" viewBox="0 0 37 45")
+                    image(id="play" width="37" height="45" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAtCAYAAAApzaJuAAAC50lEQVRYhcWZTYhOURjH/6ahTLFRxlfKwvgKRSPJBmk0Ck3UkFDjIymysFKUTKFJykYWQ6JZiHzO+FYyFmwUY2YSSrMYYhYkSc1PZ869dd1z3teMuee+//rfxTnPc+6v85z33HPvK2AS0A58AdqAZYBKaXO5haszwNhSgZnLDwfJqhfY5ksK7TJpwD5VSjonqU3SDE9/MBmg39HgSLorqTd1s1WSOiUdzo0K+JYo2VJgDHDdKabVa2BlHmsqCbUj0VkHvHWwrJqBcb4BQ0A1pALKgCMFwPqA7b5BQ0PFnl2kpPeBuZ6c4FCxNwAfHCyro574XKCMR0YAPnUBtZ6c4FDJkrZ6wIwuAZWenEG50MY5GL2RVCupXlJPKn6TpG5Ju7PYp4YyU0lXAE3OfFk9ABZ4cgo6K6jY84A7DpbVMWCEJ8dx1lCxtwI9DhZ0Ams98Zkt9OGUtAWY6MkJDhW7GrjnYMF3YK8nPheo2FuATw6aPfVWJ2OHsyUMVRckVUk6lcpbIum5pCZJo7LcEv6npI+cOYP3QFWeM5XUC0nLJTVEB8j+qG+apKulgorVLGmFpM+JtjmlhtosqVXS+ERbR7kTlo/mSzouqSZ1N/MMXZ/3TFVEMC89QKclzZTUledM1Uc/+8mpdrPo90tqjxvymClTqtuSWlJAvyQdkLQoCTSggPuUOaE2OjuR1RVgqicn6GNmY7QRpvUuOuf7coJBzQJuOChWJ6PZ8+UFgSpWqifAYk9OQWcBVVegVOZrzj5PfFAo8zZzzUGxMm8zUzw5waDMOfuQg2FlFvI6T05QqDVAt4NidQIo9+QEg5oOXHYwrMxCXujJCQp1EOh3UOwZe48nPnOonYnO1UCHg2J1EZjgGzAElPmSN7pIqbojWGegUFCmRDeBjw6KVeNg33CzgPrp3P5vPcz6o9i/XJY4tKfVJ2lXdIZ+5fQGlIF67Bn+fPSOdtbpyUPRfzPPgK/AU6Amz1I5Bv0BIZYgsHF/Ul0AAAAASUVORK5CYII=")
+        .video-text WATCH OUR STORY
+    section#expertise 
+      .container
+        h2.expertise-title.text-center EXPERTISE 
+        .expertise-text.text-center Lorem ipsum dolor sit amet proin gravida nibh vel velit
+        .expertise-block 
+          ul.expertise-list.row
+           li.expertise-list__item.text-center.border-bottom.border-right.col-lg-4.col-sm-6.col-12
+              .img-wrap.mx-auto
+                img.expertise-list__img(src="img/monitor.png", alt="monitor")
+              h5.expetrise-list__title WEB DESIGN & DEVELOPMENT
+              p.expertise-list__text.mx-auto This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+           li.expertise-list__item.text-center.border-bottom.border-right.col-lg-4.col-sm-6.col-12
+              .img-wrap.mx-auto
+                img.expertise-list__img(src="img/paint.png", alt="paint")
+              h5.expetrise-list__title BRANDING IDENTITY
+              p.expertise-list__text.mx-auto This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+           li.expertise-list__item.text-center.border-bottom.col-lg-4.col-sm-6.col-12
+              .img-wrap.mx-auto
+                img.expertise-list__img(src="img/phone.png", alt="phone")
+              h5.expetrise-list__title MOBILE APP
+              p.expertise-list__text.mx-auto This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+           li.expertise-list__item.text-center.border-right.col-lg-4.col-sm-6.col-12   
+              .img-wrap.mx-auto
+                img.expertise-list__img(src="img/chart.png", alt="chart")
+              h5.expetrise-list__title SEARCH ENGINE OPTIMIZATION
+              p.expertise-list__text.mx-auto This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+           li.expertise-list__item.text-center.border-right.col-lg-4.col-sm-6.col-12  
+              .img-wrap.mx-auto
+                 img.expertise-list__img(src="img/gamepad.png", alt="gamepad")
+              h5.expetrise-list__title GAME DEVELOPMENT
+              p.expertise-list__text.mx-auto This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+           li.expertise-list__item.text-center.col-lg-4.col-sm-6.col-12  
+              .img-wrap.mx-auto
+                 img.expertise-list__img(src="img/heart.png", alt="heart")
+              h5.expetrise-list__title MADE WITH LOVE
+              p.expertise-list__text.mx-auto This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.   
+    section#team 
+     .container 
+       h2.team-title.text-center MEET OUR AMAZING TEAM
+       .team-subtitle.text-center Lorem ipsum dolor sit amet proin gravida nibh vel velit
+       .team-block 
+         ul.team-list.row
+          for team in [{name: "SEMF UCUK", post: "CEO & FOUNDER", img: 'img/team-profile.jpg' }, {name: "DIK ADALIN", post: "ENGINEERING", img: 'img/team-profile.jpg' }, {name: "JENG KOL", post: "DESIGNER", img: 'img/team-profile.jpg' }, {name: "PET ROMAK", post: "MARKETING", img: 'img/team-profile.jpg' }, ]
+            li.team-list__item.col-lg-3.col-sm-6.col-12.mt-3
+              img(src= team.img).team-list__img
+              .team-list__text.text-center
+                h5.team-list__name=team.name
+                p.team-list__post=team.post
+       p.team-text.text-center Become part of our dream team, let’s join us ! 
+       .btn-wrap.text-center
+         button(type="button").team-button.btn-more.px-3.py-2.mb-0 WE ARE HIRING
+    section#works 
+      .container 
+        .works-block__text.row.justify-content-between
+          h2.works-title OUR WORKS
+          a.works-link.mr-5(href="#") See All Project in dribbble
+      .container-fluid.p-0.container-works
+       ul.works-list.row.mt-5
+        for item in [{href:"#", img:"img/works1.jpg"}, {href:"#", img:"img/works2.jpg"},{href:"#", img:"img/works3.jpg"},{href:"#", img:"img/works4.jpg"},{href:"#", img:"img/works1.jpg"},{href:"#", img:"img/works2.jpg"},{href:"#", img:"img/works3.jpg"},{href:"#", img:"img/works4.jpg"},{href:"#", img:"img/works1.jpg"},{href:"#", img:"img/works2.jpg"},{href:"#", img:"img/works3.jpg"},{href:"#", img:"img/works4.jpg"}]
+         li.works-list__item.col-6.col-xl-2.col-sm-4.p-0
+           a(href=item.href).works-list__link
+            img(src=item.img).works-list__img.w-100
+       .btn-wrap.text-center
+          button(type="button").works-button.btn-more.px-3.py-2.mb-0 LOAD MORE
+    section#comment 
+     .container 
+       .comment-symbol.text-center &#10075;&#10075;
+       .comment-block 
+         .comment-block__item(data-comment=0).active-comment
+          p.comment-block__text.text-center. 
+           I think human consciousness is a tragic misstep in evolution. We became too self–aware.
+           Nature created an aspect of nature separate from itself — we are creatures that should not exist by natural law. 
+           We are things that labor under the illusion of having a self, that accretion of sensory experience and feelings, 
+           programmed with total assurance that we are each somebody, when in fact everybody's nobody. I think the honorable 
+           thing for our species to do is to deny our programming. Stop reproducing, walk hand in hand into extinction — one last midnight, 
+           brothers and sisters opting out of a raw deal.
+          .comment-block__author.text-center.mt-5 Matthew McConaughey 
+          p.comment-block__post.text-center.mt-1 Detective Rust Cohle
+         .comment-block__item(data-comment=1)
+          p.comment-block__text.text-center.  
+           I was gonna play baseball, ride bulls. You know, you end up 
+           becoming something you never intended. Uh, 
+           I guess you never really even know why. There is such a feeling inside. Well, you know him for sure.
+           The feeling that life has seeped through your fingers. That the future is in the past. 
+           That it was always in the past.
+          .comment-block__author.text-center.mt-5 Woody Harrelson
+          p.comment-block__post.text-center.mt-1 Detective Marty Hart
+         .comment-block__item(data-comment=2)
+          p.comment-block__text.text-center
+           This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, 
+           lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh 
+           vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.
+           Sed non  mauris vitae erat consequat auctor eu in elit.
+          .comment-block__author.text-center.mt-5 JANE GALADRIEL
+          p.comment-block__post.text-center.mt-1 CEO TENGKUREP
+         .comment-block__item(data-comment=3)
+          p.comment-block__text.text-center.  
+            We were talking once about growing up parents. I 
+            said something about forgiveness, and he said that there was 
+            no such thing as forgiveness… that people just have short memories.
+          .comment-block__author.text-center.mt-5 Michelle Monaghan
+          p.comment-block__post.text-center.mt-1 Maggie Hart
+         .comment-block__item(data-comment=4)
+          p.comment-block__text.text-center.  
+           Well, once there was only dark. If you ask me, the light's winning.
+           Life’s barely long enough to get good at one thing. So be careful what you get good at.
+           If the only thing keeping a person decent is the expectation of divine reward then, that person is a piece of shit.
+           The world needs bad men. We keep the other bad men from the door.
+          .comment-block__author.text-center.mt-5 yehguanoCcM wehttaM
+          p.comment-block__post.text-center.mt-1  elhoC tsuR evitceteD
+       .comment-imgs.row.justify-content-center.mt-5
+         .comment-img__item(data-img=0).active-img
+            img(src="img/comment1.png", alt="Photo").comment-img
+         .comment-img__item.ml-3(data-img=1)
+            img(src="img/comment2.png", alt="Photo").comment-img
+         .comment-img__item.ml-3(data-img=2)
+            img(src="img/comment3.png", alt="Photo").comment-img
+         .comment-img__item.ml-3(data-img=3)
+            img(src="img/comment4.png", alt="Photo").comment-img
+         .comment-img__item.ml-3(data-img=4)
+            img(src="img/comment5.png", alt="Photo").comment-img
+    section#news.py-5
+     .container
+      h2.news-title.text-center GIVE US A GOOD NEWS
+      .news-block.row.justify-content-center
+        form(action="#", method="post").news-form
+         input.news-form__name(type="text", name="name" placeholder="Name").d-block.px-3.py-2.mt-4.w-100
+         input.news-form__mail(type="email", name="mail" placeholder="Email").d-block.px-3.py-2.mt-3.w-100
+         input.news-form__subject(type="text", name="subject" placeholder="Subject").d-block.px-3.py-2.mt-3.w-100
+         textarea.news-form__text(name="message", cols="60", rows="10" placeholder="Your message").d-block.px-3.py-2.mt-3.w-100
+         .btn-wrap.text-center
+           button(type="submit").news-from__button.btn-more.px-4.py-2.mb-0 SUBMIT
+    footer#footer
+     .container
+       .footer-block.row.justify-content-between
+         .footer-description.col-12.col-lg-4.col-sm-6
+           img(src="img/logo-header.png", alt="Logo").footer-description__img
+           p.footer-description__text.mt-3 lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit
+         .footer-info.col-12.col-lg-4.col-sm-6
+           .footer-title__wrap.mt-3
+             h5.footer-info__title.footer-title OUR STUDIO
+           .footer-location.row
+             .footer-img__wrap
+               img(src="img/icon-location.png", alt="location").footer-location__img
+             .footer-text__wrap.ml-3
+               p.footer-location__text Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres - Jakarta Barat 11480 - Indonesia
+           .footer-tel.row.mt-3
+            .footer-img__wrap
+              img(src="img/icon-phone.png", alt="Phone").footer-tel__img 
+            .footer-link__wrap.ml-3
+                a(href="tel:+").footer-tel__link (+62) 21-2224 3333  
+         .footer-social.col-12.col-lg-4.col-sm-6
+           .footer-title__wrap.mt-3
+              h5.footer-social__title.footer-title STAY IN TOUCH
+           .footer-subscription.row
+             input(type="email" name='mail' placeholder="Subscribe our newsletter").footer-subscription__mail.w-75.d-block
+             btn(type="submit").footer-btn.d-block.ml-2
+           .footer-link.row
+             for link in [{href:"#", img: "img/facebook.png"},{href:"#", img: "img/twitter.png"},{href:"#", img: "img/dribbble.png"},{href:"#", img: "img/instagram.png"},{href:"#", img: "img/google.png"},{href:"#", img: "img/youtube.png"}]
+               a(href=link.href).footer-social__link.d-block.text-center.mr-2
+                img(src=link.img, alt="icon").footer-social__img.mt-1
+       .footer-bottom.row.justify-content-between
+          .footer-bottom__wrap 
+             a(href="#").footer-bottom__link HELP
+             a(href="#").footer-bottom__link TERMS&CONDITION
+             a(href="#").footer-bottom__link PRIVACY
+          .footer-bottom__wrap 
+            p.footer-bottom__text  Copyright © 2015 - Tajem Creative
+    .modal.row.justify-content-center.align-items-center.mr-0.ml-0
+      .modal-video
+        iframe(width="560" height="315" src="https://www.youtube.com/embed/KvUgaHTNit4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture")
+
+  
+  script(src="js/comment.js")
+  script(src="js/modal.js")
+            
+               
+         
+        
+      
+
+
+
+
+         
+    
+

@@ -1,0 +1,113 @@
+#footer 
+    padding: 70px 0 70px
+    background: url('../img/background-footer.jpg')
+    background-size: cover
+.footer 
+  &-link 
+      margin-top: 35px
+  &-title 
+      color: #fff
+      font-size: 15px
+      @include Roboto 
+      font-weight: 900
+      &__wrap
+          width: 128px
+          height: 50px
+  &-description 
+     &__text 
+       color: #fff
+       max-width: 285px
+       font-weight: 200
+  &-location 
+     &__text  
+       color: #fff 
+       font-weight: 200
+       max-width: 235px
+  &-tel 
+      &__link 
+          color: #fff
+          font-weight: 200
+          &:hover
+              color: $primary
+  &-social 
+      &__link 
+          width: 35px
+          height: 35px
+          border: 1px solid #fff 
+          border-radius: 50%
+          &:hover 
+            border: 2px solid $primary
+  &-bottom 
+       margin-top: 60px
+       &__link
+           @include Roboto 
+           font-size: 14px
+           color: #fff
+           margin-right: 40px
+           &:hover 
+               color: $primary
+  &-subscription
+      &__mail 
+          background: none
+          border: 1px solid #9d97af
+          color: #9d97af
+          padding: 10px
+  &-btn 
+      position: relative
+      width: 22%
+      background: #fff
+      border: none
+      opacity: 0.5
+      &:after 
+        content: ""
+        position: absolute
+        background: url("../img/telegram.png")no-repeat
+        width: 30px
+        height: 30px
+        left: 35%
+        top: 20%
+
+
+
+@media (max-width: 768px)
+    .footer
+      &-bottom 
+          justify-content: center !important
+          &__text 
+              margin-top: 10px
+          &__wrap 
+              margin-left: 20px
+              &:last-child 
+                  margin-left: 0px
+                  margin-right: 20px
+@media (max-width: 576px)
+    .footer
+        &-link 
+            justify-content: center
+        &-subscription 
+            justify-content: center
+            &__mail 
+                width: 60% !important
+        &-description 
+            text-align: center
+            &__text 
+                max-width: 100%
+        &-location 
+            justify-content: center
+            &__text 
+                max-width: 287px
+        &-title 
+            &__wrap 
+               margin: 0 auto
+        &-tel 
+            justify-content: center
+@media (max-width: 360px)
+  .footer
+      &-bottom 
+          &__wrap 
+              &:last-child 
+                  margin-right: 0px
+          &__link 
+              margin-right: 20px
+
+             

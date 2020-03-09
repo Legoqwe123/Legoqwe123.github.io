@@ -1,0 +1,53 @@
+#expertise
+    padding: 70px 0 100px
+.expertise 
+   &-text 
+      position: relative
+      @include PlayFair
+      &:after
+          content: ""
+          position: absolute
+          display: block
+          background: $text 
+          width: 50px
+          height: 2px
+          margin-top: 20px
+          left: 47%
+   &-block 
+       margin-top: 95px
+   &-list 
+       &__item 
+           padding: 50px 0px 50px
+       &__img
+           margin-bottom: 39px
+       &__text 
+           max-width: 255px
+           margin-top: 20px
+.img-wrap 
+    width: 50px
+    height: 89px
+
+
+@media (max-width:992px )
+ .expertise
+     &-list
+         &__item 
+             &:nth-child(2n+1)
+                 border-bottom: 1px solid #dee2e6
+                 border-right: 1px solid #dee2e6
+                 border-top: 1px solid #dee2e6
+             &:nth-child(2n)
+                 border-top: 1px solid #dee2e6
+                 border-bottom: 1px solid #dee2e6
+                 border-right: none !important
+
+@media (max-width:767px )
+ .expertise
+     &-text
+         &:after
+             left: 45%
+@media (max-width:500px )
+ .expertise
+     &-text
+         &:after
+             left: 42%

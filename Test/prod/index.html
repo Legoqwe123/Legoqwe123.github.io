@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head></head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:300,400,900&amp;display=swap">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Тестовое задание</title>
+  <body>
+    <header id="header">
+      <div class="container">
+        <div class="header-fixed row py-2 justify-content-between align-items-center">
+          <div class="header-logo col-5"><a class="header-link d-block" href="index.html"><img class="header-logo" src="img/logo-header.png" alt="Логотип"></a></div>
+          <div class="header-menu col-7">
+            <ul class="header-list row">
+              <li class="header-list__item ml-3"><a class="header-list__link" href="#">HOME</a></li>
+              <li class="header-list__item ml-3"><a class="header-list__link" href="#">ABOUT</a></li>
+              <li class="header-list__item ml-3"><a class="header-list__link" href="#">EXPERTISE</a></li>
+              <li class="header-list__item ml-3"><a class="header-list__link" href="#">TEAMS</a></li>
+              <li class="header-list__item ml-3"><a class="header-list__link" href="#">WORKS</a></li>
+              <li class="header-list__item ml-3"><a class="header-list__link" href="#">PEOPLE SAY</a></li>
+              <li class="header-list__item ml-3"><a class="header-list__link" href="#">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+        <h1 class="header-title text-center">We Are Awesome Creative Agency</h1>
+        <p class="header-text text-center mx-auto">
+          This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel 
+          velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit 
+          consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh 
+          vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.      
+        </p>
+        <div class="header-btn__wrap text-center">
+          <button class="header-button btn-more px-3 py-2" type="button">LEARN MORE</button>
+        </div>
+      </div>
+    </header>
+    <section id="about">
+      <div class="container"> 
+        <div class="about-block row">
+          <div class="about-block__img col-5 text-center my-lg-2 my-auto d-none d-sm-block"><img class="about-img" src="img/about-logo.jpg"></div>
+          <div class="about-block__desctiption col-sm-7 col-12">
+            <h2 class="about-title">OUR STORY </h2>
+            <p class="about-text">
+              This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id 
+              elit. Duis sed odio sit amet nibh vulputate cursus<br><br>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. 
+              Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti 
+              sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+            </p>
+            <button class="about-button btn-more px-3 py-2" type="button">LEARN MORE</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="video">
+      <div class="video-block text-center">
+        <button class="video-btn"> 
+          <div class="icon-play"> 
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="37" height="45" viewBox="0 0 37 45">
+              <image id="play" width="37" height="45" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAtCAYAAAApzaJuAAAC50lEQVRYhcWZTYhOURjH/6ahTLFRxlfKwvgKRSPJBmk0Ck3UkFDjIymysFKUTKFJykYWQ6JZiHzO+FYyFmwUY2YSSrMYYhYkSc1PZ869dd1z3teMuee+//rfxTnPc+6v85z33HPvK2AS0A58AdqAZYBKaXO5haszwNhSgZnLDwfJqhfY5ksK7TJpwD5VSjonqU3SDE9/MBmg39HgSLorqTd1s1WSOiUdzo0K+JYo2VJgDHDdKabVa2BlHmsqCbUj0VkHvHWwrJqBcb4BQ0A1pALKgCMFwPqA7b5BQ0PFnl2kpPeBuZ6c4FCxNwAfHCyro574XKCMR0YAPnUBtZ6c4FDJkrZ6wIwuAZWenEG50MY5GL2RVCupXlJPKn6TpG5Ju7PYp4YyU0lXAE3OfFk9ABZ4cgo6K6jY84A7DpbVMWCEJ8dx1lCxtwI9DhZ0Ams98Zkt9OGUtAWY6MkJDhW7GrjnYMF3YK8nPheo2FuATw6aPfVWJ2OHsyUMVRckVUk6lcpbIum5pCZJo7LcEv6npI+cOYP3QFWeM5XUC0nLJTVEB8j+qG+apKulgorVLGmFpM+JtjmlhtosqVXS+ERbR7kTlo/mSzouqSZ1N/MMXZ/3TFVEMC89QKclzZTUledM1Uc/+8mpdrPo90tqjxvymClTqtuSWlJAvyQdkLQoCTSggPuUOaE2OjuR1RVgqicn6GNmY7QRpvUuOuf7coJBzQJuOChWJ6PZ8+UFgSpWqifAYk9OQWcBVVegVOZrzj5PfFAo8zZzzUGxMm8zUzw5waDMOfuQg2FlFvI6T05QqDVAt4NidQIo9+QEg5oOXHYwrMxCXujJCQp1EOh3UOwZe48nPnOonYnO1UCHg2J1EZjgGzAElPmSN7pIqbojWGegUFCmRDeBjw6KVeNg33CzgPrp3P5vPcz6o9i/XJY4tKfVJ2lXdIZ+5fQGlIF67Bn+fPSOdtbpyUPRfzPPgK/AU6Amz1I5Bv0BIZYgsHF/Ul0AAAAASUVORK5CYII="></image>
+            </svg>
+          </div>
+        </button>
+        <div class="video-text">WATCH OUR STORY</div>
+      </div>
+    </section>
+    <section id="expertise"> 
+      <div class="container">
+        <h2 class="expertise-title text-center">EXPERTISE </h2>
+        <div class="expertise-text text-center">Lorem ipsum dolor sit amet proin gravida nibh vel velit</div>
+        <div class="expertise-block"> 
+          <ul class="expertise-list row">
+            <li class="expertise-list__item text-center border-bottom border-right col-lg-4 col-sm-6 col-12">
+              <div class="img-wrap mx-auto"><img class="expertise-list__img" src="img/monitor.png" alt="monitor"></div>
+              <h5 class="expetrise-list__title">WEB DESIGN & DEVELOPMENT</h5>
+              <p class="expertise-list__text mx-auto">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+            </li>
+            <li class="expertise-list__item text-center border-bottom border-right col-lg-4 col-sm-6 col-12">
+              <div class="img-wrap mx-auto"><img class="expertise-list__img" src="img/paint.png" alt="paint"></div>
+              <h5 class="expetrise-list__title">BRANDING IDENTITY</h5>
+              <p class="expertise-list__text mx-auto">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+            </li>
+            <li class="expertise-list__item text-center border-bottom col-lg-4 col-sm-6 col-12">
+              <div class="img-wrap mx-auto"><img class="expertise-list__img" src="img/phone.png" alt="phone"></div>
+              <h5 class="expetrise-list__title">MOBILE APP</h5>
+              <p class="expertise-list__text mx-auto">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+            </li>
+            <li class="expertise-list__item text-center border-right col-lg-4 col-sm-6 col-12">  
+              <div class="img-wrap mx-auto"><img class="expertise-list__img" src="img/chart.png" alt="chart"></div>
+              <h5 class="expetrise-list__title">SEARCH ENGINE OPTIMIZATION</h5>
+              <p class="expertise-list__text mx-auto">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+            </li>
+            <li class="expertise-list__item text-center border-right col-lg-4 col-sm-6 col-12"> 
+              <div class="img-wrap mx-auto"><img class="expertise-list__img" src="img/gamepad.png" alt="gamepad"></div>
+              <h5 class="expetrise-list__title">GAME DEVELOPMENT</h5>
+              <p class="expertise-list__text mx-auto">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+            </li>
+            <li class="expertise-list__item text-center col-lg-4 col-sm-6 col-12"> 
+              <div class="img-wrap mx-auto"><img class="expertise-list__img" src="img/heart.png" alt="heart"></div>
+              <h5 class="expetrise-list__title">MADE WITH LOVE</h5>
+              <p class="expertise-list__text mx-auto">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.   </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="team"> 
+      <div class="container"> 
+        <h2 class="team-title text-center">MEET OUR AMAZING TEAM</h2>
+        <div class="team-subtitle text-center">Lorem ipsum dolor sit amet proin gravida nibh vel velit</div>
+        <div class="team-block"> 
+          <ul class="team-list row">
+            <li class="team-list__item col-lg-3 col-sm-6 col-12 mt-3"><img class="team-list__img" src="img/team-profile.jpg">
+              <div class="team-list__text text-center">
+                <h5 class="team-list__name">SEMF UCUK</h5>
+                <p class="team-list__post">CEO &amp; FOUNDER</p>
+              </div>
+            </li>
+            <li class="team-list__item col-lg-3 col-sm-6 col-12 mt-3"><img class="team-list__img" src="img/team-profile.jpg">
+              <div class="team-list__text text-center">
+                <h5 class="team-list__name">DIK ADALIN</h5>
+                <p class="team-list__post">ENGINEERING</p>
+              </div>
+            </li>
+            <li class="team-list__item col-lg-3 col-sm-6 col-12 mt-3"><img class="team-list__img" src="img/team-profile.jpg">
+              <div class="team-list__text text-center">
+                <h5 class="team-list__name">JENG KOL</h5>
+                <p class="team-list__post">DESIGNER</p>
+              </div>
+            </li>
+            <li class="team-list__item col-lg-3 col-sm-6 col-12 mt-3"><img class="team-list__img" src="img/team-profile.jpg">
+              <div class="team-list__text text-center">
+                <h5 class="team-list__name">PET ROMAK</h5>
+                <p class="team-list__post">MARKETING</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <p class="team-text text-center">Become part of our dream team, let’s join us ! </p>
+        <div class="btn-wrap text-center">
+          <button class="team-button btn-more px-3 py-2 mb-0" type="button">WE ARE HIRING</button>
+        </div>
+      </div>
+    </section>
+    <section id="works"> 
+      <div class="container"> 
+        <div class="works-block__text row justify-content-between">
+          <h2 class="works-title">OUR WORKS</h2><a class="works-link mr-5" href="#">See All Project in dribbble</a>
+        </div>
+      </div>
+      <div class="container-fluid p-0 container-works">
+        <ul class="works-list row mt-5">
+          <li class="works-list__item col-6 col-xl-2 col-sm-4 p-0"><a class="works-list__link" href="#"><img class="works-list__img w-100" src="img/works1.jpg"></a></li>
+          <li class="works-list__item col-6 col-xl-2 col-sm-4 p-0"><a class="works-list__link" href="#"><img class="works-list__img w-100" src="img/works2.jpg"></a></li>
+          <li class="works-list__item col-6 col-xl-2 col-sm-4 p-0"><a class="works-list__link" href="#"><img class="works-list__img w-100" src="img/works3.jpg"></a></li>
+          <li class="works-list__item col-6 col-xl-2 col-sm-4 p-0"><a class="works-list__link" href="#"><img class="works-list__img w-100" src="img/works4.jpg"></a></li>
+          <li class="works-list__item col-6 col-xl-2 col-sm-4 p-0"><a class="works-list__link" href="#"><img class="works-list__img w-100" src="img/works1.jpg"></a></li>
+          <li class="works-list__item col-6 col-xl-2 col-sm-4 p-0"><a class="works-list__link" href="#"><img class="works-list__img w-100" src="img/works2.jpg"></a></li>
+          <li class="works-list__item col-6 col-xl-2 col-sm-4 p-0"><a class="works-list__link" href="#"><img class="works-list__img w-100" src="img/works3.jpg"></a></li>
+          <li class="works-list__item col-6 col-xl-2 col-sm-4 p-0"><a class="works-list__link" href="#"><img class="works-list__img w-100" src="img/works4.jpg"></a></li>
+          <li class="works-list__item col-6 col-xl-2 col-sm-4 p-0"><a class="works-list__link" href="#"><img class="works-list__img w-100" src="img/works1.jpg"></a></li>
+          <li class="works-list__item col-6 col-xl-2 col-sm-4 p-0"><a class="works-list__link" href="#"><img class="works-list__img w-100" src="img/works2.jpg"></a></li>
+          <li class="works-list__item col-6 col-xl-2 col-sm-4 p-0"><a class="works-list__link" href="#"><img class="works-list__img w-100" src="img/works3.jpg"></a></li>
+          <li class="works-list__item col-6 col-xl-2 col-sm-4 p-0"><a class="works-list__link" href="#"><img class="works-list__img w-100" src="img/works4.jpg"></a></li>
+        </ul>
+        <div class="btn-wrap text-center">
+          <button class="works-button btn-more px-3 py-2 mb-0" type="button">LOAD MORE</button>
+        </div>
+      </div>
+    </section>
+    <section id="comment"> 
+      <div class="container"> 
+        <div class="comment-symbol text-center">&#10075;&#10075;</div>
+        <div class="comment-block"> 
+          <div class="comment-block__item active-comment" data-comment="0">
+            <p class="comment-block__text text-center">
+              I think human consciousness is a tragic misstep in evolution. We became too self–aware.
+              Nature created an aspect of nature separate from itself — we are creatures that should not exist by natural law. 
+              We are things that labor under the illusion of having a self, that accretion of sensory experience and feelings, 
+              programmed with total assurance that we are each somebody, when in fact everybody's nobody. I think the honorable 
+              thing for our species to do is to deny our programming. Stop reproducing, walk hand in hand into extinction — one last midnight, 
+              brothers and sisters opting out of a raw deal.
+            </p>
+            <div class="comment-block__author text-center mt-5">Matthew McConaughey </div>
+            <p class="comment-block__post text-center mt-1">Detective Rust Cohle</p>
+          </div>
+          <div class="comment-block__item" data-comment="1">
+            <p class="comment-block__text text-center">
+              I was gonna play baseball, ride bulls. You know, you end up 
+              becoming something you never intended. Uh, 
+              I guess you never really even know why. There is such a feeling inside. Well, you know him for sure.
+              The feeling that life has seeped through your fingers. That the future is in the past. 
+              That it was always in the past.
+            </p>
+            <div class="comment-block__author text-center mt-5">Woody Harrelson</div>
+            <p class="comment-block__post text-center mt-1">Detective Marty Hart</p>
+          </div>
+          <div class="comment-block__item" data-comment="2">
+            <p class="comment-block__text text-center">
+              <This>is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, </This>
+              <lorem>quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh </lorem>
+              <vulputate>cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</vulputate>
+              <Sed>non  mauris vitae erat consequat auctor eu in elit.</Sed>
+            </p>
+            <div class="comment-block__author text-center mt-5">JANE GALADRIEL</div>
+            <p class="comment-block__post text-center mt-1">CEO TENGKUREP</p>
+          </div>
+          <div class="comment-block__item" data-comment="3">
+            <p class="comment-block__text text-center">
+              We were talking once about growing up parents. I 
+              said something about forgiveness, and he said that there was 
+              no such thing as forgiveness… that people just have short memories.
+            </p>
+            <div class="comment-block__author text-center mt-5">Michelle Monaghan</div>
+            <p class="comment-block__post text-center mt-1">Maggie Hart</p>
+          </div>
+          <div class="comment-block__item" data-comment="4">
+            <p class="comment-block__text text-center">
+              Well, once there was only dark. If you ask me, the light's winning.
+              Life’s barely long enough to get good at one thing. So be careful what you get good at.
+              If the only thing keeping a person decent is the expectation of divine reward then, that person is a piece of shit.
+              The world needs bad men. We keep the other bad men from the door.
+            </p>
+            <div class="comment-block__author text-center mt-5">yehguanoCcM wehttaM</div>
+            <p class="comment-block__post text-center mt-1"> elhoC tsuR evitceteD</p>
+          </div>
+        </div>
+        <div class="comment-imgs row justify-content-center mt-5">
+          <div class="comment-img__item active-img" data-img="0"><img class="comment-img" src="img/comment1.png" alt="Photo"></div>
+          <div class="comment-img__item ml-3" data-img="1"><img class="comment-img" src="img/comment2.png" alt="Photo"></div>
+          <div class="comment-img__item ml-3" data-img="2"><img class="comment-img" src="img/comment3.png" alt="Photo"></div>
+          <div class="comment-img__item ml-3" data-img="3"><img class="comment-img" src="img/comment4.png" alt="Photo"></div>
+          <div class="comment-img__item ml-3" data-img="4"><img class="comment-img" src="img/comment5.png" alt="Photo"></div>
+        </div>
+      </div>
+    </section>
+    <section class="py-5" id="news">
+      <div class="container">
+        <h2 class="news-title text-center">GIVE US A GOOD NEWS</h2>
+        <div class="news-block row justify-content-center">
+          <form class="news-form" action="#" method="post">
+            <input class="news-form__name d-block px-3 py-2 mt-4 w-100" type="text" name="name" placeholder="Name">
+            <input class="news-form__mail d-block px-3 py-2 mt-3 w-100" type="email" name="mail" placeholder="Email">
+            <input class="news-form__subject d-block px-3 py-2 mt-3 w-100" type="text" name="subject" placeholder="Subject">
+            <textarea class="news-form__text d-block px-3 py-2 mt-3 w-100" name="message" cols="60" rows="10" placeholder="Your message"></textarea>
+            <div class="btn-wrap text-center">
+              <button class="news-from__button btn-more px-4 py-2 mb-0" type="submit">SUBMIT</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-block row justify-content-between">
+          <div class="footer-description col-12 col-lg-4 col-sm-6"><img class="footer-description__img" src="img/logo-header.png" alt="Logo">
+            <p class="footer-description__text mt-3">lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit</p>
+          </div>
+          <div class="footer-info col-12 col-lg-4 col-sm-6">
+            <div class="footer-title__wrap mt-3">
+              <h5 class="footer-info__title footer-title">OUR STUDIO</h5>
+            </div>
+            <div class="footer-location row">
+              <div class="footer-img__wrap"><img class="footer-location__img" src="img/icon-location.png" alt="location"></div>
+              <div class="footer-text__wrap ml-3">
+                <p class="footer-location__text">Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres - Jakarta Barat 11480 - Indonesia</p>
+              </div>
+            </div>
+            <div class="footer-tel row mt-3">
+              <div class="footer-img__wrap"><img class="footer-tel__img" src="img/icon-phone.png" alt="Phone"></div>
+              <div class="footer-link__wrap ml-3"><a class="footer-tel__link" href="tel:+">(+62) 21-2224 3333  </a></div>
+            </div>
+          </div>
+          <div class="footer-social col-12 col-lg-4 col-sm-6">
+            <div class="footer-title__wrap mt-3">
+              <h5 class="footer-social__title footer-title">STAY IN TOUCH</h5>
+            </div>
+            <div class="footer-subscription row">
+              <input class="footer-subscription__mail w-75 d-block" type="email" name="mail" placeholder="Subscribe our newsletter">
+              <btn class="footer-btn d-block ml-2" type="submit"></btn>
+            </div>
+            <div class="footer-link row"><a class="footer-social__link d-block text-center mr-2" href="#"><img class="footer-social__img mt-1" src="img/facebook.png" alt="icon"></a><a class="footer-social__link d-block text-center mr-2" href="#"><img class="footer-social__img mt-1" src="img/twitter.png" alt="icon"></a><a class="footer-social__link d-block text-center mr-2" href="#"><img class="footer-social__img mt-1" src="img/dribbble.png" alt="icon"></a><a class="footer-social__link d-block text-center mr-2" href="#"><img class="footer-social__img mt-1" src="img/instagram.png" alt="icon"></a><a class="footer-social__link d-block text-center mr-2" href="#"><img class="footer-social__img mt-1" src="img/google.png" alt="icon"></a><a class="footer-social__link d-block text-center mr-2" href="#"><img class="footer-social__img mt-1" src="img/youtube.png" alt="icon"></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom row justify-content-between">
+          <div class="footer-bottom__wrap"> <a class="footer-bottom__link" href="#">HELP</a><a class="footer-bottom__link" href="#">TERMS&CONDITION</a><a class="footer-bottom__link" href="#">PRIVACY</a></div>
+          <div class="footer-bottom__wrap"> 
+            <p class="footer-bottom__text"> Copyright © 2015 - Tajem Creative</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal row justify-content-center align-items-center mr-0 ml-0">
+      <div class="modal-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/KvUgaHTNit4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+      </div>
+    </div>
+  </body>
+  <script src="js/comment.js"></script>
+  <script src="js/modal.js"></script>
+</html>

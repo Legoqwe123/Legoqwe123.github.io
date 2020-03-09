@@ -1,0 +1,32 @@
+#header
+    background: url("../img/background-header.jpg") no-repeat
+    background-size: cover
+.header 
+    &-text 
+        color: #fff 
+        @include Roboto 
+        font-weight: 200
+        max-width: 72%
+        margin-top: 60px
+    &-title 
+        position: relative
+        display: block
+        color: #fff
+        margin-top: 190px
+        @include PlayFair
+        &:after
+            position: absolute
+            content: ""
+            display: block
+            left: 48%
+            margin-top: 30px
+            width: 50px 
+            height: 1px
+            background: $primary
+    &-list 
+        &__link
+            color: #ffffff
+            @include Roboto
+            font-weight: 900
+            &:hover 
+                color: $primary

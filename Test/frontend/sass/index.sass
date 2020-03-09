@@ -1,0 +1,61 @@
+$primary: #00e0d0
+$title: #413d4b
+$text: #a9a8ae
+@mixin Roboto
+ font-family: 'Roboto', sans-serif
+@mixin PlayFair
+ font-family: 'Playfair Display', serif
+  
+* , :after, :before
+    box-sizing: border-box
+img 
+  max-width: 100%
+  height: auto
+.modal 
+  background: rgba(0,0,0,0.5)
+  transform: scale(0)
+  display: none
+  transform-origin: left top
+  transition: all ease .5s
+li 
+  list-style-type: none  !important 
+p 
+  @include Roboto 
+  font-size: 14px 
+  color: $text
+  margin: 0
+ul 
+  margin: 0
+  padding: 0
+h2 
+  @include PlayFair 
+  font-size: 22px
+  color: $title
+  font-weight: 700
+a 
+  text-decoration: none
+  transition: all ease .4s
+  &:hover
+    text-decoration: none
+.modal-video 
+  width: 880px
+  height: 440px
+  iframe 
+    width: 100%
+    height: 100%
+button 
+  cursor: pointer
+  outline: 0
+  background: none
+  border: none
+.btn-more 
+   margin-top: 50px
+   margin-bottom: 210px
+   color: $primary
+   background: none
+   border: 1px solid $primary
+textarea 
+  resize: none
+  border: 1px solid #e5e5e5
+.modal-on 
+  display: flex

@@ -1,0 +1,44 @@
+#team 
+    padding: 70px 0 70px
+    background: url('../img/background-team.jpg') no-repeat 
+    background-size: cover
+.team 
+    &-text 
+        margin-top: 50px
+    &-title 
+        color: #fff 
+    &-subtitle 
+        position: relative
+        color: #f9f9f9
+        @include PlayFair
+        &:after 
+            position: absolute
+            display: block
+            content: ""
+            width: 50px
+            height: 1px
+            left: 48%
+            margin-top: 18px
+            background: #f9f9f9
+    &-list 
+       margin-top: 90px
+       &__item 
+         transition: ease-out .3s
+         &:hover 
+            transform: scale(1.05)
+       &__post
+               color: #b2b0be
+               @include Roboto 
+               font-weight: 200
+       &__name 
+           color: #ffffff
+       &__text  
+           padding: 20px 0px 30px
+           border-bottom: 1px solid #b2b0be
+           border-left: 1px solid #b2b0be
+           border-right: 1px solid #b2b0be
+       &__img 
+           width: 100%
+
+    
+   

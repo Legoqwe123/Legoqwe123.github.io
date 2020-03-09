@@ -1,0 +1,31 @@
+#comment 
+ padding: 70px 0 70px
+ background: url(../img/background-comment.jpg)no-repeat 
+ background-size: cover
+.comment  
+  &-img 
+    &__item
+        transition: ease-out .2s
+        cursor: pointer
+  &-symbol 
+      font-size: 100px
+      color: #fff
+  &-block 
+    position: relative
+    &__item 
+     display: none
+     opacity: 0
+     transition: all ease .5s
+    &__text 
+        @include PlayFair
+        font-size: 16px
+    &__author 
+        font-weight: 900
+        color: #fff 
+        font-size: 14px
+.active-comment 
+   display: block
+   opacity: 1
+.active-img 
+    transform: scale(1.4)
+
