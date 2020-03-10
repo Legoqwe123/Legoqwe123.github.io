@@ -310,8 +310,7 @@ textarea {
   position: relative; }
   .comment-block__item {
     display: none;
-    opacity: 0;
-    transition: all ease .5s; }
+    opacity: 0; }
   .comment-block__text {
     font-family: 'Playfair Display', serif;
     font-size: 16px; }
@@ -322,7 +321,9 @@ textarea {
 
 .active-comment {
   display: block;
-  opacity: 1; }
+  opacity: 1;
+  top: 0;
+  left: 0; }
 
 .active-img {
   transform: scale(1.4); }

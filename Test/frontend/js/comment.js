@@ -1,15 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
   const imgs = document.querySelectorAll(".comment-img__item");
   const comments = document.querySelectorAll(".comment-block__item");
+  const cmntArray = Array.from(comments);
   const classActiveImg = "active-img";
   const classActiveComment = "active-comment";
 
-  
-   imgs.forEach(element => {
+  imgs.forEach(element => {
     element.addEventListener("click", function() {
       const dataIndx = this.dataset.img;
-
-      closeAllItems(imgs,classActiveImg);
+      
+      if (stopSpam()){
+        return
+      }
+      
+      closeAllItems(imgs, classActiveImg);
       this.classList.add(classActiveImg);
       showComment(dataIndx);
     });
@@ -21,34 +25,59 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  function showComment(data) {
-     
-    const selectElem = document.querySelector(`.comment-block__item[data-comment = "${data}"]`);
+  function showComment(data , f) {
+    const selectElem = document.querySelector(
+      `.comment-block__item[data-comment = "${data}"]`
+    );
     let i = 0;
 
-    if (selectElem.classList.contains(classActiveComment)){
-      return
+    if (selectElem.classList.contains(classActiveComment) || stopSpam()) {
+      return;
     }
-    
-    closeAllComments()
-    selectElem.classList.add(classActiveComment)
-    
+   
+   closeAllComments(elems => {
+      elems.classList.remove(classActiveComment);
+      elems.style.opacity = 0;
+    });
+
+    selectElem.classList.add(classActiveComment);
+    selectElem.style.position = "absolute";
+
     selectElem.style.opacity = i;
-    
+
     let timerId = setInterval(() => {
-      i = i + 0.05
+      i = i + 0.2;
       selectElem.style.opacity = i;
-       if ( i > 1 ){
-        clearInterval(timerId)
-       } }, 25);
+      if (i > 1) {
+        selectElem.style.position = "relative";
+        clearInterval(timerId);
+      }
+    }, 50);
   }
- 
-  function closeAllComments() {
-    comments.forEach(element => {
-      element.classList.remove(classActiveComment);
-     });
+
+  function closeAllComments(f) {
+    
+   const filterArr = cmntArray.filter(item => item.classList.contains(classActiveComment));
+
+   filterArr.forEach(element => {
+      let i = 1;
+      let timerId = setInterval(() => {
+        i = i - 0.2;
+        element.style.opacity = i;
+        if (i < 0) {
+          clearInterval(timerId);
+          f(element);
+        }
+      }, 50);
+    });
   }
- 
+
+  function stopSpam() {
+    const filterArr = cmntArray.filter(item => item.classList.contains(classActiveComment));
+    if (filterArr.length > 1){
+      return true
+    }
+  }
 
 
 

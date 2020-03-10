@@ -8,22 +8,22 @@ gulp.task('pug', function(){
     .pipe(pug({
         pretty: true
     }))
-    .pipe(gulp.dest('public'))
+    .pipe(gulp.dest('prod'))
 })
 
 gulp.task('sass', function () {
   return gulp.src('frontend/sass/style.sass')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('public/css'));
+    .pipe(gulp.dest('prod/css'));
 });
 
 gulp.task('img', function () {
     return gulp.src('frontend/img/*.{jpg,png,svg}')
-         .pipe(gulp.dest('public/img'));
+         .pipe(gulp.dest('prod/img'));
   });
 gulp.task('js', function(){
     return gulp.src('frontend/js/*.js')
-    .pipe(gulp.dest("public/js"))
+    .pipe(gulp.dest("prod/js"))
 })
    
  
