@@ -12,15 +12,19 @@ html(lang="ru")
     header#header
       .container
        .header-fixed.row.py-2.justify-content-between.align-items-center
-         .header-logo.col-5
+         .header-logo.col-6.col-lg-auto.col-sm-12
           a.header-link.d-block(href = "index.html")
            img(src="img/logo-header.png", alt="Логотип", ).header-logo
-         .header-menu.col-7
-          ul.header-list.row
-           for name in ['HOME', 'ABOUT' , 'EXPERTISE' ,'TEAMS', 'WORKS', 'PEOPLE SAY', 'CONTACT']
+         .header-burger.col-2.d-sm-none
+           .header-menu__burger
+         .header-menu.col-12.col-lg-7
+          ul.header-list.row.justify-content-center
+           for item in [{name:'HOME', link:"#header"}, {name:'ABOUT', link:"#about"} , {name:'EXPERTISE', link:"#expertise"} ,{name:'TEAMS', link:"#team"}, {name:'WORKS', link:"#works"}, {name:'PEOPLE SAY', link:"#comment"}, {name:'CONTACT', link:"#footer"}]
               li.header-list__item.ml-3
-               a.header-list__link(href="#")=name
+               a.header-list__link(href=item.link)=item.name
        h1.header-title.text-center We Are Awesome Creative Agency
+       .header-line__wrap
+         .header-line.mx-auto
        p.header-text.text-center.mx-auto
           | This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel 
           | velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit 
@@ -55,46 +59,50 @@ html(lang="ru")
       .container
         h2.expertise-title.text-center EXPERTISE 
         .expertise-text.text-center Lorem ipsum dolor sit amet proin gravida nibh vel velit
+        .expertise-line__wrap.mx-auto
+         .expertise-line
         .expertise-block 
           ul.expertise-list.row
            li.expertise-list__item.text-center.border-bottom.border-right.col-lg-4.col-sm-6.col-12
               .img-wrap.mx-auto
                 img.expertise-list__img(src="img/monitor.png", alt="monitor")
-              h5.expetrise-list__title WEB DESIGN & DEVELOPMENT
+              h5.expertise-list__title WEB DESIGN & DEVELOPMENT
               p.expertise-list__text.mx-auto This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
            li.expertise-list__item.text-center.border-bottom.border-right.col-lg-4.col-sm-6.col-12
               .img-wrap.mx-auto
                 img.expertise-list__img(src="img/paint.png", alt="paint")
-              h5.expetrise-list__title BRANDING IDENTITY
+              h5.expertise-list__title BRANDING IDENTITY
               p.expertise-list__text.mx-auto This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
            li.expertise-list__item.text-center.border-bottom.col-lg-4.col-sm-6.col-12
               .img-wrap.mx-auto
                 img.expertise-list__img(src="img/phone.png", alt="phone")
-              h5.expetrise-list__title MOBILE APP
+              h5.expertise-list__title MOBILE APP
               p.expertise-list__text.mx-auto This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
            li.expertise-list__item.text-center.border-right.col-lg-4.col-sm-6.col-12   
               .img-wrap.mx-auto
                 img.expertise-list__img(src="img/chart.png", alt="chart")
-              h5.expetrise-list__title SEARCH ENGINE OPTIMIZATION
+              h5.expertise-list__title SEARCH ENGINE OPTIMIZATION
               p.expertise-list__text.mx-auto This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
            li.expertise-list__item.text-center.border-right.col-lg-4.col-sm-6.col-12  
               .img-wrap.mx-auto
                  img.expertise-list__img(src="img/gamepad.png", alt="gamepad")
-              h5.expetrise-list__title GAME DEVELOPMENT
+              h5.expertise-list__title GAME DEVELOPMENT
               p.expertise-list__text.mx-auto This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
            li.expertise-list__item.text-center.col-lg-4.col-sm-6.col-12  
               .img-wrap.mx-auto
                  img.expertise-list__img(src="img/heart.png", alt="heart")
-              h5.expetrise-list__title MADE WITH LOVE
+              h5.expertise-list__title MADE WITH LOVE
               p.expertise-list__text.mx-auto This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.   
     section#team 
      .container 
        h2.team-title.text-center MEET OUR AMAZING TEAM
        .team-subtitle.text-center Lorem ipsum dolor sit amet proin gravida nibh vel velit
+       .team-line__wrap.mx-auto
+         .team-line
        .team-block 
          ul.team-list.row
           for team in [{name: "SEMF UCUK", post: "CEO & FOUNDER", img: 'img/team-profile.jpg' }, {name: "DIK ADALIN", post: "ENGINEERING", img: 'img/team-profile.jpg' }, {name: "JENG KOL", post: "DESIGNER", img: 'img/team-profile.jpg' }, {name: "PET ROMAK", post: "MARKETING", img: 'img/team-profile.jpg' }, ]
-            li.team-list__item.col-lg-3.col-sm-6.col-12.mt-3
+            li.team-list__item.col-lg-3.col-sm-6.col-10.mt-3
               img(src= team.img).team-list__img
               .team-list__text.text-center
                 h5.team-list__name=team.name
@@ -104,8 +112,8 @@ html(lang="ru")
          button(type="button").team-button.btn-more.px-3.py-2.mb-0 WE ARE HIRING
     section#works 
       .container 
-        .works-block__text.row.justify-content-between
-          h2.works-title OUR WORKS
+        .works-block__text.row.justify-content-between.px-2
+          h2.works-title.mr-5 OUR WORKS
           a.works-link.mr-5(href="#") See All Project in dribbble
       .container-fluid.p-0.container-works
        ul.works-list.row.mt-5
@@ -186,10 +194,10 @@ html(lang="ru")
     footer#footer
      .container
        .footer-block.row.justify-content-between
-         .footer-description.col-12.col-lg-4.col-sm-6
+         .footer-description.col-12.col-lg-4.col-sm-6.p-0
            img(src="img/logo-header.png", alt="Logo").footer-description__img
            p.footer-description__text.mt-3 lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit
-         .footer-info.col-12.col-lg-4.col-sm-6
+         .footer-info.col-12.col-lg-4.col-sm-4.px-0
            .footer-title__wrap.mt-3
              h5.footer-info__title.footer-title OUR STUDIO
            .footer-location.row
@@ -202,7 +210,7 @@ html(lang="ru")
               img(src="img/icon-phone.png", alt="Phone").footer-tel__img 
             .footer-link__wrap.ml-3
                 a(href="tel:+").footer-tel__link (+62) 21-2224 3333  
-         .footer-social.col-12.col-lg-4.col-sm-6
+         .footer-social.col-12.col-lg-4.col-sm-6.px-0
            .footer-title__wrap.mt-3
               h5.footer-social__title.footer-title STAY IN TOUCH
            .footer-subscription.row
@@ -212,12 +220,12 @@ html(lang="ru")
              for link in [{href:"#", img: "img/facebook.png"},{href:"#", img: "img/twitter.png"},{href:"#", img: "img/dribbble.png"},{href:"#", img: "img/instagram.png"},{href:"#", img: "img/google.png"},{href:"#", img: "img/youtube.png"}]
                a(href=link.href).footer-social__link.d-block.text-center.mr-2
                 img(src=link.img, alt="icon").footer-social__img.mt-1
-       .footer-bottom.row.justify-content-between
-          .footer-bottom__wrap 
+       .footer-bottom.row.justify-content-between.align-items-center
+          .footer-bottom__wrap
              a(href="#").footer-bottom__link HELP
-             a(href="#").footer-bottom__link TERMS&CONDITION
+             a(href="#").footer-bottom__link.mx-5 TERMS&CONDITION
              a(href="#").footer-bottom__link PRIVACY
-          .footer-bottom__wrap 
+          .footer-bottom__wrap
             p.footer-bottom__text  Copyright © 2015 - Tajem Creative
     .modal.row.justify-content-center.align-items-center.mr-0.ml-0
       .modal-video
@@ -226,6 +234,8 @@ html(lang="ru")
   
   script(src="js/comment.js")
   script(src="js/modal.js")
+  script(src="js/menu.js")
+  script(src="js/scroll.js")
             
                
          

@@ -5,10 +5,10 @@ const iframe = modal.firstElementChild.firstElementChild;
 const btnPlay = document.querySelector(".video-btn");
 const classActiveModal = "modal-on";
 
-deleteNode(); 
 
-modal.addEventListener("click", function () {
-  closeModal(event,function() {
+
+modal.addEventListener("click", () => {
+  closeModal(event, () => {
     modal.classList.remove(classActiveModal);
   })
 });
@@ -27,7 +27,7 @@ function closeModal(e,f){
     }
      modal.classList.add(classActiveModal);
     }, 2);
-    deleteNode();
+    modal.firstElementChild.firstElementChild.remove();
   }
 }
 
@@ -42,17 +42,12 @@ btnPlay.addEventListener("click", () => {
       count += 0.1
       modal.style.transform = `scale(${count})`
 
-      if (+count.toFixed(2)+0.1 > 1){
+      if (count > 1){
         clearInterval(timerId)
       }
 
     }, 2);
 
 });
-
-function deleteNode() {
-    modal.firstElementChild.firstElementChild.remove();
-  }
-
 
 })

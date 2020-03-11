@@ -2,6 +2,11 @@
     background: url("../img/background-header.jpg") no-repeat
     background-size: cover
 .header 
+    &-line 
+        margin-top: 30px
+        width: 50px
+        height: 1px
+        background: #00e0d0
     &-text 
         color: #fff 
         @include Roboto 
@@ -14,15 +19,6 @@
         color: #fff
         margin-top: 190px
         @include PlayFair
-        &:after
-            position: absolute
-            content: ""
-            display: block
-            left: 48%
-            margin-top: 30px
-            width: 50px 
-            height: 1px
-            background: $primary
     &-list 
         &__link
             color: #ffffff
@@ -30,3 +26,80 @@
             font-weight: 900
             &:hover 
                 color: $primary
+
+@media (max-width:1200px )
+ .header
+     &-list 
+      &__link
+       font-size: 14px
+@media (max-width:992px )
+  .header
+     &-text 
+         max-width: 100%
+     &-link 
+         text-align: center
+         margin-top: 10px
+     &-list 
+         margin-top: 10px     
+@media (max-width:767px )
+ .header
+     &-title
+         font-size: 2rem
+@media (max-width:576px )
+ .header
+     &-list
+       height: 1px
+       background: #fff
+       transition: all ease .5s
+       overflow: hidden
+       &__item 
+             flex: 0 0 100%
+             text-align: center
+             margin-top: 20px
+       &__link 
+           color: #4e3991
+     &-title
+         margin-top: 100px
+     &-burger 
+         margin-right: 10px
+     &-menu 
+        margin-top: 5px
+        &__burger 
+           margin-top: 15px
+           cursor: pointer
+           position: relative
+           height: 20px
+           z-index: 99999
+           margin-right: 20px
+           &:after
+                position: absolute
+                content: ''
+                top: 12px
+                width: 41px
+                height: 6px
+                border-radius: 
+                background: #fff
+                transition: all ease 0.5s
+                border-radius: 5px
+           &:before
+                position: absolute
+                content: ''
+                top: 0px
+                width: 41px
+                height: 6px
+                background: #fff
+                transition: all ease 0.5s
+                border-radius: 5px
+ .active-burger
+   height: 28px
+   &:before
+       transform: rotate(45deg)
+       top: 10px 
+   &:after
+       top: 10px 
+       transform: rotate(-45deg)
+ .active-menu
+  padding: 0 0 30px   
+  height: 400px
+ 
+ 

@@ -3,6 +3,12 @@
     background: url('../img/background-team.jpg') no-repeat 
     background-size: cover
 .team 
+    &-line 
+        &__wrap
+           width: 50px
+           height: 1px
+           margin-top: 20px
+           background: #655b80
     &-text 
         margin-top: 50px
     &-title 
@@ -11,15 +17,6 @@
         position: relative
         color: #f9f9f9
         @include PlayFair
-        &:after 
-            position: absolute
-            display: block
-            content: ""
-            width: 50px
-            height: 1px
-            left: 48%
-            margin-top: 18px
-            background: #f9f9f9
     &-list 
        margin-top: 90px
        &__item 
@@ -41,4 +38,7 @@
            width: 100%
 
     
-   
+@media (max-width: 575px)
+  .team
+      &-list 
+          justify-content: center

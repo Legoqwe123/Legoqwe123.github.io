@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const cmntArray = Array.from(comments);
   const classActiveImg = "active-img";
   const classActiveComment = "active-comment";
+  
 
   imgs.forEach(element => {
     element.addEventListener("click", function() {
@@ -25,12 +26,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  function showComment(data , f) {
+  function showComment(data) {
     const selectElem = document.querySelector(
       `.comment-block__item[data-comment = "${data}"]`
     );
     let i = 0;
-
+    
     if (selectElem.classList.contains(classActiveComment) || stopSpam()) {
       return;
     }
@@ -52,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
         selectElem.style.position = "relative";
         clearInterval(timerId);
       }
-    }, 50);
+    }, 40);
   }
 
   function closeAllComments(f) {
@@ -68,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
           clearInterval(timerId);
           f(element);
         }
-      }, 50);
+      }, 40);
     });
   }
 
@@ -78,7 +79,5 @@ document.addEventListener("DOMContentLoaded", () => {
       return true
     }
   }
-
-
 
 });

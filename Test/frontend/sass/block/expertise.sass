@@ -1,18 +1,15 @@
 #expertise
     padding: 70px 0 100px
 .expertise 
+   &-line 
+       &__wrap
+        background: $text 
+        width: 50px
+        height: 2px
+        margin-top: 20px
    &-text 
       position: relative
       @include PlayFair
-      &:after
-          content: ""
-          position: absolute
-          display: block
-          background: $text 
-          width: 50px
-          height: 2px
-          margin-top: 20px
-          left: 47%
    &-block 
        margin-top: 95px
    &-list 
@@ -43,11 +40,24 @@
 
 @media (max-width:767px )
  .expertise
-     &-text
-         &:after
-             left: 45%
-@media (max-width:500px )
+     &-list 
+         &__title
+             font-size: 1rem
+         &__text 
+             max-width: 225px
+@media (max-width:576px )
  .expertise
-     &-text
-         &:after
-             left: 42%
+     &-list 
+         &__item 
+             &:nth-child(2)
+                 border-top: none
+                 border-bottom: none
+             &:nth-child(3)
+                 border-top: none
+                 border-bottom: none
+             &:nth-child(4)
+                 border-top: none
+                 border-bottom: none
+             &:nth-child(5)
+                 border-bottom: none
+            

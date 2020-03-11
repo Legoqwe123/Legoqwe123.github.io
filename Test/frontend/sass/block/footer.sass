@@ -2,10 +2,13 @@
     padding: 70px 0 70px
     background: url('../img/background-footer.jpg')
     background-size: cover
+    overflow: hidden
 .footer 
   &-link 
       margin-top: 35px
   &-title 
+      position: relative
+      right: 16px
       color: #fff
       font-size: 15px
       @include Roboto 
@@ -43,7 +46,6 @@
            @include Roboto 
            font-size: 14px
            color: #fff
-           margin-right: 40px
            &:hover 
                color: $primary
   &-subscription
@@ -64,24 +66,41 @@
         background: url("../img/telegram.png")no-repeat
         width: 30px
         height: 30px
-        left: 35%
+        left: 38%
         top: 20%
 
 
 
+@media (max-width:991px)    
+  .footer
+    &-social 
+       margin-left: 19px
 @media (max-width: 768px)
     .footer
+      &-btn 
+          &:after
+              left: 34%
+      &-location
+          &__text 
+              max-width: 170px
       &-bottom 
           justify-content: center !important
           &__text 
               margin-top: 10px
           &__wrap 
-              margin-left: 20px
-              &:last-child 
-                  margin-left: 0px
-                  margin-right: 20px
-@media (max-width: 576px)
+             width: 100%
+             text-align: center
+                 
+@media (max-width: 575px)
     .footer
+        &-btn 
+          &:after
+              left: 38%
+        &-info 
+            margin-top: 20px
+        &-social 
+            margin-top: 20px
+            margin-left: 0px
         &-link 
             justify-content: center
         &-subscription 
@@ -97,17 +116,12 @@
             &__text 
                 max-width: 287px
         &-title 
+            right: 0px
+            text-align: center
             &__wrap 
+               height: 30px
                margin: 0 auto
         &-tel 
             justify-content: center
-@media (max-width: 360px)
-  .footer
-      &-bottom 
-          &__wrap 
-              &:last-child 
-                  margin-right: 0px
-          &__link 
-              margin-right: 20px
 
              
