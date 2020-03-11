@@ -1,7 +1,34 @@
 const gulp = require('gulp');
 const pug = require('gulp-pug');
-var sass = require('gulp-sass');
+const sass = require('gulp-sass');
+const webpack = require('webpack-stream');
 sass.compiler = require('node-sass');
+
+
+const rules = {
+    output: {
+        filename: "index.js"
+    },
+    mode: "production",
+    module: {
+        rules: [
+          {
+            test: /\.js$/,
+            exclude: /node_modules/,
+            use: {
+              loader: 'babel-loader',
+              options: {
+                "presets" : [
+                  [
+        "@babel/preset-env",
+                  
+                  ]
+                ]
+              }
+            }
+          }
+        ]
+      }}
 
 gulp.task('pug', function(){
     return gulp.src('frontend/*.pug')
@@ -23,6 +50,7 @@ gulp.task('img', function () {
   });
 gulp.task('js', function(){
     return gulp.src('frontend/js/*.js')
+    .pipe(webpack(rules))
     .pipe(gulp.dest("prod/js"))
 })
    
