@@ -4,6 +4,7 @@ html(lang="ru")
   meta(charset="utf-8")
   meta(http-equiv="X-UA-Compatible", content="ie=edge")
   meta(name="viewport", content="width=device-width, initial-scale=1.0")
+  link(href="http://allfont.ru/allfont.css?fonts=hammersmith-one" rel="stylesheet" type="text/css")
   link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:300,400,900&display=swap")
   link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous")
   link(rel="stylesheet", href="css/style.css")
@@ -31,7 +32,7 @@ html(lang="ru")
           | consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh 
           | vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.      
        .header-btn__wrap.text-center
-          button(type = "button").header-button.btn-more.px-3.py-2 LEARN MORE
+          a(href = "#").header-button.btn-more.px-3.py-2 LEARN MORE
     section#about
       .container 
         .about-block.row
@@ -47,7 +48,7 @@ html(lang="ru")
                | Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. 
                | Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti 
                | sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-            button(type = "button").about-button.btn-more.px-3.py-2 LEARN MORE
+            a(href = "#").about-button.btn-more.px-3.py-2 LEARN MORE
     section#video
       .video-block.text-center
         button.video-btn 
@@ -109,7 +110,7 @@ html(lang="ru")
                 p.team-list__post=team.post
        p.team-text.text-center Become part of our dream team, let’s join us ! 
        .btn-wrap.text-center
-         button(type="button").team-button.btn-more.px-3.py-2.mb-0 WE ARE HIRING
+         a(href="#").team-button.btn-more.px-3.py-2.mb-0 WE ARE HIRING
     section#works 
       .container 
         .works-block__text.row.justify-content-between.px-2
@@ -122,7 +123,7 @@ html(lang="ru")
            a(href=item.href).works-list__link
             img(src=item.img).works-list__img.w-100
        .btn-wrap.text-center
-          button(type="button").works-button.btn-more.px-3.py-2.mb-0 LOAD MORE
+          a(href="#").works-button.btn-more.px-3.py-2.mb-0 LOAD MORE
     section#comment 
      .container 
        .comment-symbol.text-center &#10075;&#10075;
@@ -232,10 +233,10 @@ html(lang="ru")
         iframe(width="560" height="315" src="https://www.youtube.com/embed/KvUgaHTNit4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture")
 
   
-  script(src="js/comment.js")
-  script(src="js/modal.js")
-  script(src="js/menu.js")
-  script(src="js/scroll.js")
+  script(src="js/polyfill.js")
+  script(src="js/index.js")
+
+  
             
                
          

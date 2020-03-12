@@ -5,6 +5,8 @@ $text: #a9a8ae
  font-family: 'Roboto', sans-serif
 @mixin PlayFair
  font-family: 'Playfair Display', serif
+@mixin Hammersmith
+ font-family: 'Hammersmith One', arial
   
 * , :after, :before
     box-sizing: border-box
@@ -52,8 +54,12 @@ button
    margin-top: 50px
    margin-bottom: 210px
    color: $primary
+   display: inline-block
    background: none
    border: 1px solid $primary
+   @include Hammersmith 
+   &:hover
+     color: $primary
 textarea 
   resize: none
   border: 1px solid #e5e5e5

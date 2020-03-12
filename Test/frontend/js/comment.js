@@ -1,6 +1,3 @@
-import "@babel/polyfill";
-
-
 document.addEventListener("DOMContentLoaded", () => {
   const imgs = document.querySelectorAll(".comment-img__item");
   const comments = document.querySelectorAll(".comment-block__item");
