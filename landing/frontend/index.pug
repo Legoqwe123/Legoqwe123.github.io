@@ -1,0 +1,108 @@
+doctype html
+html(lang="ru")
+  head
+  meta(charset="utf-8")
+  meta(http-equiv="X-UA-Compatible", content="ie=edge")
+  meta(name="viewport", content="width=device-width, initial-scale=1.0")
+  link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous")
+  link(rel="stylesheet", href="css/style.css")
+  title Марафон
+  body
+    header#header
+      .header-block.row.flex-column.align-items-center
+        .header-block__logo
+          img.header-image__logo(src='img/headerLogo.png' title = "logo")
+        .header-block__title
+          h1.header-title МТБ
+          p.header-subtitle Полумарафон
+          p.header-date 2 августа
+          p.header-time 12:00
+        .header-block__description
+          p.header-description МТБ гонка проводится на лыжной трассе СК «Альфа-Битца». 
+          | Москва, Юго-Западный округ, 36 км МКАД (внешняя сторона).
+        .header-block__button 
+          a.header-button(href='#').d-block Зарегистрироваться
+        p.header-hashtag #LindoresRvoRace
+  section#description 
+     .description-block.row
+      .description-block__right.col-3
+         .description-block__distance 
+           h2.description-distance__title.description-title ДИСТАНЦИИ
+           ul.description-distance__list 
+             - var distance = ['44-км (4 круга)', '33-км (3 круга)' ,'22-км (2 круга) юниоры' ,'11-км (1 круг) заезд*' ,'Детский заезд' ,'Командный зачёт'];
+                each item in distance 
+                  li.description-list__item= item
+           p.description-distance__subtitle.mt-3 *- без распределения мест  
+         .description-block__track 
+           h2.description-track__title.description-title ТРАССА
+           p.description-track__title 11-километровый круг, перепад высот 64 метра с суммарным набором высоты в 211 метров.
+         .description-block__button
+           button.description-button.description-button__right ПОДРОБНЕЕ
+      .description-block__left.col-4
+         .description-block__schedule
+           h2.description-schedule__title.description-title РАСПИСАНИЕ
+           ul.description-schedule__list 
+            - var schedule = ['9:00 – Начало работы стартового лагеря', '9:30 – 11:30 – Регистрация участников',  '11:50 – Построение участников и предстартовый брифинг', '12:00 – Старт участников на дистанцию 44 КМ (количество кругов 4)', '12:05 – Старт участников на дистанцию 33 КМ (количество кругов 3)', '12:10 – Старт участников на дистанцию 22 КМ (количество кругов 2)', '12:15 – Старт участников на дистанцию 11 КМ (количество кругов 1)', '15:30 – Закрытие финишного коридора.', '15:30 – Награждение победителей и призеров.', '16:00 – Окончание работы стартового лагеря и камер хранения.']
+               each item in schedule 
+                 li.description-schedule__item= item
+         .description-block__button
+           button.description-button.description-button__left РЕГЛАМЕНТ ГОНКИ
+  section#prizes
+    .prizes-wrapper__title.row.justify-content-center
+      h2.prizes-block__title LINDORES ABBEY RVO RACE – ЭТО:
+    .prizes-block.row.justify-content-center
+      ul.prizes-block__list.mt-5
+        - var prizes = ['Памятная медаль и диплом;', 'Призы и подарки от партнеров;' , 'Оборудованный стартовый городок и размеченная трасса;', 'Хронометраж и фото-съемка;', 'Пункт питания, камеры хранения, техническая и медицинская помощь;' , 'Вкуснейшая горячая каша с мясом и липовый чай']
+           each item in prizes 
+            li.prizes-block__item.row.mt-4.align-items-center
+               img.prizes-block__icon(src='img/star.png')
+               p.prizes-block__text.ml-3=item
+  section#location
+    .location-block.row
+      .location-block_info.col-6.mt-5
+        .location-block__wrapper.row.justify-content-center
+           .location-block__item.col-6
+             h2.location-info__title Как добраться
+             p.location-info__text.mt-3 Лыжная трасса СК «Альфа-Битца» находится на 36-м км МКАД (внешняя сторона).
+             p.location-info__text.mt-3 от м."Ясенево", авт. 202, 165 до ост. "Зона отдыха Битца"; (выход из первого вагона по ходу поезда) при выходе из метро направо, последний выход на улицу. От остановки спуститься по ступенькам в сторону поля, пройти через него до комплекса «Альфа-Битца»
+             p.location-info__text.mt-3 от м."Бульвар Дмитрия Донского" авт. 967 до ост. "Зона отдыха Битца"; по надземному пешеходному переходу перейти на противо- положную сторону и спуститься по ступенькам в сторону поля, пройти через него до комплекса «Альфа-Битца
+             
+      .location-block__map.col-6
+       iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad47118c3d7a37e997e59dafd67b07e86eb25c73f059304a1cd7d08996647b608&amp;source=constructor" width="100%" height="655" frameborder="0")
+  section#gallery 
+    .gallery-block.row
+      .gallery-block__left.p-0.col-6
+         .gallery-block__wrapper.row.justify-content-center
+           .gallery-block__text.text-center ФОТО
+             - var public = false 
+             if public === false 
+               .gallery-block__help Опубликуем после гонки, возвращайтесь
+             else  
+              button
+              .gallery-block__button Смотреть
+      .gallery-block__right.p-0.col-6
+        .gallery-block__wrapper.row.justify-content-center
+          .gallery-block__text.text-center ВИДЕО
+            - var public = false 
+            if public === false 
+              .gallery-block__help Опубликуем после гонки, возвращайтесь
+            else  
+              button
+               .gallery-block__button Смотреть
+  footer#footer 
+     .footer-block
+       h2.footer-title.text-center ПАРТНЕРЫ
+       p.footer-subtitle.text-center Мероприятия
+
+    
+        
+         
+        
+      
+
+
+
+
+         
+    
+

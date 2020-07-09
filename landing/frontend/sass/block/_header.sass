@@ -1,0 +1,51 @@
+#header
+    position: relative
+    background: url('../img/bgHeader.jpg') no-repeat
+    background-size: cover
+    z-index: 999
+    &:before
+        content: ""
+        position: absolute
+        background: url('../img/bicycle.png') 100% 0% no-repeat
+        background-size: 88%
+        width: 87%
+        height: 100%
+        right: 0
+        z-index: -1
+.header
+    &-block
+        color: $white
+        text-align: center
+        width: 100%
+        &__logo
+            margin-top: 195px
+        &__description
+            margin-top: 30px
+            font-size: 20px
+        &__button
+            margin-top: 20px
+    &-title
+        font-size: 11rem
+        margin-top: 55px
+        @include GothamBold
+    &-subtitle
+        margin-top: -55px
+        font-size: 5rem
+        @include AdobeIt
+    &-date
+        font-size: 2rem
+        @include GothamBlack
+    &-time
+        font-size: 2rem
+        @include GothamBlack
+    &-hashtag
+        margin: 20px 0px
+        font-size: 18px
+        @include GothamPro
+    &-button
+        color: $white
+        font-size: 26px
+        margin-top: 20px
+        border: 3px solid $white
+        padding: 10px 48px
+        @include GothamPro
