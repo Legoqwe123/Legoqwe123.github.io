@@ -1,3 +1,5 @@
+#gallery
+  overflow: hidden
 .gallery
     &-block
         position: relative
@@ -5,13 +7,11 @@
             position: relative
             background: url('../img/gallery_1.jpg') no-repeat
             background-size: cover
-            overflow: hidden
             &:after
                 content: ""
                 position: absolute
                 right: 0
-                top: 0
-                width: 2px
+                bottom: 0
                 height: 100%
                 background: $text
                 width: 6px
@@ -19,9 +19,8 @@
             position: relative
             background: url('../img/gallery_2.jpg') no-repeat
             background-size: cover
-            overflow: hidden
         &__text
-            padding: 325px 0px
+            padding: 25% 0px
             color: $white
             font-size: 50px
             @include GothamBold
@@ -30,3 +29,12 @@
             font-size: 25px
             text-align: center
             @include GothamBold
+
+@media (max-width: 1140px)
+  .gallery
+    &-block
+        &__left
+           &:after
+              width: 100%
+              height: 6px
+              

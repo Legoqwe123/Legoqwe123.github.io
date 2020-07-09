@@ -1,4 +1,9 @@
+#location 
+ overflow: hidden
 .location
+    &-block 
+        &__info 
+         max-width: 49.7%
     &-info
         &__text
             max-width: 490px
@@ -13,3 +18,19 @@
             width: 280px
             height: 70px
             @include GothamBold
+    &-yandex
+        height: 100%
+
+@media (max-width: 992px)
+  .location
+    &-block 
+      &__map 
+          height: 350px
+      &__info 
+          max-width: 100%
+    &-info
+      &__text
+         max-width: 100%
+           
+
+  
