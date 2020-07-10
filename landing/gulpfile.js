@@ -51,7 +51,7 @@ gulp.task('fonts', function () {
 });
 
 gulp.task('img', function () {
-  return gulp.src('frontend/img/*.{jpg,png,svg}')
+  return gulp.src('frontend/img/*.{jpgimg,png,svg}')
     .pipe(tinypng({
       key: '7nLKFgKtc4KKybP4TqVD2DxGm02nBNBP',
       log: true
