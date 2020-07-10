@@ -7,7 +7,7 @@
     &:before
         content: ""
         position: absolute
-        background: url('../img/bicycle.png') 100% 0% no-repeat
+        background: url('../img/bicycle.png') 75% 0% no-repeat
         background-size: cover
         width: 100%
         height: 100%
@@ -26,6 +26,9 @@
             font-size: 20px
         &__button
             margin-top: 20px
+    &-description
+        &__text
+            font-size: 20px
     &-title
         font-size: 126px
         margin-top: 55px
@@ -69,3 +72,21 @@
         border: 3px solid $white
         padding: 10px 48px
         @include GothamPro
+
+@media (max-width: 768px)
+ #header 
+   &:before 
+      display: none
+ .header 
+   &-block 
+      &__logo 
+          margin-top: 30px
+          transform: scale(0.9)
+   &-title 
+        font-size: 95px
+   &-subtitle 
+        font-size: 45px
+   &-button 
+       padding: 10px 20px
+       font-size: 22px
+
