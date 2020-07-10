@@ -8,21 +8,21 @@ html(lang="ru")
   link(rel="stylesheet", href="css/style.css")
   title Марафон
   body
-  //-  header#header
-  //-     .header-block.row.flex-column.align-items-center
-  //-       .header-block__logo
-  //-         img.header-image__logo(src='img/headerLogo.png' title = "logo")
-  //-       .header-block__title
-  //-         h1.header-title МТБ
-  //-         p.header-subtitle Полумарафон
-  //-         p.header-date 2 августа
-  //-         p.header-time 12:00
-  //-       .header-block__description
-  //-         p.header-description МТБ гонка проводится на лыжной трассе СК «Альфа-Битца». 
-  //-         | Москва, Юго-Западный округ, 36 км МКАД (внешняя сторона).
-  //-       .header-block__button 
-  //-         a.header-button(href='#').d-block Зарегистрироваться
-  //-       p.header-hashtag #LindoresRvoRace
+    header#header
+       .header-block.row.flex-column.align-items-center
+         .header-block__logo
+           img.header-image__logo(src='img/headerLogo.png' title = "logo")
+         .header-block__title
+           h1.header-title МТБ
+           p.header-subtitle Полумарафон
+           p.header-date 2 августа
+           p.header-time 12:00
+         .header-block__description
+           p.header-description МТБ гонка проводится на лыжной трассе СК «Альфа-Битца». 
+           | Москва, Юго-Западный округ, 36 км МКАД (внешняя сторона).
+         .header-block__button 
+           a.header-button(href='#').d-block Зарегистрироваться
+         p.header-hashtag #LindoresRvoRace
   
   //- section#description 
   //-    .description-block.row
@@ -49,16 +49,16 @@ html(lang="ru")
   //-        .description-block__button
   //-          button.description-button.description-button__left РЕГЛАМЕНТ ГОНКИ
   
-  //- section#prizes
-  //-   .prizes-wrapper__title.row.justify-content-center
-  //-     h2.prizes-block__title LINDORES ABBEY RVO RACE – ЭТО:
-  //-   .prizes-block.row.justify-content-center
-  //-     ul.prizes-block__list.mt-5
-  //-       - var prizes = ['Памятная медаль и диплом;', 'Призы и подарки от партнеров;' , 'Оборудованный стартовый городок и размеченная трасса;', 'Хронометраж и фото-съемка;', 'Пункт питания, камеры хранения, техническая и медицинская помощь;' , 'Вкуснейшая горячая каша с мясом и липовый чай']
-  //-          each item in prizes 
-  //-           li.prizes-block__item.row.mt-4.align-items-center
-  //-              img.prizes-block__icon(src='img/star.png')
-  //-              p.prizes-block__text.ml-3=item
+  section#prizes.px-5.px-md-0
+    .prizes-wrapper__title.row.justify-content-center
+      h2.prizes-block__title LINDORES ABBEY RVO RACE – ЭТО:
+    .prizes-block.row.justify-content-center
+      ul.prizes-block__list.mt-5
+        - var prizes = ['Памятная медаль и диплом;', 'Призы и подарки от партнеров;' , 'Оборудованный стартовый городок и размеченная трасса;', 'Хронометраж и фото-съемка;', 'Пункт питания, камеры хранения, техническая и медицинская помощь;' , 'Вкуснейшая горячая каша с мясом и липовый чай']
+           each item in prizes 
+            li.prizes-block__item.row.mt-4.align-items-center.flex-column.flex-md-row
+               img.prizes-block__icon(src='img/star.png')
+               p.prizes-block__text.ml-3.text-center.text-md-initial=item
   
   section#location
     .location-block.row

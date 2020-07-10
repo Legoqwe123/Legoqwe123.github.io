@@ -1,7 +1,7 @@
 #prizes
     background: $dakrnest
     padding: 100px 0px
- 
+
 .prizes
     &-block
         &__title
@@ -11,3 +11,8 @@
             color: $white
             font-size: 22px
             @include AdobeReg
+@media (max-width: 765px)
+    .prizes
+        &-block 
+          &__text
+              max-width: 550px

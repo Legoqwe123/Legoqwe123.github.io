@@ -21,18 +21,37 @@
         &__logo
             margin-top: 150px
         &__description
+            @include AdobeIt
             margin-top: 30px
             font-size: 20px
         &__button
             margin-top: 20px
     &-title
-        font-size: 11rem
+        font-size: 126px
         margin-top: 55px
         @include GothamBold
     &-subtitle
-        margin-top: -55px
-        font-size: 5rem
+        position: relative
+        display: block
+        margin-top: -30px
+        font-size: 55px
         @include AdobeIt
+        &:after 
+           content: ""
+           background: $text
+           position: absolute
+           width: 150px
+           height: 3px
+           right: -180px
+           top: 47%
+        &:before
+            content: ""
+            position: absolute
+            background: $text
+            width: 150px
+            height: 3px
+            left: -180px
+            top: 47%
     &-date
         font-size: 2rem
         @include GothamBlack
@@ -40,7 +59,7 @@
         font-size: 2rem
         @include GothamBlack
     &-hashtag
-        margin: 20px 0px
+        margin: 20px 0px 40px
         font-size: 18px
         @include GothamPro
     &-button
