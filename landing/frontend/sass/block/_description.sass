@@ -56,6 +56,10 @@
             @include AdobeReg 
             span 
                 @include AdobeBold
+    &-wrapper 
+        &__right 
+            position: relative
+            left: 50px
 
 @media (max-width: 1760px)
     .description
@@ -63,7 +67,7 @@
        &__left
           margin-top: 101px
 
-@media (max-width: 1394px)
+@media (max-width: 1395px)
     .description
      &-schedule 
         &__text 
@@ -76,6 +80,10 @@
 @media (max-width: 992px)
     #description
        padding: 50px 0px
+    .description 
+        &-wrapper 
+            &__right 
+                left: 0px
 @media (max-width: 576px)
     .description
         &-schedule 
