@@ -1,9 +1,10 @@
 #prizes
-    background: $dakrnest
-    padding: 100px 0px
+    background: $darknest
+    padding: 70px 0px
     overflow: hidden
 .prizes
     &-block
+        margin-left: 265px
         &__title
             color: $white
             max-width: 450px
@@ -11,6 +12,10 @@
             color: $white
             font-size: 22px
             @include AdobeReg
+@media (max-width: 1200px)
+    .prizes
+        &-block 
+            margin-left: 0px
 @media (max-width: 765px)
     .prizes
         &-block 

@@ -1,7 +1,7 @@
 #description
     background: $green
     overflow: hidden
-    padding: 110px 0px 50px
+    padding: 70px 0px 50px
 .description
     &-block
         position: relative
@@ -14,10 +14,10 @@
             font-size: 14px
     &-button
         position: relative
-        border: 4px solid $dark
+        border: 4px solid $darknest
         font-size: 21px
         max-width: 100%
-        color: $dark
+        color: $darknest
         @include GothamBold
         width: 300px
         height: 70px
@@ -27,7 +27,7 @@
           position: absolute
           width: 0%
           height: 100%
-          background: $dark
+          background: $darknest
           left: 0
           top: 0
           z-index: -1
@@ -57,7 +57,22 @@
             span 
                 @include AdobeBold
 
+@media (max-width: 1760px)
+    .description
+     &-button
+       &__left
+          margin-top: 101px
 
+@media (max-width: 1391px)
+    .description
+     &-schedule 
+        &__text 
+          letter-spacing: -0.5px
+@media (max-width: 1328px)
+    .description
+      &-button
+       &__left
+          margin-top: 30px
 @media (max-width: 992px)
     #description
        padding: 50px 0px

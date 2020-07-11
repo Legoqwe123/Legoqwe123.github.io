@@ -1,6 +1,6 @@
 #footer
     background: $background
-    padding: 50px 0px
+    padding: 50px 0px 0px
     overflow: hidden
 .footer
     &-bottom 
@@ -13,7 +13,37 @@
         color: $white
         font-size: 26px
         @include AdobeIt
-
+    &-icon
+        &__one
+            width: 283px
+            height: 174px
+        &__two
+            width: 202px
+            height: 204px
+        &__three
+            width: 262px
+            height: 36px
+        &__four
+            width: 269px
+            height: 119px
+        &__five
+            width: 259px
+            height: 98px
+    &-info 
+      background: $darknest
+      &__logo
+          span 
+            color: $white
+             font-size: 20px
+            @include GothamPro   
+      &__text
+        color: $white
+        @include GothamPro
+        border-bottom: 1px solid $white
+        font-size: 20px
+        &:hover
+          color: $text
+          border-bottom: 1px solid $text
 @media (max-width: 1140px)
   .footer
      &-bottom 
@@ -24,4 +54,8 @@
    .footer
        &-top 
            &__img 
-               transform: scale(.8) 
+               transform: scale(.75) 
+       &-bottom 
+           &__item 
+             &:nth-child(2)
+                margin: 0px 

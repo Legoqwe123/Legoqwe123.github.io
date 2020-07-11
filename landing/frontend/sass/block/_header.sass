@@ -14,12 +14,16 @@
         right: 0
         z-index: -1
 .header
+    &-image 
+        &__logo 
+           width: 250px
+           height: 100%
     &-block
         color: $white
         text-align: center
         width: 100%
         &__logo
-            margin-top: 150px
+            margin-top: 25px
         &__description
             @include AdobeIt
             margin-top: 30px
@@ -47,14 +51,14 @@
         &__text
             font-size: 20px
     &-title
-        font-size: 126px
-        margin-top: 55px
+        font-size: 110px
+        margin-top: 25px
         @include GothamBold
     &-subtitle
         position: relative
         display: block
         margin-top: -30px
-        font-size: 55px
+        font-size: 50px
         @include AdobeIt
         &:after 
            content: ""
@@ -87,7 +91,7 @@
         font-size: 26px
         border: 3px solid $white
         padding: 10px 48px
-        @include GothamPro
+        @include GothamBold
         transition: all ease .5s
        
 
