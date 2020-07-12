@@ -53,6 +53,7 @@
     &-schedule 
         &__text 
             font-size: 23px 
+            white-space: break-spaces
             @include AdobeReg 
             span 
                 @include AdobeBold
@@ -84,14 +85,48 @@
         &-wrapper 
             &__right 
                 left: 0px
+@media (max-width: 769px)
+    .description
+        &-schedule 
+          &__item 
+              &:nth-child(4)
+                max-width: 550px
+              &:nth-child(5)
+                max-width: 550px
+              &:nth-child(6)
+                max-width: 550px
+              &:nth-child(7)
+                max-width: 550px
 @media (max-width: 576px)
     .description
         &-schedule 
           &__text 
               font-size: $textResponse
+          &__item   
+              &:nth-child(4)
+                max-width: 460px
+              &:nth-child(5)
+                max-width: 460px
+              &:nth-child(6)
+                max-width: 460px
+              &:nth-child(7)
+                max-width: 460px
         &-track
           &__text 
               font-size: $textResponse
         &-list
            &__text
               font-size: $textResponse 
+           
+@media (max-width: 365px)
+    .description
+      &-schedule 
+        &__item 
+          &:nth-child(4)
+            max-width: 240px
+          &:nth-child(5)
+            max-width: 240px
+          &:nth-child(6)
+            max-width: 240px
+          &:nth-child(7)
+            max-width: 240px
