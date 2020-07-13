@@ -21,9 +21,13 @@ html(lang="ru")
            p.header-description__text МТБ гонка проводится на лыжной трассе СК «Альфа-Битца» 
            | Москва, Юго-Западный округ, 36 км МКАД (внешняя сторона)
          .header-block__button 
-           a.header-button(href='https://vgdata.ru/registration.php?Race1=69' target='_blank').d-block Зарегистрироваться
+           button.header-button(href='https://vgdata.ru/registration.php?Race1=69' target='_blank').d-block Зарегистрироваться
          p.header-hashtag #LindoresRvoRace
   
+  section#modal.row.justify-content-center.align-items-center.m-0
+    button.modal-btn__exit
+    iframe.modal-iframe(src="https://vgdata.ru/registration.php?Race1=69", frameborder="0" align='middle')
+
   section#description.px-4
     .description-block.row.flex-column.flex-lg-row
       .description-block__right.col-12.col-lg-6
@@ -147,6 +151,9 @@ html(lang="ru")
               path(d="M20.2032 5.6001H11.796C8.37931 5.6001 5.59961 8.3798 5.59961 11.7965V20.2037C5.59961 23.6204 8.37931 26.4001 11.796 26.4001H20.2032C23.6199 26.4001 26.3996 23.6204 26.3996 20.2037V11.7965C26.3996 8.3798 23.6199 5.6001 20.2032 5.6001ZM24.3071 20.2037C24.3071 22.4702 22.4697 24.3076 20.2032 24.3076H11.796C9.52951 24.3076 7.69209 22.4702 7.69209 20.2037V11.7965C7.69209 9.52996 9.52951 7.69258 11.796 7.69258H20.2032C22.4697 7.69258 24.3071 9.52996 24.3071 11.7965V20.2037Z" fill="white")
               path(d="M16 18.5C14.6193 18.5 13.5 17.3807 13.5 16C13.5 14.6193 14.6193 13.5 16 13.5C17.3807 13.5 18.5 14.6193 18.5 16C18.5 17.3807 17.3807 18.5 16 18.5Z" stroke="white" stroke-width="3")
               path(d="M21.3906 11.95C22.1026 11.95 22.6797 11.3728 22.6797 10.6609C22.6797 9.94896 22.1026 9.37183 21.3906 9.37183C20.6787 9.37183 20.1016 9.94896 20.1016 10.6609C20.1016 11.3728 20.6787 11.95 21.3906 11.95Z" fill="white")
+        
+  script(src="js/modal.js")
+      
 
 
 

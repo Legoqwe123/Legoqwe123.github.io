@@ -1,0 +1,67 @@
+#modal 
+    position: fixed
+    top: 0
+    left: 0
+    background: rgba(0, 0, 0, 0.8)
+    width: 100%
+    height: 100%
+    z-index: 999
+    display: none
+    animation: .4s ease-out normal slowUpOpacity
+.modal 
+    &-iframe
+        width: 700px
+        background: white
+        height: 500px
+        z-index: 999
+        animation: .4s ease-out normal slowUpModal
+    &-btn 
+        &__exit 
+         position: fixed
+         top: 10%
+         padding: 0
+         width: 38px
+         height: 35px
+         right: 6%
+         &:after
+             content: ''
+             position: absolute
+             width: 40px
+             height: 4px
+             display: block
+             background: $white
+             transform: rotate(-45deg)
+             transform-origin: center
+         &:before
+             content: ''
+             position: absolute
+             width: 40px
+             height: 4px
+             display: block
+             background: $white
+             transform: rotate(45deg)
+             transform-origin: center
+
+
+.active-modal 
+  display: flex !important
+         
+ 
+@keyframes slowUpOpacity
+    0%
+      opacity: 0.5  
+    50%
+      opacity: 0.8   
+    100%
+      opacity: 1  
+    
+    
+@keyframes slowUpModal
+    0%
+      transform: translateY(-100px)
+      opacity: 0
+    50%
+      opacity: 0.8
+    100%
+      transform: translateY(0px)
+      opacity: 1
