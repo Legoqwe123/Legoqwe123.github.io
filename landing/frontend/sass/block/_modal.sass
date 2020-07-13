@@ -10,6 +10,7 @@
     animation: .4s ease-out normal slowUpOpacity
 .modal 
     &-iframe
+        position: relative
         width: 700px
         background: white
         height: 500px
@@ -65,3 +66,12 @@
     100%
       transform: translateY(0px)
       opacity: 1
+
+@media( max-width: 415px )
+   .modal
+     &-iframe 
+       top: 34px
+     &-btn
+       &__exit
+         top: 3%
+  
