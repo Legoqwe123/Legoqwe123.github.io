@@ -21,18 +21,16 @@ html(lang="ru")
            p.header-description__text МТБ гонка проводится на лыжной трассе СК «Альфа-Битца» 
            | Москва, Юго-Западный округ, 36 км МКАД (внешняя сторона)
          .header-block__button 
-           button.header-button(href='https://vgdata.ru/registration.php?Race1=69' target='_blank').d-block Зарегистрироваться
+           a.header-button(href='http://velogearance.ru/' target='_blank').d-block Зарегистрироваться
          p.header-hashtag #LindoresRvoRace
   
-  section#modal.row.justify-content-center.align-items-center.m-0
-    button.modal-btn__exit
-    iframe.modal-iframe(src="https://vgdata.ru/registration.php?Race1=69", frameborder="0" align='middle')
+  
 
   section#description.px-4
     .description-block.row.flex-column.flex-lg-row
       .description-block__right.col-12.col-lg-6
         .description-wrapper__right.row.flex-column.flex-lg-column.flex-md-row.align-items-lg-center.align-items-start.px-3.px-md-5.px-lg-0
-         .description-block__distance.col-12.col-lg-7.col-md-6.text-center.text-md-left.pl-0
+         .description-block__distance.col-12.col-lg-7.col-md-6.text-center.text-md-left.px-0
            h2.description-distance__title.description-title ДИСТАНЦИИ
            ul.description-distance__list 
              - var distance = ['44-км (4 круга)', '33-км (3 круга)' ,'22-км (2 круга) юниоры' ,'11-км (1 круг) заезд*' ,'Детский заезд' ,'Командный зачёт'];
@@ -40,11 +38,17 @@ html(lang="ru")
                   li.description-list__item
                    .description-list__text=item
            p.description-distance__subtitle.mt-3 *- без распределения мест  
-         .description-block__track.col-12.col-lg-7.col-md-6.mt-4.mt-md-0.mt-lg-4.text-center.text-md-left.pl-0
+         .description-block__track.col-12.col-lg-7.col-md-6.mt-4.mt-md-0.mt-lg-4.text-center.text-md-left.px-0
            h2.description-track__title.description-title ТРАССА
            p.description-track__text  <span>11-километровый круг </span>, перепад высот <span> 64 метра </span> с суммарным набором высоты в <span> 211 метров</span>.
-         .description-block__button.col-12.col-md-7.text-center.text-md-left.pl-0
+         .description-block__button.col-12.col-md-7.text-center.text-md-left.px-0
            a.description-button.description-button__right.d-inline-flex.justify-content-center.align-items-center.mt-3(href='pdf/racemap.pdf' target='_blank') ПОДРОБНЕЕ
+           a.description-link__svg.d-inline-block.ml-3(href='https://strava.app.link/gPbE63dX37' target='_blank')
+             svg(viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" width="2500" height="2500")
+               path(d="M0 0h16v16H0z" fill="#fc4c02")
+               g(fill="#fff" fill-rule="evenodd")
+                 path(d="M6.9 8.8l2.5 4.5 2.4-4.5h-1.5l-.9 1.7-1-1.7z" opacity=".6")
+                 path(d="M7.2 2.5l3.1 6.3H4zm0 3.8l1.2 2.5H5.9z")
       
       .description-block__left.col-12.col-lg-6.px-3.px-md-0
         .description-wrapper__left.row.flex-column.px-3.px-md-5.px-lg-0.align-items-start.align-items-center
@@ -59,13 +63,13 @@ html(lang="ru")
                li.description-schedule__item.mt-2.mt-lg-0
                  p.description-schedule__text <span>11:50</span> – Построение участников и предстартовый брифинг 
                li.description-schedule__item.mt-2.mt-lg-0
-                 p.description-schedule__text <span>12:00</span> – Старт участников на дистанцию 44 КМ (количество кругов 4)
+                 p.description-schedule__text <span>12:00</span> – Старт участников на дистанцию 44 КМ 
                li.description-schedule__item.mt-2.mt-lg-0
-                 p.description-schedule__text <span>12:05</span> – Старт участников на дистанцию 33 КМ (количество кругов 3)
+                 p.description-schedule__text <span>12:05</span> – Старт участников на дистанцию 33 КМ
                li.description-schedule__item.mt-2.mt-lg-0
-                 p.description-schedule__text <span>12:10</span> – Старт участников на дистанцию 22 КМ (количество кругов 2)
+                 p.description-schedule__text <span>12:10</span> – Старт участников на дистанцию 22 КМ
                li.description-schedule__item.mt-2.mt-lg-0
-                 p.description-schedule__text <span>12:15</span> – Старт участников на дистанцию 11 КМ (количество кругов 1)
+                 p.description-schedule__text <span>12:15</span> – Старт участников на дистанцию 11 КМ
                li.description-schedule__item.mt-2.mt-lg-0
                  p.description-schedule__text <span>15:30</span> – Закрытие финишного коридора.
                li.description-schedule__item.mt-2.mt-lg-0
@@ -104,55 +108,58 @@ html(lang="ru")
     .gallery-block.row
       .gallery-block__left.p-0.col-12.col-xl-6
          .gallery-block__wrapper.row.justify-content-center
-           .gallery-block__text.text-center ФОТО
-             - var public = false 
+           .gallery-block__text.text-center.row.flex-column.align-items-center ФОТО
+             - var public = true 
              if public === false 
                .gallery-block__help Опубликуем после гонки, возвращайтесь
              else  
-              button
-              .gallery-block__button Смотреть
+             
+              a.gallery-block__button(href= 'https://nextcloud.ubf.eu/s/F6oenmmTKkHEZFN' target='_blank') Смотреть
       .gallery-block__right.p-0.col-12.col-xl-6
         .gallery-block__wrapper.row.justify-content-center
-          .gallery-block__text.text-center ВИДЕО
-            - var public = false 
+          .gallery-block__text.text-center.row.flex-column.align-items-center ВИДЕО
+            - var public = true 
             if public === false 
               .gallery-block__help Опубликуем после гонки, возвращайтесь
             else  
-              buttonss
-               .gallery-block__button Смотреть
+              
+               a.gallery-block__button(href='https://www.youtube.com/watch?v=S1AYaBE7JuU&t=138s' target='_blank') Смотреть
   
-  footer#footer 
+  footer#footer.px-5
      h2.footer-title.text-center ПАРТНЕРЫ
      p.footer-subtitle.text-center Мероприятия
      .footer-block.row.flex-column.align-items-center.mt-3.mt-md-5
        .footer-block__top.row.align-items-end.justify-content-center
          .footer-top__item.mr-0.mr-sm-4
+          a(href="https://www.facebook.com/rvovelogruppa/", target="_blank").d-block
            img.footer-top__img.footer-icon__one(src='img/footer_icon_1.png')
          .footer-top__item.ml-0.ml-sm-4.mt-3.mt-sm-0
+          a(href="https://lindoresabbeydistillery.com/", target="_blank").d-block
            img.footer-top__img.footer-icon__two(src='img/footer_icon_2.png')
        .footer-block__bottom.row.align-items-center.mt-4.mt-sm-5.justify-content-center
-         .footer-bottom__item
-           img.footer-top__img.footer-icon__three(src='img/footer_icon_3.png')
-         .footer-bottom__item
-           img.footer-top__img.footer-icon__four(src='img/footer_icon_4.png')
-         .footer-bottom__item
-           img.footer-top__img.footer-icon__five(src='img/footer_icon_5.png')
-     .footer-info.row.flex-column.flex-sm-row.align-items-center.py-4.mt-5.justify-content-between
-      .footer-info__logo
-         span ©
-         a.footer-info__text(href="https://lindoresabbeydistillery.com" target="_blank" rel="noopener noreferrer") Lindores Abbey
-         span , 2020
-      .footer-info__icon.row.mt-2
-        a(href="https://www.facebook.com/LindoresRussia/" target="_blank" class="social-link")
-           svg.footer-icon__facebook(width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg")
-             path(d="M18.3968 9.5879H20.1496V6.5351C19.8472 6.4935 18.8072 6.3999 17.596 6.3999C15.0688 6.3999 13.3376 7.9895 13.3376 10.9111V13.5999H10.5488V17.0127H13.3376V25.5999H16.7568V17.0135H19.4328L19.8576 13.6007H16.756V11.2495C16.7568 10.2631 17.0224 9.5879 18.3968 9.5879Z" fill="white")
-        a(href="https://www.instagram.com/lindores_ru" target="_blank" class="social-link")
-            svg.footer-icon__instagramm(width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg")
-              path(d="M20.2032 5.6001H11.796C8.37931 5.6001 5.59961 8.3798 5.59961 11.7965V20.2037C5.59961 23.6204 8.37931 26.4001 11.796 26.4001H20.2032C23.6199 26.4001 26.3996 23.6204 26.3996 20.2037V11.7965C26.3996 8.3798 23.6199 5.6001 20.2032 5.6001ZM24.3071 20.2037C24.3071 22.4702 22.4697 24.3076 20.2032 24.3076H11.796C9.52951 24.3076 7.69209 22.4702 7.69209 20.2037V11.7965C7.69209 9.52996 9.52951 7.69258 11.796 7.69258H20.2032C22.4697 7.69258 24.3071 9.52996 24.3071 11.7965V20.2037Z" fill="white")
-              path(d="M16 18.5C14.6193 18.5 13.5 17.3807 13.5 16C13.5 14.6193 14.6193 13.5 16 13.5C17.3807 13.5 18.5 14.6193 18.5 16C18.5 17.3807 17.3807 18.5 16 18.5Z" stroke="white" stroke-width="3")
-              path(d="M21.3906 11.95C22.1026 11.95 22.6797 11.3728 22.6797 10.6609C22.6797 9.94896 22.1026 9.37183 21.3906 9.37183C20.6787 9.37183 20.1016 9.94896 20.1016 10.6609C20.1016 11.3728 20.6787 11.95 21.3906 11.95Z" fill="white")
+         .footer-bottom__item.mt-3
+          img.footer-top__img.footer-icon__three(src='img/veloartlube.png')
+         .footer-bottom__item.ml-0.ml-sm-5.mt-5.mr-0
+          a(href="http://velogearance.ru/", target="_blank").d-block
+           img.footer-top__img.footer-icon__fourth(src='img/footer_icon_3.png')
+         .footer-bottom__item.mx-0.mx-sm-5.mt-5
+          a(href="https://fondshipulina.ru/", target="_blank").d-block
+           img.footer-top__img.footer-fifth(src='img/shipullin.png')
+         .footer-bottom__item.mx-0.mx-sm-5.mt-5
+          a(href="https://bitza-sport.ru/", target="_blank").d-block
+           img.footer-top__img.footer-sixth(src='img/footer_icon_4.png')
+         .footer-bottom__item.mx-0.mx-sm-5.mt-5
+          a(href="https://www.free-wheel.ru/", target="_blank").d-block
+           img.footer-top__img.footer-icon__seventh(src='img/footer_icon_5.png')
+         .footer-bottom__item.mx-0.mx-sm-5.mt-5
+          a(href="http://powerupshop.ru/", target="_blank").d-block
+           img.footer-top__img.footer-icon__seventh(src='img/powerup.png')
+         .footer-bottom__item.mx-0.mx-sm-5.mt-5
+           a(href="https://www.decathlon.ru/", target="_blank").d-block
+            img.footer-top__img.footer-icon__eighth(src='img/dektalon.png')
+   
         
-  script(src="js/modal.js")
+
       
 
 

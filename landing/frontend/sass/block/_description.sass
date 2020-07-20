@@ -3,6 +3,11 @@
     overflow: hidden
     padding: 70px 0px 50px
 .description
+    &-link
+      &__svg 
+        svg
+          width: 70px
+          height: 70px
     &-block
         position: relative
         &__track
@@ -73,6 +78,10 @@
      &-schedule 
         &__text 
           letter-spacing: -0.5px
+     &-link
+       &__svg
+         display: block !important
+         margin: 20px 0px 0px !important
 @media (max-width: 1332px)
     .description
       &-button
@@ -84,7 +93,8 @@
     .description 
         &-wrapper 
             &__right 
-                left: 0px
+                left: 0px 
+        
 @media (max-width: 769px)
     .description
         &-schedule 
@@ -117,6 +127,13 @@
         &-list
            &__text
               font-size: $textResponse 
+
+@media (max-width: 442px)
+    .description
+       &-schedule
+         &__text
+           max-width: 330px
+           
            
 @media (max-width: 365px)
     .description

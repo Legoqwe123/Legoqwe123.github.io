@@ -3,6 +3,16 @@
 .gallery
     &-block
         position: relative
+        &__button 
+            @include AdobeIt
+            display: block
+            width: 150px
+            max-width: 100% 
+            margin-top: 20px
+            font-size: 23px
+            background: $text
+            color: $white
+            padding: 5px
         &__left
             position: relative
             background: url('../img/gallery_1.jpg') no-repeat
@@ -22,7 +32,7 @@
         &__text
             padding: 25% 0px
             color: $white
-            font-size: 50px
+            font-size: 60px
             @include GothamBold
         &__help
             color: $white

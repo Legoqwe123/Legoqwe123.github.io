@@ -1,34 +1,14 @@
 #footer
     background: $background
-    padding: 50px 0px 0px
+    padding: 50px 0px 50px
     overflow: hidden
 .footer
-    &-bottom 
-        &__item 
-          &:nth-child(2)
-                margin: 0px 150px   
     &-title 
         color: $white
     &-subtitle 
         color: $white
         font-size: 26px
         @include AdobeIt
-    &-icon
-        &__one
-            width: 283px
-            height: 174px
-        &__two
-            width: 202px
-            height: 204px
-        &__three
-            width: 262px
-            height: 36px
-        &__four
-            width: 269px
-            height: 119px
-        &__five
-            width: 259px
-            height: 98px
     &-info 
       padding: 0 170px
       background: $darknest
@@ -45,20 +25,27 @@
         &:hover
           color: $text
           border-bottom: 1px solid $text
-@media (max-width: 1140px)
+@media (max-width: 1244px)
   .footer
      &-bottom 
         &__item 
-          &:nth-child(2)
-                margin: 40px 
+          &:nth-child(1)
+                margin: 0 5rem
 @media (max-width: 792px)
    .footer
        &-info 
            padding: 0px 50px
        &-top 
            &__img 
-               transform: scale(.75) 
+               transform: scale(.95) 
        &-bottom 
            &__item 
              &:nth-child(2)
                 margin: 0px 
+@media (max-width: 576px)
+   .footer
+      &-bottom 
+        &__item 
+          &:nth-child(1)
+                margin: 0 3rem
+            
