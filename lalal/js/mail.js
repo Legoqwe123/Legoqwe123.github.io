@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const data = new FormData($form);
 
-    const response = await fetch("../smart.php", {
+    const response = await fetch("./smart.php", {
       method: "POST",
       body: "username=2",
     });
