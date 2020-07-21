@@ -1,0 +1,98 @@
+#opportunities {
+  background: #fffcf1;
+  position: relative;
+}
+
+.opportunities-list_item_txt {
+  font-family: "News Cycle", sans-serif;
+  font-size: 18px;
+  color: #3d314a;
+  margin: 0;
+  padding: 0;
+  max-width: 480px;
+}
+
+#opportunities-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.opportunities-content-box {
+  margin: 0;
+}
+
+.opportunities-content-sub_line {
+  /* max-width: 470px; */
+  position: relative;
+  text-decoration: none;
+  z-index: 1;
+}
+.opportunities-content-sub_line:before {
+  position: absolute;
+  content: "";
+  height: 17px;
+  line-height: normal;
+  width: 100%;
+  background: #ff7d00;
+  bottom: 5px;
+  left: 40px;
+  z-index: -1;
+}
+
+#opportunities-content-list_items {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.opportunities-list_item {
+  list-style-type: none;
+  font-family: "News Cycle", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  margin: 0;
+  color: #1a1423;
+  padding-bottom: 30px;
+  display: flex;
+  align-items: flex-start;
+}
+.opportunities-list_tick {
+  list-style-type: none;
+  margin: 0;
+  padding-bottom: 15px;
+}
+.tick-pic {
+  margin-right: 30px;
+  margin-top: 8px;
+}
+
+@media (max-width: 1010px) {
+  #opportunities-content {
+    flex-direction: column;
+  }
+  .opportunities-content-box {
+    padding-top: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  #opportunities-content-list_items {
+    padding-top: 50px;
+    margin: 0;
+  }
+  .opportunities-list_tick {
+    padding-bottom: 25px;
+  }
+  .opportunities-content-sub_line:before {
+    bottom: 0;
+  }
+}
+@media (max-width: 560px) {
+  h4 {
+    font-size: 20px;
+  }
+  .opportunities-content-sub_line:before {
+    height: 12px;
+    width: 90%;
+  }
+}

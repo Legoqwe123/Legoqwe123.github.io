@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap");
+@font-face {
+  font-family: "News Cycle";
+  src: url("../fonts/news_cycle_reg.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  font-family: "News Cycle", sans-serif;
+  font-weight: 300;
+  font-size: 34px;
+  margin: 0;
+  color: #1a1423;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+button {
+  border: none;
+  outline: none;
+  padding: 0;
+}
+h1 {
+  font-family: "News Cycle", sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  margin: 0;
+  padding-top: 65px;
+  color: #1a1423;
+  z-index: 999;
+  position: relative;
+}
+h3 {
+  font-family: "News Cycle", sans-serif;
+  font-weight: 300;
+  font-size: 34px;
+  margin: 0;
+  padding-top: 21px;
+  color: #1a1423;
+  text-decoration: none;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}

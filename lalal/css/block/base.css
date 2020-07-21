@@ -1,0 +1,120 @@
+#base-kit {
+  padding-bottom: 140px;
+}
+.base-kit_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.base-kit_list {
+  background-color: #1a1423;
+  position: relative;
+  padding: 43px;
+}
+.base-kit_list_checklist {
+  text-align: center;
+  margin: 0;
+}
+.base-kit_list_checklist_item {
+  color: #fffcf1;
+  list-style-type: none;
+}
+.base-kit_list_checklist_item_txt {
+  font-family: "News Cycle", sans-serif;
+  font-size: 18px;
+  color: #fffcf1;
+  margin: 0;
+}
+.base-kit_list-line_item {
+  list-style-type: none;
+  margin: 2px 0;
+  padding: 0;
+}
+.opening-option {
+  flex: 1 1 auto;
+}
+
+.opening-option_sub {
+  font-family: "News Cycle", sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+  margin: 0;
+  color: #1a1423;
+  text-align: center;
+  margin: 70px 0 60px;
+  padding: 0;
+}
+.opening-option_items_txt {
+  font-family: "News Cycle", sans-serif;
+  font-size: 18px;
+  color: #3d314a;
+  margin-left: 20px;
+  padding: 0;
+  text-align: left;
+}
+.opening-option_items {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+.opening-option_item_phone {
+  display: flex;
+  align-items: center;
+}
+.opening-option_item_remote {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 1130px) {
+  #base-kit {
+    padding-bottom: 50px;
+  }
+  .base-kit_content_pic {
+    order: 3;
+    flex: 0 1 93%;
+    margin-top: 55px;
+    text-align: center;
+  }
+  .opening-option {
+    order: 2;
+    flex: 0 1 55%;
+  }
+  .base-kit_content {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .opening-option_sub {
+    margin: 0 0 70px;
+  }
+  .opening-option_item_remote {
+    flex-direction: column;
+  }
+  .opening-option_item_phone {
+    flex-direction: column;
+  }
+  .opening-option_items_txt {
+    margin-left: 0;
+  }
+}
+@media (max-width: 760px) {
+  .opening-option_sub {
+    font-size: 20px;
+  }
+}
+@media (max-width: 636px) {
+  .opening-option_items {
+    flex-direction: column;
+    align-items: center;
+  }
+  .opening-option_sub {
+    text-align: left;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .opening-option {
+    flex: 0 1 100%;
+  }
+}
