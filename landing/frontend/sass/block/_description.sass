@@ -6,7 +6,7 @@
     &-link
       &__svg 
         position: relative
-        top: -4px
+        top: -2px
         svg
           width: 70px
           height: 70px
@@ -83,15 +83,23 @@
      &-schedule 
         &__text 
           letter-spacing: -0.5px
-     &-link
-       &__svg
-         display: block !important
-         margin: 20px 0px 0px !important
+     &-button
+       &__right
+         width: 250px
+       
+        
 @media (max-width: 1332px)
     .description
       &-button
        &__left
           margin-top: 30px
+
+@media (max-width: 1170px)
+    .description
+     &-button
+       &__right
+         width: 197px
+
 @media (max-width: 992px)
     #description
        padding: 50px 0px
@@ -99,6 +107,9 @@
         &-wrapper 
             &__right 
                 left: 0px 
+        &-button
+          &__right
+            width: 280px
         
 @media (max-width: 769px)
     .description
@@ -138,6 +149,9 @@
        &-schedule
          &__text
            max-width: 330px
+       &-button 
+         &__right 
+           width: 184px
            
            
 @media (max-width: 365px)
