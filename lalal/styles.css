@@ -1,0 +1,496 @@
+@import url("https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap");
+@font-face {
+  font-family: "News Cycle";
+  src: url(fonts/news_cycle_reg.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+/******************************************************************************** 1 блок */
+
+.container {
+  max-width: 1170px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+.main-screen {
+  background-color: #fffcf1;
+  height: 750px;
+  height: 100%;
+}
+#main-screen-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+button {
+  border: none;
+  outline: none;
+  padding: 0;
+}
+h1 {
+  font-family: "News Cycle", sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  margin: 0;
+  padding-top: 65px;
+  color: #1a1423;
+}
+h3 {
+  font-family: "News Cycle", sans-serif;
+  font-weight: 300;
+  font-size: 34px;
+  margin: 0;
+  padding-top: 21px;
+  color: #1a1423;
+  text-decoration: none;
+}
+.cta-btn {
+  text-align: center;
+  width: 270px;
+  height: 55px;
+  font-family: "News Cycle", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  color: #fffcf1;
+  background-color: #a10702;
+  border: none;
+  margin-top: 50px;
+  cursor: pointer;
+}
+.main-screen-utp_cont {
+  width: 100%;
+  width: 800px;
+}
+.main-screen-utp_cont_sub {
+  width: 100%;
+  max-width: 616px;
+}
+/* .collage_photo_main {
+  width: 512px;
+  width: 100%;
+  height: 418px;
+  height: 100%;
+} */
+
+/******************************************************************************** ВТОРОЙ БЛОК */
+
+.advantages-text-item {
+  margin: 0;
+  padding-bottom: 40px;
+  font-family: "News Cycle", sans-serif;
+  font-size: 18px;
+  color: #1a1423;
+}
+#advantages-text {
+  width: 400px;
+}
+.text-selection {
+  color: #ff7d00;
+}
+h2 {
+  font-family: "News Cycle", sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  padding: 140px 0 100px;
+  color: #1a1423;
+  text-align: center;
+  margin: 0;
+}
+#advantages-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/******************************************************************************** ТРЕТИЙ БЛОК */
+#opportunities {
+  margin-top: 140px;
+  background: #fffcf1;
+  height: 460px;
+  position: relative;
+}
+
+.opportunities-list_item_txt {
+  font-family: "News Cycle", sans-serif;
+  font-size: 18px;
+  color: #3d314a;
+  margin: 0;
+  padding: 0;
+}
+
+#opportunities-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.opportunities-content-box {
+  margin: 0;
+  width: 450px;
+}
+
+.opportunities-content-sub_line {
+  width: 470px;
+  position: relative;
+  text-decoration: none;
+  z-index: 1;
+}
+.opportunities-content-sub_line:before {
+  position: absolute;
+  content: "";
+  height: 17px;
+  line-height: normal;
+  width: 450px;
+  background: #ff7d00;
+  bottom: 5px;
+  left: 40px;
+  z-index: -1;
+}
+
+h4 {
+  font-family: "News Cycle", sans-serif;
+  font-weight: 300;
+  font-size: 34px;
+  margin: 0;
+  color: #1a1423;
+  text-decoration: none;
+}
+#opportunities-content-list_items {
+  width: 480px;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.opportunities-list_item {
+  list-style-type: none;
+  font-family: "News Cycle", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  margin: 0;
+  color: #1a1423;
+  padding-bottom: 30px;
+}
+.opportunities-list_tick {
+  list-style-type: none;
+  margin: 0;
+  padding-bottom: 15px;
+}
+.opportunities-list {
+  margin-left: 20px;
+  padding: 0;
+}
+.tick-pic {
+  margin-right: 30px;
+  padding-bottom: 40px;
+}
+
+/******************************************************************************** ЧЕТВЕРТЫЙ БЛОК */
+/* .base-kit_content {
+  display: flex;
+  justify-content: space-between;
+} */
+.base-kit_content_total {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.base-kit_content_pic {
+  width: 810px;
+  width: 100%;
+}
+.base-kit_list {
+  width: 270px;
+  height: 358px;
+  background-color: #1a1423;
+  position: relative;
+}
+.base-kit_list_checklist {
+  text-align: center;
+  padding: 33px 0 0;
+  margin: 0;
+}
+.base-kit_list_checklist_item {
+  color: #fffcf1;
+  list-style-type: none;
+}
+.base-kit_list_checklist_item_txt {
+  font-family: "News Cycle", sans-serif;
+  font-size: 18px;
+  color: #fffcf1;
+  margin: 0;
+}
+.base-kit_list-line_item {
+  list-style-type: none;
+  margin: 2px 0;
+  padding: 0;
+}
+
+.opening-option_sub {
+  font-family: "News Cycle", sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+  margin: 0;
+  color: #1a1423;
+  text-align: center;
+  margin: 70px 0 60px;
+  padding: 0;
+}
+.opening-option_items_txt {
+  font-family: "News Cycle", sans-serif;
+  font-size: 18px;
+  color: #3d314a;
+  margin-left: 20px;
+  padding: 0;
+  text-align: left;
+}
+.opening-option_items {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+.opening-option_item_phone {
+  display: flex;
+  align-items: center;
+}
+.opening-option_item_remote {
+  display: flex;
+  align-items: center;
+}
+
+/******************************************************************************* ПЯТЫЙ БЛОК */
+
+#features {
+  background-color: #3d314a;
+  height: 460px;
+  margin-top: 140px;
+}
+.features-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 120px;
+}
+.features-cont-txt {
+  font-family: "News Cycle", sans-serif;
+  font-size: 18px;
+  color: #fffcf1;
+  margin: 0;
+  text-align: center;
+  padding-top: 20px;
+}
+.features-cont-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 290px;
+}
+.features-cont-item_kem {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 270px;
+}
+.features-corrections_txt {
+  font-family: "News Cycle", sans-serif;
+  font-size: 12px;
+  color: #fffcf1;
+  margin: 0;
+  padding-top: 100px;
+}
+/******************************************************************************* ШЕСТОЙ БЛОК */
+#contacts {
+  background-color: #fffcf1;
+  height: 928px;
+}
+.contacts_sub {
+  font-family: "News Cycle", sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+  margin: 0;
+  color: #1a1423;
+  margin-bottom: 80px;
+}
+
+.text-selection-sale {
+  color: #a10702;
+}
+
+input {
+  width: 350px;
+  height: 55px;
+  border: none;
+  padding-left: 20px;
+  margin-right: 20px;
+  font-family: "News Cycle", sans-serif;
+  font-size: 20px;
+}
+/* input:focus-visible {
+  outline: none;
+  border-color: #a10702;
+} */
+
+.sending-form-btn {
+  text-align: center;
+  width: 350px;
+  height: 55px;
+  font-family: "News Cycle", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+
+  color: #fffcf1;
+  background-color: #a10702;
+  border: none;
+  margin: 40px 0 60px;
+  cursor: pointer;
+}
+
+.contacts-data {
+  list-style-type: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #1a1423;
+  font-family: "News Cycle", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  margin-left: 20px;
+}
+.contacts-data-item {
+  padding-bottom: 20px;
+}
+.contacts-container {
+  text-align: center;
+}
+
+/******************************************************************************* ШЕСТОЙ БЛОК */
+footer {
+  background-color: #1a1423;
+  height: 83px;
+  margin: 0 auto;
+}
+
+.foot-copyright {
+  text-align: center;
+  font-family: "News Cycle", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: #fffcf1;
+  padding-top: 27px;
+  margin: 0 auto;
+}
+
+/******************************************************************************* АДАПТИВ 768px*************************************************************************** */
+
+/******************************************************************************* Первый БЛОК */
+@media (max-width: 768px) {
+  .container {
+    max-width: 672px;
+  }
+  h1 {
+    font-size: 48px;
+    padding-top: 112px;
+  }
+  .main-screen-utp_cont {
+    min-width: 605px;
+  }
+  .collage_photo_main {
+    padding-top: 365px;
+  }
+  .main-screen-utp_cont_sub {
+    width: 348px;
+  }
+  img {
+    max-width: 100%;
+  }
+
+  /*/*******************************************************************************ВТОРОЙ БЛОК*/
+  #advantages-content {
+    min-width: 672px;
+    min-height: 900px;
+    flex-direction: column;
+  }
+  h2 {
+    padding: 100px 0 60px;
+  }
+  /*/*******************************************************************************ТРЕТИЙ БЛОК*/
+  #opportunities {
+    min-height: 604px;
+  }
+  #opportunities-content {
+    min-width: 672px;
+    min-height: 453px;
+    flex-direction: column;
+  }
+  .opportunities-content-box {
+    padding-top: 70px;
+  }
+  #opportunities-content-list_items {
+    padding-top: 50px;
+    margin: 0;
+  }
+  .opportunities-list_tick {
+    padding-bottom: 25px;
+  }
+  .opportunities-content-sub_line:before {
+    max-width: 380px;
+    bottom: 0;
+  }
+  /*/*******************************************************************************ЧЕТВЕРТЫЙ БЛОК*/
+  #features {
+    max-height: 768px;
+  }
+  .features-cont {
+    max-width: 600px;
+    /* max-height: 535px; */
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    margin: 0;
+  }
+  /********************************************************************************ПЯТЫЙ БЛОК*/
+  .contacts_sub {
+    text-align: center;
+  }
+  input {
+    width: 496px;
+    margin-bottom: 20px;
+  }
+  .sending-form-btn {
+    width: 496px;
+    margin: 0 0 60px;
+  }
+  .sending-form {
+    padding-left: 88px;
+  }
+}
+/******************************************************************************* АДАПТИВ 320px*************************************************************************** */
+/*******************************************************************************ПЕРВЫЙ БЛОК*****************************************/
+@media (max-width: 320px) {
+  .container {
+    max-width: 270px;
+  }
+  h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+}
