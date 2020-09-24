@@ -1,0 +1,19 @@
+#video {
+  padding: 0px 0px 140px;
+}
+
+#video h2 {
+  padding: 0px;
+  margin-bottom: 50px;
+}
+
+.wrapper-video {
+  margin: 0 auto;
+  text-align: center;
+  width: 700px;
+  max-width: 100%;
+}
+
+.wrapper-video iframe {
+  width: 100%;
+}
